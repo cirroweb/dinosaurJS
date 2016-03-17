@@ -12,6 +12,19 @@ Router.map(function() {
   this.route('location');
   this.route('sponsors');
   this.route('register');
+  this.route('home', {path: '/'});
+});
+
+
+Ember.Router.reopen({
+  beforeTransition: function() {
+    let $body = $('body');
+
+    if ($body.hasClass('nav-open')) {
+      $body.removeClass('nav-open');
+    }
+    return;
+   }.on('willTransition')
 });
 
 export default Router;

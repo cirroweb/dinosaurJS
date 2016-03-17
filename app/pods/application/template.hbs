@@ -1,12 +1,11 @@
-<div class='navigation'>
+<nav>
   {{nav-bar}}
-</div>
+</nav>
 
 {{!-- button to slide out nav --}}
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
+<button {{action 'toggleNav'}} class="menu-btn">Menu</button>
+<div {{action 'toggleNav'}} class="nav-overlay"></div>
 
-<div class="site-wrap">
-  <h1>DinosaurJS</h1>
+<div class="wrap">
   {{liquid-outlet}}
 </div>
