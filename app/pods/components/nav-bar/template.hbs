@@ -1,13 +1,10 @@
-<button {{action 'toggleNav'}}>Nav</button>
-{{#if showingNav}}
-  <ul>
-    <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-    <li>{{#link-to 'speakers'}}Speakers{{/link-to}}</li>
-    <li>{{#link-to 'schedule'}}Schedule{{/link-to}}</li>
-    <li>{{#link-to 'about'}}About{{/link-to}}</li>
-    <li>{{#link-to 'location'}}Location{{/link-to}}</li>
-    <li>{{#link-to 'sponsors'}}Sponsors{{/link-to}}</li>
-    <li>{{#link-to 'register'}}Register{{/link-to}}</li>
-  </ul>
-{{/if}}
+<ul>
+  <li class="nav-item">{{#link-to 'index'}}Home{{/link-to}}</li>
+  <li class="nav-item">{{#link-to 'speakers'}}Speakers{{/link-to}}</li>
+  <li class="nav-item">{{#link-to 'schedule'}}Schedule{{/link-to}}</li>
+  <li class="nav-item">{{#link-to 'about'}}About{{/link-to}}</li>
+  <li class="nav-item">{{#link-to 'location'}}Location{{/link-to}}</li>
+  <li class="nav-item">{{#link-to 'sponsors'}}Sponsors{{/link-to}}</li>
+  <li class="nav-item">{{#link-to 'register'}}Register{{/link-to}}</li>
+</ul>
 {{yield}}
