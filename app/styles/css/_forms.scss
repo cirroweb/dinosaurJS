@@ -1,0 +1,175 @@
+.field-wrapper {
+  margin: 0;
+  clear: both;
+  position: relative;
+  overflow: visible;
+}
+
+fieldset {
+  margin: 0em auto 4em;
+  display: block;
+  max-width: 650px;
+  &.email-footer {
+    margin: 0em auto;
+  }
+}
+
+label, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: $base_font_size;
+  font-weight: $font_weight_normal;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  max-width: 635px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  display: inline-block;
+  padding: 11px;
+  height: 44px;
+  line-height: 22px;
+  margin-bottom: 2em;
+  vertical-align: middle;
+  border-radius: 5px;
+  min-width: 50px;
+  max-width: 635px;
+  width: 100%;
+  color: $color_black;
+  background-color: transparent;
+  border: 1.5px solid $color_grey;
+  margin: 0 0 24px 0;
+
+  &:focus {
+    // border: 1px solid $color_gold;
+    outline: none;
+    &:hover {
+      border-color: $color_gold;
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &.email-footer {
+    height: 30px;
+    border: 1.5px solid $color_white;
+    border-radius: 15px;
+    max-width: 400px;
+    }
+  }
+
+textarea {
+  min-height: 80px;
+}
+
+.radio, .checkbox {
+  max-width: 635px;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+  padding-left: 36px;
+  text-indent: -36px;
+}
+
+.multiselect-checkboxes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0 0 24px 0;
+
+  li label {
+    font-size: 13px;
+  }
+}
+
+
+.data-list {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  border-bottom: 1px dotted #E7E7E7;
+  font-size: 13px;
+
+  select {
+    margin: 0;
+  }
+}
+
+.remove {
+  font-weight: $font_weight_bold;
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+  -moz-transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  &:hover {
+    color: $color_red;
+  }
+}
+
+.remove-phone {
+  color: $color_grey_dark;
+  font-size: 13px;
+  display: inline;
+  clear: both;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+  -moz-transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  &:hover {
+    color: $color_red;
+  }
+}
+
+.form-actions {
+  border-top: 1px solid $color_grey_medium;
+  padding-top: 30px;
+}
+
+  &.cancel {
+    &:hover {
+      background-color: $color_yellow;
+    }
+  }
+
+  &.delete {
+    &:hover {
+      background-color: $color_red;
+    }
+  }
+
+  &.save {
+    &:hover {
+      background-color: $color_green;
+    }
+  }

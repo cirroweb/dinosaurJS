@@ -1,0 +1,91 @@
+.card {
+  padding: 10px;
+
+  .card-inner {
+    background-color: white;
+    padding: 30px;
+    }
+  }
+
+.contact-card {
+  min-height: 300px;
+  }
+
+.programs-card {
+  h4, p {
+    margin-bottom: 0;
+  }
+}
+
+.health-help-card {
+  min-height: 300px;
+}
+
+.news-card {
+  padding: 10px 0;
+}
+
+.plans-card {
+  min-height: 500px;
+  .plan-title {
+    min-height: 125px;
+  }
+  .plan-body {
+    min-height: 250px
+  }
+}
+
+
+.dental-section-card {
+  .plans-card {
+    background-color: $color_grey_light;
+    border: 1px solid $color_grey_medium;
+    button {
+      background-color: $color_white;
+      &:hover {
+        background-color: $color_gold;
+      }
+    }
+  }
+}
+
+.homepage-card {
+  min-height: 500px;
+}
+
+// Twitter Carousel
+
+.twitter-card {
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  height: 280px;
+  a {
+    font-weight: bold;
+  }
+}
+
+.tweet-text {
+  height: 120px;
+}
+
+.twitter-row {
+  .left-arrow {
+    left: -100px;
+    top: 50%;
+    margin-top: -25px;
+    position: absolute;
+    span, span:before, span:after {
+      background-color: $color_navy;
+      }
+  }
+  .right-arrow {
+    right: -100px;
+    top: 50%;
+    margin-top: -25px;
+    position: absolute;
+    span, span:before, span:after {
+      background-color: $color_navy;
+      }
+  }
+}

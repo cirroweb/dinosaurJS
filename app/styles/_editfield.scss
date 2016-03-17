@@ -1,0 +1,162 @@
+.card-inner {
+  position: relative;
+}
+
+.edit-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  background-color: $color_pink;
+  font-size: 1rem;
+  &.faq-section-edit-icon {
+    left: -45px;
+    top: 21px;
+  }
+  &.tag-edit {
+    position: relative;
+    display: inline-block;
+  }
+
+  &:hover {
+    background-color: darken($color_pink, 5%);
+  }
+}
+
+.add-new-icon {
+  height: 70px;
+  width: 70px;
+  line-height: 78px;
+  background-color: $color_pink;
+  font-size: 2rem;
+  margin: 30px auto;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  &.add-new-question {
+    height: 30px;
+    width: 30px;
+    margin: 10px 0 30px;
+    font-size: 1.3rem;
+    line-height: 36px;
+  }
+
+  &:hover {
+    background-color: darken($color_pink, 5%);
+  }
+
+}
+
+.crud-button {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  border-radius: 50%;
+  text-align: center;
+  color: $color_black;
+  -webkit-transition: background-color 300ms ease-in-out;
+  -moz-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  cursor: pointer;
+}
+
+// In-Line Editing Styling
+
+.type-1, .type-2, .type-3, .type-4, .page-header {
+  input, textarea {
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    line-height: inherit;
+    height: auto;
+    min-height: auto;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 0 0 5px;
+    margin: 0;
+    border-width: 0 0 2px 0;
+    border-color: transparent;
+    -webkit-transition: 300ms ease-out;
+    -moz-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+
+    &:hover {
+      border-color: $color_grey_medium;
+      }
+
+    &:focus {
+      border-color: $color_pink;
+      }
+
+    &:focus:hover {
+      border-color: $color_pink;
+      }
+  }
+}
+
+.is-there-cta {
+  background-color: $color_grey_light;
+  color: $color_grey_dark;
+  margin: 0 auto 20px;
+  min-height: 15px;
+  position: relative;
+  max-width: 500px;
+  &.header-left-align {
+    margin: 0 0 20px 0;
+  }
+
+  label {
+    font-weight: normal;
+    color: $color_grey_dark;
+  }
+}
+
+.cta-toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cta-header {
+  padding: 5px;
+  background-color: $color_grey_light;
+  border-bottom: 1px solid $color_grey_dark;
+  margin-bottom: 5px;
+  label {
+    display: inline;
+    opacity: 0.4;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    &.checked {
+      opacity: 1;
+    }
+    input[type="radio"] {
+      visibility: hidden;
+    }
+  }
+}
+
+.cta-footer {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.cta-internal-link {
+  color: $color_cyan;
+  span {
+    display: inline;
+
+    &:first-child {
+      opacity: 0.5; 
+      }
+    input {
+      width: auto;
+      min-width: auto;
+      padding: 0;
+      }
+    }
+  }

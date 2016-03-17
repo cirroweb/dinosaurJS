@@ -1,0 +1,40 @@
+.tabs {
+  border-bottom: 1px solid $color_grey_medium;
+  overflow: visible;
+  background-color: #FFF;
+  left: 0;
+  right: 0;
+  width: auto !important;
+  @extend .-clear;
+
+  label,
+  .div {
+    font-weight: $font_weight_bold;
+    padding: 14px 0 15px 0;
+    line-height: 24px;
+    margin: 0 35px 0 0;
+    float: left;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #737373;
+    }
+
+    &.checked,
+    &.active {
+      color: $color_orange;
+      border-bottom: 1px solid #737373;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+.tab-content {
+  padding: 70px 0 0 0;
+  @extend .-clear;
+}

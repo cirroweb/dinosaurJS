@@ -1,0 +1,149 @@
+
+
+.-text--white {
+  color: $color_white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.-text--gold {
+  color: $color_gold;
+}
+
+.-text--grey {
+  color: $color_grey;
+}
+
+.-text--light-grey {
+  color: $color_grey_light;
+}
+
+.-text--blue {
+  color: $color_blue;
+}
+
+.-text--red {
+  color: $color_red;
+}
+
+em {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: $font_weight_bold;
+}
+
+p {
+    margin-bottom: 33px;
+    font-size: inherit;
+    line-height: $base_line_height;
+    input, textarea {
+      font-size: 1rem !important;
+      line-height: inherit;
+      margin-bottom: 0 !important;
+    }
+    }
+
+a {
+    transition: $base_transition_duration1 ease;
+    -moz-transition: $base_transition_duration1 ease;
+    -webkit-transition: $base_transition_duration1 ease;
+    font-weight: normal;
+    text-decoration: none;
+    color: $color_black;
+
+    }
+
+.a--nav {
+    transition: all $base_transition_duration1 ease;
+    -moz-transition: all $base_transition_duration1 ease;
+    -webkit-transition: all $base_transition_duration1 ease;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: $color_black;
+
+    &:hover,
+    &.active {
+        color: $color_black;
+        border-bottom-color: $color_black;
+        }
+    }
+
+h1 {
+    font-size: 4rem;
+    font-weight: $font_weight_bold;
+    line-height: 1.1em;
+    margin-bottom: 1.5rem;
+    input {
+      font-size: 4rem !important;
+      line-height: 1.1em !important;
+    }
+    }
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: $font_weight_bold;
+    input {
+      font-size: 2.5rem !important;
+      line-height: inherit;
+    }
+    }
+
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: $font_weight_normal;
+  input {
+    font-size: 2.5rem !important;
+    line-height: inherit;
+  }
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-weight: $font_weight_normal;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  input {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+}
+
+h5 {
+  font-size: 0.8rem;
+  font-weight: $font_weight_normal;
+  input {
+    font-size: 0.8rem !important;
+    line-height: inherit;
+  }
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: $font_weight_normal;
+  input {
+    font-size: 1.2rem !important;
+    line-height: inherit;
+  }
+}
+
+
+.huge-text {
+  font-size: 7rem;
+  font-weight: $font_weight_bold;
+}
+
+.-uppercase {
+  text-transform: uppercase;
+}
+
+.small-text {
+  font-size: .7rem;
+}
+
+@media only screen and ( max-width: $break_tablet_medium ) {
+  html {
+    font-size: $base_font_size_sm;
+  }
+}

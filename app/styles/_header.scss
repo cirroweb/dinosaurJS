@@ -1,0 +1,25 @@
+.main-navigation {
+  height: 70px;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    a.active {
+      border-bottom: 2px solid black;
+    }
+  }
+  .logo {
+    position: absolute;
+    left: 0;
+    top: -15px;
+    border-bottom: none;
+  }
+  img {
+    height: 50px;
+    width: 166px;
+  }
+
+}

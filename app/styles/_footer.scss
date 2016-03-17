@@ -1,0 +1,24 @@
+.main-footer {
+  background-color: $color_navy;
+  text-align: left;
+  text-decoration: none;
+  ul {
+    padding-left: 0;
+    text-align: center;
+    vertical-align: baseline;
+  }
+  li {
+    list-style: none;
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+    font-weight: $font_weight_normal;
+  }
+  h5, a {
+    color: $color_grey_light;
+  }
+
+  a {
+    border-bottom: none;
+  }
+}

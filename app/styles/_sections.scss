@@ -1,0 +1,333 @@
+// Headers
+.page-header {
+  height: 500px;
+  background: $color_blue;
+  overflow: hidden;
+  .row {
+    height: 100%;
+    }
+  .-cover {
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+  h1 {
+    color: $color_white;
+  }
+  button, .button {
+    background-color: $color_cyan;
+    border-color: $color_cyan;
+    &:hover {
+      background-color: darken($color_cyan, 5%);
+      color: $color_white;
+      }
+  }
+  }
+
+// Used to contain text within a section
+.contain-text{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 30px;
+  }
+
+// Main Content
+.main-content {
+  position: relative;
+}
+
+// Dave's stuff DELETEME
+
+
+.section {
+  overflow: hidden;
+
+  &.home-section {
+    height: 100vh;
+
+    > .row > div[class*="col--"] {
+      height: 100vh;
+    }
+  }
+
+  .-color--navy {
+    background: $color_royal_blue;
+    h2 {
+      color: white;
+    }
+
+  }
+
+  &.-add-padding {
+    padding: 50px 0;
+  }
+
+  &.-color--robins-egg {
+    background: $color_robins_egg;
+  }
+
+  &.-color--royal-blue {
+    background: $color_blue;
+    h2 {
+      color: white;
+    }
+    h4 {
+      color: white;
+    }
+    p {
+      color: rgba(255,255,255,0.5);
+    }
+  }
+
+  &.-color--navy {
+    background: $color_navy;
+    h2 {
+      color: $color_gold;
+    }
+    h1 {
+      color: $color_gold;
+    }
+    h4 {
+      color: white;
+    }
+    p {
+      color: rgba(255,255,255,0.5);
+    }
+    button {
+      color: white;
+    }
+  }
+
+  .row {
+    height: 100%;
+    }
+  .-cover {
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+.section-2 {
+  overflow: hidden;
+
+  .right {
+    margin: 0 auto;
+    &.-color--navy {
+      background: $color_navy;
+      h2 {
+        color: white;
+      }
+    }
+  }
+
+  &.-color--navy {
+    background: $color_navy;
+    h1 {
+      color: $color_gold;
+    }
+    h2 {
+      color: $color_gold;
+    }
+    h3 {
+      color: $color_gold;
+    }
+    h4 {
+      color: white;
+    }
+    p {
+      color: rgba(255,255,255,0.5);
+    }
+    button {
+      color: white;
+    }
+  }
+
+  .-color--dark-navy {
+    background: $color_dark_navy;
+    h1 {
+      color: $color_gold;
+    }
+    h2 {
+      color: $color_gold;
+    }
+    h3 {
+      color: $color_gold;
+    }
+    h4 {
+      color: white;
+    }
+    p {
+      color: rgba(255,255,255,0.5);
+    }
+    button {
+      color: white;
+    }
+  }
+
+  .row {
+    height: 100%;
+    }
+  .-cover {
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+// Used for the column trick as per: http://matthewjamestaylor.com/blog/equal-height-columns-cross-browser-css-no-hacks
+.col-container-2 {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: $color_navy;
+}
+
+.col-container-1 {
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 50%;
+  background: $color_dark_navy;
+}
+
+.col-1 {
+  float: left;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  padding: 300px 0;
+  p {
+    max-width: 400px;
+  }
+}
+
+.col-2 {
+  float: left;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  padding: 200px 0;
+}
+
+
+// Plans Section Content Styling
+
+.plans-section-content {
+  p {
+    color: $color_grey_light;
+  }
+}
+
+.compare-plans-section-1 {
+  width: 50%;
+  margin: 0 auto;
+  h4 {
+    color: $color_gold;
+  }
+}
+
+.compare-plans-section-2 {
+  button, .button {
+    color: $color_white;
+  }
+  h4 {
+    color: $color_white;
+  }
+  p {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+.home-page-sections {
+  .page-header {
+    height: 100vh;
+  }
+
+  .email-enrollment {
+    height: 100vh;
+  }
+
+  .type-1 {
+    height: 100vh;
+    p {
+      color: $color_grey;
+    }
+    h4 {
+      color: $color_blue;
+    }
+
+  }
+  .type-2 {
+    height: 100vh;
+    button, .button {
+      color: $color_white;
+      background-color: $color_cyan;
+      border: none;
+    }
+    h4 {
+      color: $color_blue;
+    }
+    p {
+      color: $color_grey;
+    }
+  }
+  .type-3 {
+    height: 100vh;
+  }
+  .type-4 {
+    .full-height {
+      height: 100vh;
+    }
+    height: 100vh;
+    button, .button {
+      color: $color_white;
+      background-color: $color_cyan;
+      border: none;
+    }
+  }
+
+}
+
+.home-page-nav-arrow {
+  height: 55px;
+  width: 55px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  background: $color_cyan;
+}
+
+.inner-nav-arrow {
+  position: absolute;
+  &:before {
+    background-color: $color_white;
+    height: 3px;
+    width: 20px;
+    position: absolute;
+    top: 30px;
+    left: 11px;
+    content: "";
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+  }
+  &:after {
+    background-color: $color_white;
+    height: 3px;
+    width: 20px;
+    position: absolute;
+    top: 30px;
+    left: 24px;
+    content: "";
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+
+  }
+}

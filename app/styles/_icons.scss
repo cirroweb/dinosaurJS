@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "cu-health-icons";
+  src:url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/cu-health-icons.eot");
+  src:url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/cu-health-icons.eot?#iefix") format("embedded-opentype"),
+    url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/cu-health-icons.woff") format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/cu-health-icons.ttf") format("truetype"),
+    url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/cu-health-icons.svg#cu-health-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontAwesome";
+  src:url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/fontawesome-webfont.eot");
+  src:url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+    url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/fontawesome-webfont.woff") format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/fontawesome-webfont.ttf") format("truetype"),
+    url("https://s3-us-west-2.amazonaws.com/cu-health-ember/cu-health-plan-ember/assets/fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[data-icon]:before {
+  font-family: "cu-health-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "cu-health-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+  content: "a";
+  line-height: 30px;
+}
+.icon-plus:before {
+  content: "b";
+}
+.icon-circle-slash:before {
+  content: "c";
+}
+.icon-x:before {
+  content: "d";
+}
+.icon-trashcan:before {
+  content: "e";
+}
+.icon-check:before {
+  content: "f";
+}

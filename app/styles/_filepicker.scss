@@ -1,0 +1,156 @@
+.file-picker-wrap {
+  margin: 30px 0 ;
+  // border: 2px dashed $color_white;
+  padding-bottom: 50%;
+  overflow: hidden;
+  height: auto;
+  min-height: 300px;
+  cursor: pointer;
+  position: relative;
+
+  .file-picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    background: white;
+    -webkit-transition: 300ms ease-in-out;
+    -moz-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    color: $color_grey;
+
+    &:hover {
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    &:before {
+      content: 'Drop File';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      color: $color_grey_dark;
+      transform: translate(-50%, -50%);
+      -webkit-transition: 300ms ease-in-out;
+      -moz-transition: 300ms ease-in-out;
+      transition: 300ms ease-in-out;
+    }
+
+    &.over {
+      background: $color-pink;
+      color: $color-pink;
+      &:before {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .file-picker__dropzone {
+    height: 100%;
+  }
+
+  .file-picker__preview {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+
+    img {
+      height: 100%;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.file-picker-wrap, .border-black {
+  .file-picker {
+    // border: 2px dashed $color_black
+  }
+}
+
+$color-black: #333;
+
+.processing {
+  height: 300px;
+  padding-top: 80px;
+}
+
+
+.waiting {
+min-height: 300px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Uses everything below here in the app */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.is-loading {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: $color-black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -15px 0 0 -15px;
+    -webkit-animation: pulse 1s infinite ease-in-out;
+    animation: pulse 1s infinite ease-in-out;
+  }
+
+  &.b-loaded:before {
+    content: none;
+  }
+}
+
+.b-lazy {
+    -webkit-transition: opacity 200ms ease-in-out;
+       -moz-transition: opacity 200ms ease-in-out;
+         -o-transition: opacity 200ms ease-in-out;
+            transition: opacity 200ms ease-in-out;
+             max-width: 100%;
+               opacity: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.b-lazy.b-loaded {
+               opacity: 1;
+}

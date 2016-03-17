@@ -1,0 +1,97 @@
+table {
+  table-layout: auto;
+  word-break: normal;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  th, td {
+    vertical-align: top;
+    padding: 12px 15px;
+  }
+
+  th {
+    word-break: normal;
+    text-align: left;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+    font-weight: 600;
+  }
+
+  td {
+    border-bottom: 1px dotted #E0E0E0;
+    cursor: default;
+  }
+
+}
+
+
+/* Flexbox Play
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+}
+
+
+.flex-items-default {
+    width: 300px;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.flex-item {
+  width: 300px;
+  height: 250px;
+  background-color: Beige;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+ .flex-item-1 {
+    width: 300px;
+    height: 250px;
+    background-color: Beige;
+}
+
+ .flex-item-2 {
+    width: 300px;
+    height: 250px;
+    background-color: BurlyWood;
+}
+
+ .flex-item-3 {
+    width: 300px;
+    height: 250px;
+    background-color: Beige;
+}
+
+ .flex-item-4 {
+    width: 300px;
+    height: 250px;
+    background-color: BurlyWood;
+}
+
+ .flex-item-5 {
+    width: 300px;
+    height: 250px;
+    background-color: Beige;
+}
+
+ .flex-item-6 {
+    width: 300px;
+    height: 250px;
+    background-color: BurlyWood;
+}
+
+ */

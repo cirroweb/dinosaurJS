@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    }
+
+
+body {
+    height: 100%;
+    margin: 0;
+    color: $base_primary_color;
+    font-family: $font_work_sans;
+    font-size: $base_font_size;
+    font-style: normal;
+    font-weight: $font_weight_normal;
+    line-height: $base_line_height;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+    -webkit-touch-callout: none;
+    &.modal-open {
+      overflow: hidden;
+    }
+    // baseline me plz
+    //background: url('http://alistapart.com/d/settingtypeontheweb/images/gridbg.gif') white
+    }
+
+
+hr {
+  height: 2px;
+  border: none;
+  background: $color_grey_medium;
+  clear: both;
+  margin-bottom: 25px;
+
+  &.grey {
+    background: $color_grey_light;
+  }
+  &.short-line-break {
+    height: 1px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+hr.news-line {
+    margin: 20px 0;
+  }
+
+iframe {
+  width: 100%;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 40px;
+  &.no-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+ol {
+  list-style: decimal;
+  padding-left: 40px;
+}
+
+.light-grey-background {
+  background-color: $color_grey_light;
+}
+
+.darkbackground {
+  background-color: $color_grey;
+}
+
+.blackbackground {
+  background-color: $color_black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.news-items-wrapper {
+    hr:last-child {
+       display: none;
+       }
+}

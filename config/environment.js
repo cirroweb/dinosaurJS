@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'dinosaurjs',
+    podModulePrefix: 'dinosaurjs/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

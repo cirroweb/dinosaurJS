@@ -1,0 +1,158 @@
+.liquid-container {
+  -webkit-trasform: none !important;
+  -moz-trasform: none !important;
+  transform: none !important;
+}
+
+@keyframes modal-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-mask-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.modal-mask {
+  animation: modal-mask-enter 300ms;
+  -webkit-animation: modal-mask-enter 300ms;
+  -moz-animation: modal-mask-enter 300ms;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z_layer_forward;
+  opacity: .5;
+  background: #000;
+  background: -webkit-gradient(radial,50% 25%,0,50% 25%,800,from(rgba(0,0,0,.5)),to(#000)) rgba(0, 0, 0, 0);
+  background: -moz-radial-gradient(center 45deg,circle cover,rgba(0,0,0,.5) 0%,#000 100%) transparent;
+}
+
+.modal {
+  position: fixed;
+  left:  50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 40px;
+  width: 95%;
+  max-width: 700px;
+  max-height: 90%;
+  overflow: scroll;
+  background: $color_grey_light;
+  z-index: 1500;
+  box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04);
+  animation: modal-enter 300ms;
+  -webkit-animation: modal-enter 300ms;
+
+  &.sm {
+    max-width: 400px;
+    }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+
+.modal-header {
+  position: relative;
+  padding: 15px 30px;
+  border-bottom: 1px solid darken($color_grey_light, 8%);
+}
+
+.modal-content {
+  padding: 40px 30px 30px;
+  input, textarea {
+    background-color: $color_white;
+    border-radius: 0;
+    border: none;
+    &:hover, &:focus {
+      border: none;
+      background-color: $color_white;
+    }
+  }
+  fieldset {
+  margin-bottom: 0;
+  }
+  }
+
+
+.modal-footer {
+  position: relative;
+  border-top: 1px solid darken($color_grey_light, 8%);
+
+  &.thirds button,
+  &.thirds a
+   {
+    width: 33.333%;
+    &:nth-child(2) {
+      border-left: 1px solid darken($color_grey_light, 8%);
+      border-right: 1px solid darken($color_grey_light, 8%);
+    }
+  }
+
+  &.half button,
+  &.half a {
+    width: 50%;
+    &:nth-child(2) {
+      border-left: 1px solid darken($color_grey_light, 8%);
+    }
+  }
+
+  &.full button,
+  &.full a {
+    width: 100%;
+  }
+  button,
+  a {
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    &:hover {
+      border: none;
+      background-color: $color_grey_medium;
+    }
+
+    &:disabled,
+    &.disabled {
+      cursor: not-allowed;
+      color: $color_grey;
+      &:hover {
+        background-color: $color_grey_light;
+      }
+    }
+  }
+}
+
+
+.valid {
+    color: $color_green;
+  }
+.not-valid {
+  color: $color_red;
+}
+.no-input {
+  color: $color_grey;
+}
+
+.modal-tags > div {
+  display: inline-block;
+}

@@ -1,0 +1,387 @@
+/**
+ * Style pages styling
+ */
+
+header.main-navigation {
+  display:none;
+}
+
+footer.main-footer {
+  display: none;
+}
+
+.colored [class*="col--"],
+.colored [class*="push--"],
+.color-fill{
+  background: #3E81ED;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid white;
+}
+
+.style-nav-inner {
+  height: 100%;
+  background: #EFF3F7;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  width: 25%;
+  min-width: 150px;
+  top: 70px;
+  padding-top: 40px;
+  z-index: 1000;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+}
+
+@media only screen and (max-width: 768px) {
+  .style-nav-inner {
+    transform: translateX(-90%);
+    -webkit-transform: translateX(-90%);
+  }
+
+  .style-nav-inner:hover {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+
+}
+
+.styles-header svg{
+  width: 22px;
+  height: auto;
+  position: relative;
+  top: 4px;
+}
+
+.styles-header a {
+  border: none !important;
+}
+
+.styles-header strong{
+  font-weight: 400;
+}
+
+.style-nav a {
+  display: block;
+  padding: 15px 30px;
+  border-bottom: none;
+}
+
+.style-nav a:hover {
+  display: block;
+  padding: 15px 30px;
+  border-bottom: none;
+}
+
+.styles-header {
+  background: #F9ED32;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding: 23px 30px;
+  z-index: 3000;
+}
+
+.styles-body {
+  padding-top: 40px;
+}
+
+.style-nav a.active {
+  background-color: #3E81ED;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.background-grey {
+  background-color: #F2F2F2;
+}
+
+button, .button {
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+
+.alert-bar-display {
+  left: 0;
+  top: 0;
+  position: relative;
+
+}
+
+.modal-styling-div {
+  width: 100%;
+  height: 350px;
+}
+
+.example-modal {
+  top: 100px;
+}
+
+.transition-example {
+  padding: 30px;
+  margin: 30px 0;
+  background-color: #EFF3F7;
+}
+
+.example-body {
+  background-color: white;
+  padding: 30px;
+}
+
+.border-solid {
+  border: 1px solid gray;
+}
+
+.side-nav-drop {
+  display: none;
+  background-color: darken(#EFF3F7, 5%);
+}
+
+// for the ember-alerts plugin
+.warning {
+  background-color: red;
+  font-color: white;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: green;
+  font-color: white;
+  border-radius: 5px;
+}
+
+/**
+ * code element styling
+ */
+
+code {
+  padding: .1em .3em;
+  border-radius: .3em;
+  background: #f7f7f7;
+  font-family: monospace;
+}
+
+
+/**
+ * GitHub Gist Theme
+ */
+
+
+.hljs {
+  display: block;
+  background: #EFF3F7;
+  padding: 25px;
+  /*border: solid 1px rgba(51, 51, 51, 0.12);*/
+  width: 100%;
+  color: #333333;
+  overflow-x: auto;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.bash .hljs-shebang,
+.java .hljs-javadoc,
+.javascript .hljs-javadoc,
+.rust .hljs-preprocessor {
+  color: #969896;
+}
+
+.hljs-string,
+.apache .hljs-sqbracket,
+.coffeescript .hljs-subst,
+.coffeescript .hljs-regexp,
+.cpp .hljs-preprocessor,
+.c .hljs-preprocessor,
+.javascript .hljs-regexp,
+.json .hljs-attribute,
+.makefile .hljs-variable,
+.markdown .hljs-value,
+.markdown .hljs-link_label,
+.markdown .hljs-strong,
+.markdown .hljs-emphasis,
+.markdown .hljs-blockquote,
+.nginx .hljs-regexp,
+.nginx .hljs-number,
+.objectivec .hljs-preprocessor .hljs-title,
+.perl .hljs-regexp,
+.php .hljs-regexp,
+.xml .hljs-value,
+.less .hljs-built_in,
+.scss .hljs-built_in {
+  color: #df5000;
+}
+
+.hljs-keyword,
+.css .hljs-at_rule,
+.css .hljs-important,
+.http .hljs-request,
+.ini .hljs-setting,
+.haskell .hljs-type,
+.java .hljs-javadoctag,
+.javascript .hljs-tag,
+.javascript .hljs-javadoctag,
+.nginx .hljs-title,
+.objectivec .hljs-preprocessor,
+.php .hljs-phpdoc,
+.sql .hljs-built_in,
+.less .hljs-tag,
+.less .hljs-at_rule,
+.scss .hljs-tag,
+.scss .hljs-at_rule,
+.scss .hljs-important,
+.stylus .hljs-at_rule,
+.go .hljs-typename,
+.swift .hljs-preprocessor {
+  color: #a71d5d;
+}
+
+.apache .hljs-common,
+.apache .hljs-cbracket,
+.apache .hljs-keyword,
+.bash .hljs-literal,
+.bash .hljs-built_in,
+.coffeescript .hljs-literal,
+.coffeescript .hljs-built_in,
+.coffeescript .hljs-number,
+.cpp .hljs-number,
+.cpp .hljs-built_in,
+.c .hljs-number,
+.c .hljs-built_in,
+.cs .hljs-number,
+.cs .hljs-built_in,
+.css .hljs-attribute,
+.css .hljs-hexcolor,
+.css .hljs-number,
+.css .hljs-function,
+.haskell .hljs-number,
+.http .hljs-literal,
+.http .hljs-attribute,
+.java .hljs-number,
+.javascript .hljs-built_in,
+.javascript .hljs-literal,
+.javascript .hljs-number,
+.json .hljs-number,
+.makefile .hljs-keyword,
+.markdown .hljs-link_reference,
+.nginx .hljs-built_in,
+.objectivec .hljs-literal,
+.objectivec .hljs-number,
+.objectivec .hljs-built_in,
+.php .hljs-literal,
+.php .hljs-number,
+.python .hljs-number,
+.ruby .hljs-prompt,
+.ruby .hljs-constant,
+.ruby .hljs-number,
+.ruby .hljs-subst .hljs-keyword,
+.ruby .hljs-symbol,
+.rust .hljs-number,
+.sql .hljs-number,
+.puppet .hljs-function,
+.less .hljs-number,
+.less .hljs-hexcolor,
+.less .hljs-function,
+.less .hljs-attribute,
+.scss .hljs-preprocessor,
+.scss .hljs-number,
+.scss .hljs-hexcolor,
+.scss .hljs-function,
+.scss .hljs-attribute,
+.stylus .hljs-number,
+.stylus .hljs-hexcolor,
+.stylus .hljs-attribute,
+.stylus .hljs-params,
+.go .hljs-built_in,
+.go .hljs-constant,
+.swift .hljs-built_in,
+.swift .hljs-number {
+  color: #0086b3;
+}
+
+.apache .hljs-tag,
+.cs .hljs-xmlDocTag,
+.css .hljs-tag,
+.xml .hljs-title,
+.stylus .hljs-tag {
+  color: #63a35c;
+}
+
+.bash .hljs-variable,
+.cs .hljs-preprocessor,
+.cs .hljs-preprocessor .hljs-keyword,
+.css .hljs-attr_selector,
+.css .hljs-value,
+.ini .hljs-value,
+.ini .hljs-keyword,
+.javascript .hljs-tag .hljs-title,
+.makefile .hljs-constant,
+.nginx .hljs-variable,
+.xml .hljs-tag,
+.scss .hljs-variable {
+  color: #333333;
+}
+
+.bash .hljs-title,
+.coffeescript .hljs-title,
+.cpp .hljs-title,
+.c .hljs-title,
+.cs .hljs-title,
+.css .hljs-id,
+.css .hljs-class,
+.css .hljs-pseudo,
+.ini .hljs-title,
+.haskell .hljs-title,
+.haskell .hljs-pragma,
+.java .hljs-title,
+.javascript .hljs-title,
+.makefile .hljs-title,
+.objectivec .hljs-title,
+.perl .hljs-sub,
+.php .hljs-title,
+.python .hljs-decorator,
+.python .hljs-title,
+.ruby .hljs-parent,
+.ruby .hljs-title,
+.rust .hljs-title,
+.xml .hljs-attribute,
+.puppet .hljs-title,
+.less .hljs-id,
+.less .hljs-pseudo,
+.less .hljs-class,
+.scss .hljs-id,
+.scss .hljs-pseudo,
+.scss .hljs-class,
+.stylus .hljs-class,
+.stylus .hljs-id,
+.stylus .hljs-pseudo,
+.stylus .hljs-title,
+.swift .hljs-title,
+.diff .hljs-chunk {
+  color: #795da3;
+}
+
+.coffeescript .hljs-reserved,
+.coffeescript .hljs-attribute {
+  color: #1d3e81;
+}
+
+.diff .hljs-chunk {
+  font-weight: bold;
+}
+
+.diff .hljs-addition {
+  color: #55a532;
+  background-color: #eaffea;
+}
+
+.diff .hljs-deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
+}
+
+.markdown .hljs-link_url {
+  text-decoration: underline;
+}

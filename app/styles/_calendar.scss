@@ -1,0 +1,149 @@
+.fc-content {
+  position: relative;
+  padding-left: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .8rem;
+  color: $color_grey_dark;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: $color_grey_dark;
+    left: 10px;
+    top: 3px;
+    border-radius: 50%;
+  }
+}
+
+.fc-time {
+  display: none;
+}
+
+.fc-day-grid {
+  background-color: $color_white;
+}
+
+.fc-ltr .fc-basic-view .fc-day-number {
+  text-align: left;
+  padding: 12px 0 0 15px;
+  color: $color_grey;
+}
+
+
+.fc td, .fc th {
+    border-style: solid;
+    border-width: 8px;
+    border-color: $color_grey_light;
+    padding: 0px;
+    vertical-align: top;
+}
+
+.fc-unthemed .fc-today {
+    background: $color_gold;
+}
+
+.fc-head {
+  table {
+    margin-bottom: 0;
+    color: $color_grey_dark;
+    font-weight: normal;
+  }
+}
+
+.fc-today-button {
+  display: none;
+}
+
+.fc-left {
+  color: $color_grey_dark;
+  h2 {
+    font-weight: normal;
+  }
+}
+
+.fc-day-header {
+  font-weight: normal;
+}
+
+.calendar-arrow {
+  height: 50px;
+  width: 100px;
+  position: relative;
+  bottom: 0;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.left-arrow {
+  span {
+    height: 3px;
+    width: 45px;
+    background-color: $color_grey;
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    &:before {
+      background-color: $color_grey;
+      height: 3px;
+      width: 20px;
+      position: absolute;
+      top: 6px;
+      left: -4px;
+      content: "";
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+    }
+    &:after {
+      background-color: $color_grey;
+      height: 3px;
+      width: 20px;
+      position: absolute;
+      top: -6px;
+      left: -4px;
+      content: "";
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+    }
+  }
+}
+
+.right-arrow {
+  span {
+    height: 3px;
+    width: 45px;
+    background-color: $color_grey;
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    &:before {
+      background-color: $color_grey;
+      height: 3px;
+      width: 20px;
+      position: absolute;
+      top: -6px;
+      left: 30px;
+      content: "";
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+    }
+    &:after {
+      background-color: $color_grey;
+      height: 3px;
+      width: 20px;
+      position: absolute;
+      top: 6px;
+      left: 30px;
+      content: "";
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+    }
+  }
+}

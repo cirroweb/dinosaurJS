@@ -1,0 +1,52 @@
+// Login
+.login {
+  background: $color_grey_light;
+  overflow: hidden;
+
+  .login-form {
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  input {
+    border: none;
+    background: white;
+    border-radius: 0;
+    margin-bottom: 15px;
+    &:focus,
+    &:hover {
+      border: 0;
+      background: white;
+      }
+  }
+
+  button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .password-field {
+    position: relative;
+    input {
+      padding-right: 60px;
+      }
+    a {
+      position: absolute;
+      top: 14px;
+      font-size: 0.95rem;
+      right: 12px;
+      color: $color_grey_dark;
+      border: none;
+      }
+    }
+
+  .main-navigation,
+  .main-footer {
+    display: none;
+  }
+}

@@ -6,6 +6,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('speakers');
+  this.route('schedule');
+  this.route('about');
+  this.route('location');
+  this.route('sponsors');
+  this.route('register');
 });
 
 export default Router;

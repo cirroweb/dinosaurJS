@@ -1,0 +1,46 @@
+.messages {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 90px;
+  z-index: 9999;
+  min-height: 50px;
+  padding: .8em 20px .8em 20px;
+  border-radius: 4px;
+  background-color: $color_green;
+  overflow: hidden;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  width: 93%;
+  left: -100%;
+  max-width: 600px;
+  transition: 300ms;
+  cursor: pointer;
+
+  &.success {
+    background-color: $color_green;
+  }
+
+  &.error {
+    background-color: $color_red;
+  }
+
+  &.info {
+    background-color: $color_blue;
+  }
+
+  &.active {
+    left: 20px;
+  }
+
+  .error-message {
+    padding: 0 20px 0 0;
+    position: relative;
+  }
+
+  .close-x {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
