@@ -3,3 +3,14 @@
   background: $color_purple;
   padding: 0 10%;
 }
+
+section {
+  padding: 10%;
+
+  &.--section-black {
+    background: $color_black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+  }
+
+}
