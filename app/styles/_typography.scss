@@ -1,8 +1,42 @@
+@keyframes scrollCode {
+  0% {
+    transform: rotate(180deg) skew(1deg, 0deg);
+  }
+  50% {
+    transform: rotate(400deg) skew(40deg, 20deg);
+  }
+  100% {
+    transform: rotate(90deg) skew(70deg, -30deg);
+  }
+}
 
 
 .-text--white {
   color: $color_white;
   -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: 'Source Code Pro';
+  font-weight: 400;
+  color: #FD9A9B;
+  font-size: 14px;
+  word-wrap: break-word;
+  height: 50vh;
+  width: 100%;
+  display: block;
+  position: relative;
+  background: $color_grey_dark;
+  overflow: hidden;
+
+  pre {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: scrollCode 50s linear infinite alternate-reverse;
+  }
 }
 
 

@@ -17,7 +17,7 @@
   border: none;
   padding: 0;
   border-radius: 50%;
-  z-index: $z_layer_forward;
+  z-index: $z_layer_10;
   animation: spinPlz 5s infinite linear;
 
   &:hover {
@@ -31,21 +31,27 @@
 .nav-overlay {
   position: fixed;
   top: 0;
-  left: 0;
   bottom: 0;
   right: 0;
+  width: 50%;
   background: $color_black;
-  background: rgba(0,0,0,0.26);
-  z-index: -1;
-  opacity: 0;
+  z-index: $z_layer_forward;
+  transform: translateX(100%);
   transition: 300ms ease-in-out;
+}
+
+.nav-exit {
+  color: white;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: line-through;
 }
 
 nav {
   background: white;
   position: fixed;
   left: 0;
-  width: 300px;
+  width: 50%;
   height: 100vh;
   z-index: $z_layer_forward;
   transform: translateX(-100%);
@@ -58,12 +64,7 @@ body.nav-open {
     transform: translateX(0%);
   }
 
-  .menu-btn {
-    left: 400px;
-  }
-
   .nav-overlay {
-    z-index: $z_layer_10;
-    opacity: 1;
+    transform: translateX(0%);
   }
 }

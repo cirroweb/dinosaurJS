@@ -4,7 +4,11 @@
 
 {{!-- button to slide out nav --}}
 <button {{action 'toggleNav'}} class="menu-btn">Menu</button>
-<div {{action 'toggleNav'}} class="nav-overlay"></div>
+<div {{action 'toggleNav'}} class="nav-overlay">
+  <div class="valigner nav-exit">
+    <div class="valigner--cell">Close</div>
+  </div>
+</div>
 
 <div class="wrap">
   {{liquid-outlet}}

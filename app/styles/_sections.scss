@@ -1,14 +1,22 @@
 .logo-wrap {
   height: 100vh;
-  background: $color_purple;
-  padding: 0 10%;
+  background: white;
+  padding: 0 25%;
+}
+
+#home-logo {
+  fill: $color_grey_dark;
+
+  // &:hover {
+  //   fill: $color_black;
+  // }
 }
 
 section {
   padding: 10%;
 
   &.--section-black {
-    background: $color_black;
+    background: $color_grey_dark;
     color: white;
     -webkit-font-smoothing: antialiased;
   }
