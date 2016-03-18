@@ -16,6 +16,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+small {
+  font-size: 0.4rem;
+  line-height: 1.2;
+}
+
 code {
   font-family: 'Source Code Pro';
   font-weight: 400;
@@ -35,7 +40,7 @@ code {
     left: 0;
     right: 0;
     bottom: 0;
-    animation: scrollCode 50s linear infinite alternate-reverse;
+    //animation: scrollCode 50s linear infinite alternate-reverse;
   }
 }
 
