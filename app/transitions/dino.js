@@ -7,9 +7,7 @@ export default function(opts={}) {
 
   let firstStep;
   let outOpts = opts;
-
-  var $w = $('.wrap');
-  $w.addClass('hidden');
+  let $w = $('.wrap');
 
   if ($w.hasClass('add-transition')) {
     $w.removeClass('add-transition');
@@ -35,9 +33,7 @@ export default function(opts={}) {
 
   return firstStep.then(() => {
     run.later(function () {
-      $w.addClass('add-transition');
-      $w.removeClass('hidden');
-      $w.addClass('loaded');
+      $w.addClass('add-transition loaded');
     }, 300);
     return animate(this.newElement, {opacity: 1}, {duration: 1}, 'dino');
   });
