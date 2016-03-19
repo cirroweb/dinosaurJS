@@ -1,5 +1,14 @@
 .wrap {
   @extend .-clear;
+  opacity: 0;
+  transform: translateY(100px);
+  &.add-transition {
+    transition: 300ms ease-in-out;
+  }
+  &.loaded {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .container,
