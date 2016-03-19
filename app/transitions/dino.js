@@ -7,10 +7,10 @@ export default function(opts={}) {
 
   let firstStep;
   let outOpts = opts;
-  // let self = this;
 
-  // this.newElement.children('.wrap').addClass('loaded');
   var $w = $('.wrap');
+  $w.addClass('hidden');
+
   if ($w.hasClass('add-transition')) {
     $w.removeClass('add-transition');
   }
@@ -34,9 +34,9 @@ export default function(opts={}) {
   }
 
   return firstStep.then(() => {
-    //  self.newElement.children('.wrap').addClass('loaded');
     run.later(function () {
       $w.addClass('add-transition');
+      $w.removeClass('hidden');
       $w.addClass('loaded');
     }, 300);
     return animate(this.newElement, {opacity: 1}, {duration: 1}, 'dino');
