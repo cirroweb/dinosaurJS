@@ -19,7 +19,7 @@ export default Component.extend({
     let minutes    = Math.floor((diff - (daysToInMs + hrsToInMs)) / 60000),
         minsToInMs = minutes * 60000;
 
-    let seconds = Math.round( (diff - (daysToInMs + hrsToInMs + minsToInMs)) / 1000 );
+    let seconds = Math.floor( (diff - (daysToInMs + hrsToInMs + minsToInMs)) / 1000 );
 
     this.set('days'    , days);
     this.set('hours'   , hours);
