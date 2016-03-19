@@ -10,10 +10,13 @@
 .menu-btn {
   position: fixed;
   top: 30px;
-  left: 30px;
+  right: 30px;
   height: 80px;
   width: 80px;
+  margin-left: -40px;
   background: $color_white;
+  color: $color_black;
+  -webkit-font-smoothing: antialiased;
   border: none;
   padding: 0;
   border-radius: 50%;
