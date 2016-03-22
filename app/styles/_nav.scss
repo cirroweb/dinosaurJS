@@ -13,7 +13,7 @@
   left: 30px;
   height: 80px;
   width: 80px;
-  background: white;
+  background: $color_white;
   border: none;
   padding: 0;
   border-radius: 50%;
@@ -23,7 +23,7 @@
   font-size: 20px;
 
   &:hover {
-    background: white;
+    background: $color_white;
     color: $color_black;
     border: none;
   }
@@ -34,7 +34,7 @@
   bottom: 20px;
   right: 30px;
   font-size: 13px;
-  color: white;
+  color: $color_white;
 }
 
 
@@ -51,13 +51,13 @@
 }
 
 .nav-exit {
-  color: white;
+  color: $color_white;
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
 
 nav {
-  background: white;
+  background: $color_white;
   position: fixed;
   left: 0;
   width: 50%;
@@ -79,19 +79,30 @@ nav {
     position: relative;
     padding-left: 8%;
     margin: 2% 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     a {
       letter-spacing: 2vw;
       transition: 500ms ease-in-out;
       &:before {
-        content: "☺";
+        content: "";
         position: absolute;
-        left: -10px;
-        top: 0;
+        top: 50%;
+        left: 0;
+        height: 2vw;
+        width: 2vw;
+        background: $color_white;
+        line-height: 2;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        border: 3px solid;
+        transform: translateY(-50%);
+      }
+      &:hover:before {
+        background: $color_black;
       }
       &.active:before {
-        transform: rotate(180deg);
+        background: $color_black;
       }
     }
   }

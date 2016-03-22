@@ -1,6 +1,6 @@
 .logo-wrap {
   height: 100vh;
-  background: white;
+  background: $color_white;
   padding: 0 25%;
 }
 
@@ -48,12 +48,12 @@ section {
 
   &.--section-black {
     background: $color_grey_dark;
-    color: white;
+    color: $color_white;
     -webkit-font-smoothing: antialiased;
   }
 
-  &.--section-white {
-    background: white;
+  &.--section-$color_white {
+    background: $color_white;
     color: $color_grey_dark;
   }
 
