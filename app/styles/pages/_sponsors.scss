@@ -1,0 +1,37 @@
+.page-intro {
+  margin-bottom: 5%;
+}
+
+.sponsor-section {
+  margin: 0 auto;
+}
+
+.sponsor-wrapper {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+
+.sponsor-logo-wrapper {
+  background-color: $color_white;
+  img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    width: 100%;
+  }
+}
+
+.sponsor-description {
+  padding-left: 5%;
+}
+
+@media (max-width: 768px) {
+  .sponsor-description {
+    padding-left: 0;
+    margin-top: 5%
+  }
+  .sponsor-logo {
+    margin-bottom: 5%;
+  }
+}
