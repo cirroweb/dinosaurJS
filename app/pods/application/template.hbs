@@ -2,6 +2,10 @@
   {{nav-bar}}
 </nav>
 
+<h3>
+  {{dino-countdown}}
+</h3>
+
 <button {{action 'toggleNav'}} class="menu-btn">Menu</button>
 <div {{action 'toggleNav'}} class="nav-overlay">
   <div class="valigner nav-exit">
@@ -12,11 +16,6 @@
   </div>
 </div>
 
-
-<div class="date">
-  June 24, 2016
-</div>
-{{dino-countdown}}
 
 <div class="wrap">
   {{liquid-outlet}}

@@ -1,15 +1,107 @@
 .logo-wrap {
   height: 100vh;
   background: $color_white;
-  padding: 0 25%;
+  z-index: -1;
+  position: relative;
 }
 
-#home-logo {
-  fill: $color_grey_dark;
+.name-wrap {
+  position: fixed;
+  z-index: $z_layer_10;
+  bottom: 0;
+  left: 30px;
+}
 
-  // &:hover {
-  //   fill: $color_black;
-  // }
+.flexer {
+  position: relative;
+  z-index: $z_layer_10;
+  color: $color_black;
+  font-size: 8vw;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-is-this {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: $z_layer_10;
+  color: $color_black;
+  font-size: 8vw;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    width: 400px;
+    height: 100%;
+  }
+}
+
+.full-overflow {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  position: relative;
+}
+
+.home-info {
+  height: 100vh;
+  background: $color_white;
+  color: $color_black;
+  padding: 0 10%;
+}
+
+.home-mask {
+  background-image: url('/assets/logo.svg');
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: $z_layer_05;
+}
+
+.top-mask {
+  position: absolute;
+  background: $color_white;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2vh;
+}
+
+.bottom-mask {
+  position: absolute;
+  background: $color_white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2vh;
+}
+
+.right-mask {
+  position: absolute;
+  background: $color_white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10%;
+}
+
+.left-mask {
+  position: absolute;
+  background: $color_white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10%;
 }
 
 .date {
@@ -44,7 +136,7 @@
 }
 
 section {
-  padding: 10%;
+  padding: 10% 5%;
 
   &.--section-black {
     background: $color_grey_dark;

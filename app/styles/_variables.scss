@@ -3,10 +3,11 @@
 $color_purple: #6f00ff;
 // $color_purple: #5959ff;
 $color_black: #111;
-$color_grey: #A2A4A3;
+$color_grey: hsla(0,0%,100%,.5);
 $color_grey_dark: #1C1E1C;
 
-$color_white: #FFF0E2;
+// $color_white: #FFF0E2;
+$color_white: #FFF;
 $color_body: #E6E6E6;
 $color_highlight: #ff2d55;
 $color_grey_light: #F2F2F2;
@@ -34,7 +35,7 @@ $base_font_size_sm: 12px;
 
 $base_gutter: 10px;
 $base_padding_general: 30px;
-$base_line_height: 1.4;
+$base_line_height: 1.2;
 $base_reset_lineheight: 1;
 $base_transition_duration0: 300ms;
 $base_transition_duration1: 400ms;
@@ -43,9 +44,11 @@ $base_transition_duration3: 800ms;
 $base_transition_duration4: 1000ms;
 
 // Fonts
-$font_work_sans: 'Poppins', sans-serif;
-$font_weight_normal: 500;
-$font_weight_bold: 500;
+$font_work_sans: 'Regalo', sans-serif;
+$font_helvetica: Helvetica,Arial,serif;
+$font_weight_light: 100;
+$font_weight_normal: normal;
+$font_weight_bold: normal;
 
 // Layering
 $z_layer_10: 100;
