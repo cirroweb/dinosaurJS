@@ -1,2 +1,29 @@
-<h1>Schedule</h1>
+<section class="schedule-section">
+  <h1>Schedule</h1>
+
+  <ul>
+    <hr />
+    {{#each model as |event|}}
+    <li>
+      <div class="row">
+        <div class="col--1of3 event-time">
+          <p>
+            {{event.time}}
+          </p>
+        </div>
+        <div class="col--2of3 event-info">
+          {{#schedule-accordion closeText='OMG Close This' openText=event.name }}
+            {{#each event.talkDescription as |line|}}
+              <p> {{line}} </p>
+            {{/each}}
+          {{/schedule-accordion}}
+          <p> <a href="/speakers/#{{event.speakerId}}">{{event.speaker}}</a> </p>
+        </div>
+      </div>
+    </li>
+    <hr />
+    {{/each}}
+  </ul>
+
+</section>
 {{outlet}}

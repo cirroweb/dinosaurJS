@@ -7,6 +7,27 @@
   margin: 0 auto;
 }
 
+// Alternate styling for nth sections
+.speakers {
+  hr {
+    background-color: $color_white;
+  }
+  section:nth-child(even) {
+    background-color: $color_white;
+    color: $color_black;
+    hr {
+      background-color: $color_black;
+    }
+    button.presentation-link {
+      color: $color_black;
+    }
+    .presentation-info {
+      background: $color_black;
+      color: $color_white;
+    }
+  }
+}
+
 .speaker-wrapper {
   margin-bottom: 5%;
   margin-top: 5%;
@@ -14,7 +35,7 @@
 
 
 .speaker-img-wrapper {
-  background-color: $color_white;
+  // background-color: $color_white;
   img {
     -webkit-filter: grayscale(1);
     filter: grayscale(100%);
@@ -76,6 +97,7 @@ button.presentation-link {
   position: relative;
   width: 100%;
   text-align: left;
+  color: $color_white;
   &:before {
     content: "";
     position: absolute;
@@ -83,7 +105,7 @@ button.presentation-link {
     left: 0;
     height: 2vw;
     width: 2vw;
-    background: #FFF0E2;
+    background: #fcfcfc;
     line-height: 2;
     font-size: 1.5rem;
     border-radius: 50%;
@@ -121,10 +143,11 @@ button.presentation-link.open {
 
 .presentation-info {
   transition: 400ms ease-in-out;
-  background: $color_black;
+  background: $color_white;
   padding: 5%;
-  color: $color_white;
+  color: $color_black;
   -webkit-font-smoothing: antialiased;
+  border-radius: 10px;
   margin-top: 1vw;
   &.showing {
     max-height: 1300px;
