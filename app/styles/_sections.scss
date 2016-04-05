@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.section--grid {
+  background-image: -webkit-linear-gradient(left,#262626 1px,transparent 0),-webkit-linear-gradient(bottom,#262626 1px,transparent 0);
+}
+
 .name-wrap {
   position: fixed;
   z-index: $z_layer_10;
@@ -49,60 +53,8 @@ canvas {
   position: relative;
 }
 
-.home-info {
-  height: 100vh;
-  background: $color_white;
-  color: $color_black;
-  padding: 0 10%;
-}
 
-.home-mask {
-  background-image: url('/assets/logo.svg');
-  background-size: contain;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: $z_layer_05;
-}
 
-.top-mask {
-  position: absolute;
-  background: $color_white;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2vh;
-}
-
-.bottom-mask {
-  position: absolute;
-  background: $color_white;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2vh;
-}
-
-.right-mask {
-  position: absolute;
-  background: $color_white;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 10%;
-}
-
-.left-mask {
-  position: absolute;
-  background: $color_white;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 10%;
-}
 
 .date {
   position: fixed;
