@@ -1,13 +1,15 @@
 .wrap {
   @extend .-clear;
   opacity: 0;
-  transform: translateY(100px);
+  transform: translate3d(0,0%,0) scale(.95);
+  transform-origin: 50% 0%;
+  perspective: 1000px;
   &.add-transition {
-    transition: 300ms ease-in-out;
+    transition: all cubic-bezier(.77,0,.175,1) .5s;
   }
   &.loaded {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translate3d(0,0%,0) scale(1);
   }
 }
 
