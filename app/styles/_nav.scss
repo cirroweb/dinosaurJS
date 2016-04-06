@@ -125,3 +125,18 @@ body.nav-open {
     transform: translateX(0%);
   }
 }
+
+@media only screen and ( max-width: $break_tablet_small ) {
+  nav {
+    width: 85%;
+    li {
+      padding: 10px 8%;
+    }
+  }
+  .nav-overlay {
+    width: 15%;
+  }
+  .close-nav {
+    transform: rotate(-90deg);
+  }
+}

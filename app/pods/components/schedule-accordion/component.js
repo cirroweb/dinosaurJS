@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   isOpen: false,
   actions: {
     toggleAccordion() {
-      this.toggleProperty('isOpen');
+      this.set('isOpen', !this.get('isOpen'));
     }
   }
 });
