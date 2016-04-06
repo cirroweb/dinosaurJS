@@ -16,6 +16,27 @@
   </div>
 </div>
 
+{{!-- nav for about route --}}
+<div class="row about-nav">
+  <ul>
+    <li>
+      {{#scroll-to href='#info' duration=500 easing='swing'}}  {{!-- we can do other easing functions, but they'd require jqueryUi--}}
+      Information
+      {{/scroll-to}}
+    </li>
+    <li>
+      {{#scroll-to href='#location' duration=500 easing='swing'}}
+      Location
+      {{/scroll-to}}
+    </li>
+    <li>
+      {{#scroll-to href='#sponsors' duration=500 easing='swing'}}
+      Sponsors
+      {{/scroll-to}}
+    </li>
+  </ul>
+</div>
+
 
 <div class="wrap">
   {{liquid-outlet}}
