@@ -1,5 +1,5 @@
-<div class="logo-wrap">
-  <div id="video-container">
+{{#if isSupported}}
+  <div class="video-container">
     <video id="camera-stream" src={{cameraSrc}} width="500" autoplay></video>
   </div>
-</div>
+{{/if}}
