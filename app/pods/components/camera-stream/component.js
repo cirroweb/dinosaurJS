@@ -1,7 +1,8 @@
 import Ember from 'ember';
-const { Component, computed } = Ember;
+const { Component, computed, run } = Ember;
 
 export default Component.extend({
+  isSupported: false,
   setSrc: function() {
     navigator.getUserMedia = (navigator.getUserMedia       ||
                               navigator.webkitGetUserMedia ||
@@ -9,6 +10,10 @@ export default Component.extend({
                               navigator.msGetUserMedia);
 
     if (navigator.getUserMedia) {
+      run.scheduleOnce('afterRender', this, function() {
+        this.set('isSupported', true);
+      });
+
       // Request camera
       navigator.getUserMedia({ video: true }, (localMediaStream) => {
           let vid = document.getElementById("camera-stream");
@@ -18,10 +23,7 @@ export default Component.extend({
           console.log(`The following error occurred with using getUserMedia: ${error}`);
         }
       );
-
-    } else {
-      alert('Whoa there, looks like your browser isn\'t supporting getUserMedia...');
-    }    
+    }   
   }.on('didRender')
 
 });

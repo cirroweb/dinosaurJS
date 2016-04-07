@@ -3,35 +3,24 @@ import PIXI from 'pixi';
 import PixiCanvas from 'ember-cli-pixijs/components/pixi-canvas';
 
 export default PixiCanvas.extend({
-  scrollSpeed: -1,
-
-  // So right now if you comment this pixiRenderer in it will override the
-  // plugin renderer and allow us to have a transparent canvas
-  // pixiRenderer: Ember.computed('width', 'height', function() {
-  //   const { width, height } = this.getProperties('width', 'height');
-
-  //   return new PIXI.autoDetectRenderer(width, height, {transparent: true});
-  // }),
-
   draw() {
     const renderer = this.get('pixiRenderer');
     const stage = new PIXI.Container();
-
     let scrollingImage, displacementFilter, displacementSprite;
     let image = this.get('imgUrl');
-    let scrollSpeed = this.get('scrollSpeed');
-
+    let mousePos = renderer.plugins.interaction.mouse.global;
     PIXI.loader.add("image", image).load(setup);
 
     function setup() {
-      scrollingImage =  new PIXI.extras.TilingSprite(PIXI.loader.resources.image.texture, window.innerWidth, window.innerHeight);
+      scrollingImage =  new PIXI.extras.TilingSprite(PIXI.loader.resources.image.texture, 800, 600);
 
       // This adds the sprite that will become the filter
       displacementSprite = new PIXI.Sprite.fromImage('/assets/texture.png');
       stage.addChild(displacementSprite);
+
       // Convert displacementSprite into a Displacement Filter
       displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
-      displacementFilter.scale.x = 40;
+      displacementFilter.scale.x = 10;
       displacementFilter.scale.y = 100;
 
       // Add displacement filter to our tiled sprite
@@ -43,10 +32,16 @@ export default PixiCanvas.extend({
       resize();
     }
 
-    let theloop = function(){
-      requestAnimationFrame(theloop);
-      scrollingImage.tilePosition.y += scrollSpeed;
+    let theloop = function() {
+      // This sets scroll speed between 1 and -1, 0 as the middle of the screen
+      let mouseShift = { x: ((mousePos.x-400)/800), y: ((mousePos.y-300)/600) };
+      let mouseYWithNoStop = mouseShift.y > -0.15 && mouseShift.y < 0.15 ? 0.15 : mouseShift.y;
+      scrollingImage.tilePosition.y += mouseYWithNoStop * 5;
+      scrollingImage.tilePosition.x = mouseShift.x * 34;
+      displacementFilter.scale.x = mouseShift.x * 100;
+
       renderer.render(stage);
+      requestAnimationFrame(theloop);
     };
 
     let resize = function() {
@@ -57,7 +52,7 @@ export default PixiCanvas.extend({
     };
 
     window.onresize = function(event) {
-        resize();
+      resize();
     };
   },
 
