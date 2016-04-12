@@ -9,8 +9,6 @@ Router.map(function() {
   this.route('speakers');
   this.route('schedule');
   this.route('about');
-  this.route('location');
-  this.route('sponsors');
   this.route('register');
   this.route('home', {path: '/'});
 });

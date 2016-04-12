@@ -1,0 +1,48 @@
+
+<div class="page-intro">
+  <h1>Sponsor Dinosaur.js</h1>
+  <p>We're looking for sponsors for our wonderful event. Check out our sponsor prospectus.</p>
+  <hr />
+</div>
+
+<h3>Gold Level Sponsors</h3>
+
+{{#each goldSponsors as |sponsor|}}
+  <div class="sponsor-section">
+    <div class="sponsor-wrapper row">
+      <div class="sponsor-logo-wrapper col--1of3">
+        <a href="" target="blank">
+          <img src="{{sponsor.img}}" class="sponsor-logo" />
+        </a>
+      </div>
+      <div class="sponsor-description col--2of3">
+        <h4>{{sponsor.name}}</h4>
+        {{#each sponsor.description as |line|}}
+          <p> {{line}} </p>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+{{/each}}
+
+<hr />
+
+<h3>Silver Level Sponsors</h3>
+
+{{#each silverSponsors as |sponsor|}}
+  <div class="sponsor-section">
+    <div class="sponsor-wrapper row">
+      <div class="sponsor-logo-wrapper col--1of3">
+        <a href="" target="blank">
+          <img src="{{sponsor.img}}" class="sponsor-logo" />
+        </a>
+      </div>
+      <div class="sponsor-description col--2of3">
+        <h4>{{sponsor.name}}</h4>
+        {{#each sponsor.description as |line|}}
+          <p> {{line}} </p>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+{{/each}}

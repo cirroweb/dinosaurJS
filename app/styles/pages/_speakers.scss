@@ -5,10 +5,16 @@
 
 .speaker-section {
   margin: 0 auto;
+  a {
+    color: $color_white;
+  }
 }
 
 // Alternate styling for nth sections
 .speakers {
+  h1 {
+    text-align: center;
+  }
   hr {
     background-color: $color_white;
   }
@@ -17,6 +23,9 @@
     color: $color_black;
     hr {
       background-color: $color_black;
+    }
+    a {
+      color: $color_black;
     }
     button.presentation-link {
       color: $color_black;
@@ -37,8 +46,8 @@
 .speaker-img-wrapper {
   // background-color: $color_white;
   img {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(100%);
+    // -webkit-filter: grayscale(1);
+    // filter: grayscale(100%);
     mix-blend-mode: multiply;
     width: 100%;
     max-width: 400px;
