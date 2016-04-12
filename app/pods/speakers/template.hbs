@@ -1,7 +1,9 @@
+
 <div class="speakers">
   <section>
     <h1>Host / EmCee</h1>
   </section>
+
 
   <section id="jenn-schiffer">
     <div class="speaker-section">
@@ -36,7 +38,7 @@
           <div class="speaker-description col--2of3">
             <h4>{{speaker.name}}</h4>
             {{#each speaker.description as |line|}}
-              <p> {{line}} </p>
+              <p class="-text-alt"> {{line}} </p>
             {{/each}}
             {{#content-accordion closeText='Hide Summary' openText=speaker.talkName }}
               {{#each speaker.talkDescription as |desc|}}

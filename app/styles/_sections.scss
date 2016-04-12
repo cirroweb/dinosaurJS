@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.gradient {
+  background-image: linear-gradient(to right, #f5f5f5 -25%, #191919 100%);
+}
+
 .section--grid {
   background-image: -webkit-linear-gradient(left,#262626 1px,transparent 0),-webkit-linear-gradient(bottom,#262626 1px,transparent 0);
 }
