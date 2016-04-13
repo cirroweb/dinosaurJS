@@ -131,6 +131,12 @@
 }
 
 @media only screen and ( max-width: $break_tablet_small ) {
+  .split,
+  .third,
+  .forth {
+    flex-direction: column;
+  }
+
   .split > *,
   .third > *,
   .forth > * {
@@ -138,21 +144,21 @@
   }
 
 
-    .col:not(.col--mobile-same),
-    [class*="col--"]:not(.col--mobile-same) {
-        float: none !important;
-        width: 100% !important;
-        .inner {
-          margin-left: 0;
-          }
+  .col:not(.col--mobile-same),
+  [class*="col--"]:not(.col--mobile-same) {
+      float: none !important;
+      width: 100% !important;
+      .inner {
+        margin-left: 0;
         }
+      }
 
-    div[class*="push--"] {
-      margin-left: 0 !important;
-    }
+  div[class*="push--"] {
+    margin-left: 0 !important;
+  }
 
-    div[class^="padding-"] {
-      padding: 0 !important;
-    }
+  div[class^="padding-"] {
+    padding: 0 !important;
+  }
 
 }

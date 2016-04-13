@@ -27,7 +27,7 @@
     a {
       color: $color_black;
     }
-    button.presentation-link {
+    div.presentation-link {
       color: $color_black;
     }
     .presentation-info {
@@ -99,7 +99,7 @@
   }
 }
 
-button.presentation-link {
+div.presentation-link {
   border: none;
   padding: 0 0 0 3vw;
   border-radius: 0;
@@ -108,6 +108,7 @@ button.presentation-link {
   position: relative;
   width: 100%;
   text-align: left;
+  line-height: 1.2;
   color: $color_white;
   &:before {
     content: "";
@@ -131,7 +132,7 @@ button.presentation-link {
   }
 }
 
-button.presentation-link.closed {
+div.presentation-link.closed {
   &:hover {
     background: transparent;
     &:before {
@@ -141,7 +142,7 @@ button.presentation-link.closed {
 }
 
 
-button.presentation-link.open {
+div.presentation-link.open {
   &:before {
     background: $color_black;
   }
@@ -162,6 +163,9 @@ button.presentation-link.open {
   // border-radius: 10px;
   margin-top: 1vw;
   overflow: hidden;
+  p:last-child {
+    margin-bottom: 0;
+  }
   &.showing {
     max-height: 1300px;
     opacity: 1;
@@ -173,19 +177,27 @@ button.presentation-link.open {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and ( max-width: $break_tablet_small ) {
+  .speaker-description,
+  div.presentation-link {
+    text-align: center;
+
+  }
+
+  div.presentation-link {
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+    &:before {
+      display: none;
+    }
+  }
+
   .speaker-img-wrapper img {
     max-width: 300px;
   }
-  button.presentation-link {
-    height: 20px;
-    padding: 0 0 0 20px;
-    line-height: 15px;
-    &:before {
-      height: 15px;
-      width: 15px;
-    }
-  }
+
   .presentation-info.showing {
     line-height: 23px;
   }

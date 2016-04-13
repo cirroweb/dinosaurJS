@@ -7,6 +7,23 @@
   }
 }
 
+.code-of-conduct {
+
+  .strip {
+    mix-blend-mode: normal;
+    background: $color_black;
+  }
+
+  section {
+    color: $color_black;
+    background: #1e5799;
+    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 0%, #cccccc 0%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 0%,#cccccc 0%,#ffffff 100%);
+    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#cccccc 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffffff',GradientType=0 );
+  }
+}
+
 
 section a {
   color: white;
@@ -65,7 +82,7 @@ section a {
   right: 20px;
   color: $color_black;
   font-size: 4rem;
-  font-size: 19.5vw;
+  font-size: 19vw;
   line-height: 0.85;
 
   figure:last-child {
@@ -143,4 +160,10 @@ section {
     }
   }
 
+}
+
+@media only screen and ( max-width: $break_tablet_small ) {
+  section {
+    padding: 80px 40px;
+  }
 }
