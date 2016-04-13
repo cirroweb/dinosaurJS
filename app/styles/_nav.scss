@@ -101,7 +101,6 @@
 }
 
 nav {
-  background: white;
   position: fixed;
   left: 0;
   width: 50%;
@@ -110,6 +109,7 @@ nav {
   transform: translateX(-100%);
   transition: 300ms ease-in-out;
   overflow-y: scroll;
+  background: white;
 
   .ember-view {
     height: 100%;
