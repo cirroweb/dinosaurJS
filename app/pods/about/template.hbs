@@ -1,5 +1,29 @@
 {{camera-stream}}
 
+{{!-- nav for about route --}}
+<div class="row about-nav">
+  <div class="valigner">
+    <div class="valigner--cell">
+      <ul>
+        <li>
+          {{#scroll-to href='#info' duration=500 easing='swing'}}  {{!-- we can do other easing functions, but they'd require jqueryUi--}}
+          Information
+          {{/scroll-to}}
+        </li>
+        <li>
+          {{#scroll-to href='#location' duration=500 easing='swing'}}
+          Location
+          {{/scroll-to}}
+        </li>
+        <li>
+          {{#scroll-to href='#sponsors' duration=500 easing='swing'}}
+          Sponsors
+          {{/scroll-to}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <div id="info">
   {{partial "about/conference-info"}}

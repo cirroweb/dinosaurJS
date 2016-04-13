@@ -8,6 +8,10 @@
 }
 
 
+section a {
+  color: white;
+}
+
 .logo-wrap {
   height: 100vh;
   background: $color_white;
@@ -133,6 +137,10 @@ section {
   &.--section-white {
     background: $color_white;
     color: $color_black;
+
+    a {
+      color: $color_black;
+    }
   }
 
 }

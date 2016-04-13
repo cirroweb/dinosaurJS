@@ -72,12 +72,12 @@
 .credit {
   position: fixed;;
   bottom: 20px;
-  right: 30px;
+  left: 40px;
   font-size: 15px;
-  color: $color_white;
+  color: $color_black;
 
   a {
-    color: white;
+    color: $color_black;
   }
 }
 

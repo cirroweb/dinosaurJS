@@ -5,7 +5,7 @@
         <li>Dino JS</li>
         <li>June 24,2016</li>
         <li>Denver,CO</li>
-        <li><a herf="https://ti.to/dinosaurjs/2016" target="_blank" class="flash">Buy Tickets Now!</a></li>
+        <li><a href="https://ti.to/dinosaurjs/2016" target="_blank" class="flash">Buy Tickets Now!</a></li>
         <li>{{dino-countdown}}</li>
       </ul>
 
@@ -21,32 +21,9 @@
 <div {{action 'toggleNav'}} class="nav-overlay">
   <div class="valigner nav-exit">
     <div class="valigner--cell close-nav">Close</div>
-    <div class="credit">
-      Site by <a href="http://ultra-fragola.com" target="_blank">Ultra Fragola</a>
-    </div>
   </div>
 </div>
 
-{{!-- nav for about route --}}
-<div class="row about-nav">
-  <ul>
-    <li>
-      {{#scroll-to href='#info' duration=500 easing='swing'}}  {{!-- we can do other easing functions, but they'd require jqueryUi--}}
-      Information
-      {{/scroll-to}}
-    </li>
-    <li>
-      {{#scroll-to href='#location' duration=500 easing='swing'}}
-      Location
-      {{/scroll-to}}
-    </li>
-    <li>
-      {{#scroll-to href='#sponsors' duration=500 easing='swing'}}
-      Sponsors
-      {{/scroll-to}}
-    </li>
-  </ul>
-</div>
 
 
 <div class="strip -left-strip"></div>

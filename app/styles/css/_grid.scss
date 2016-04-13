@@ -15,6 +15,30 @@
     padding: 0;
     }
 
+.split {
+  display: flex;
+
+  & > * {
+    width: 50%;
+  }
+}
+
+.third {
+  display: flex;
+
+  & > * {
+    width: 33.333%;
+  }
+}
+
+.forth {
+  display: flex;
+
+  & > * {
+    width: 20%;
+  }
+}
+
 
 // grid
 .row {
@@ -107,6 +131,13 @@
 }
 
 @media only screen and ( max-width: $break_tablet_small ) {
+  .split > *,
+  .third > *,
+  .forth > * {
+    width: 100%;
+  }
+
+
     .col:not(.col--mobile-same),
     [class*="col--"]:not(.col--mobile-same) {
         float: none !important;

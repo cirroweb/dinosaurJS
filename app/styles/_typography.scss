@@ -78,9 +78,11 @@ a {
     font-weight: normal;
     text-decoration: none;
     color: $color_black;
-    background: $color_grey;
-
     }
+
+p a {
+  border-bottom: 2px solid $color_grey;
+}
 
 .a--nav {
     transition: all $base_transition_duration1 ease;

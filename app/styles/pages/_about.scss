@@ -7,44 +7,62 @@
   }
 }
 
-
-
 .about-nav {
-  display: none;
-  position: fixed;
-  height: 100%;
-  text-align: center;
-  margin: 0 1%;
-  top: 50%;
-  left: 0px;
-  z-index: $z_layer_02;
-  color: $color_white;
-  mix-blend-mode: difference;
-  // text-align: right;
-  transform: translateY(-50%) translateX(-50%);
-  writing-mode: vertical-lr;
+  height: 50px;
+
   ul {
-    list-style: none;
-    li {
-      display: inline-block;
-      padding: 10px 0px;
-    }
-  }
-  a {
-    color: $color_white;
-  }
-  div {
-    min-width: 50px;
-    line-height: 1;
+    margin: 0 0 0 20px;
     padding: 0;
-    margin: 10px 0;
-    font-size: 1rem;
   }
-  small {
-    display: block;
-    margin-bottom: 15px;
+
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  a {
+    color: white;
+    margin: 0 15px;
+    font-size: 21px;
   }
 }
+
+// .about-nav {
+//   display: none;
+//   position: fixed;
+//   height: 100%;
+//   text-align: center;
+//   margin: 0 1%;
+//   top: 50%;
+//   left: 0px;
+//   z-index: $z_layer_02;
+//   color: $color_white;
+//   mix-blend-mode: difference;
+//   // text-align: right;
+//   transform: translateY(-50%) translateX(-50%);
+//   writing-mode: vertical-lr;
+//   ul {
+//     list-style: none;
+//     li {
+//       display: inline-block;
+//       padding: 10px 0px;
+//     }
+//   }
+//   a {
+//     color: $color_white;
+//   }
+//   div {
+//     min-width: 50px;
+//     line-height: 1;
+//     padding: 0;
+//     margin: 10px 0;
+//     font-size: 1rem;
+//   }
+//   small {
+//     display: block;
+//     margin-bottom: 15px;
+//   }
+// }
 
 body.about .about-nav {
   display: block;
@@ -64,6 +82,48 @@ body.about .about-nav {
   height: 400px;
   margin: -200px 0 0 -200px;
   animation: circle 5s infinite linear;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input {
+  border-width: 0 0 2px 0;
+  padding: 10px 0;
+  background: transparent;
+  border-radius: 0;
+  font-size: 1rem;
+  font-family: $font_work_sans;
+  width: 90%;
+  color: white;
+  cursor: inherit;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.email-signup-submit-button {
+  width: 10%;
+  input {
+    background: white;
+    font-size: 1rem;
+    color: $color_black;
+    border-radius: 0;
+    border: 0;
+    padding: 10px 0;
+    line-height: 1.3;
+    height: auto;
+    transition: 300ms;
+
+    &:hover {
+      background: white;
+      color: $color_black;
+      opacity: 0.8;
+    }
+  }
 }
 
 .badge span {
