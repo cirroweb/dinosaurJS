@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const { Component, computed, run } = Ember;
+const { Component, run } = Ember;
 
 export default Component.extend({
   isSupported: false,
