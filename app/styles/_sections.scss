@@ -7,6 +7,27 @@
   }
 }
 
+
+section {
+  padding: 10% 5%;
+
+  &.--section-black {
+    background: $color_black;
+    color: $color_white;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &.--section-white {
+    background: $color_white;
+    color: $color_black;
+
+    a {
+      color: $color_black;
+    }
+  }
+
+}
+
 .code-of-conduct {
 
   .strip {
@@ -154,25 +175,6 @@ canvas {
 
 
 
-section {
-  padding: 10% 5%;
-
-  &.--section-black {
-    background: $color_black;
-    color: $color_white;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  &.--section-white {
-    background: $color_white;
-    color: $color_black;
-
-    a {
-      color: $color_black;
-    }
-  }
-
-}
 
 @media only screen and ( max-width: $break_tablet_small ) {
   section {
