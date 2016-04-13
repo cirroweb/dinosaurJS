@@ -20,6 +20,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'font-src': "'self' data: use.typekit.net https://s3-us-west-2.amazonaws.com",
+    'media-src': "'self'",
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
