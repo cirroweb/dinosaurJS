@@ -6,9 +6,8 @@ export default PixiCanvas.extend({
     const renderer = this.get('pixiRenderer');
     const stage = new PIXI.Container();
     let scrollingImage, displacementFilter, displacementSprite;
-    let image = this.get('imgUrl');
     let mousePos = renderer.plugins.interaction.mouse.global;
-    PIXI.loader.add("image", image).load(setup);
+    PIXI.loader.add("image", this.get('imgUrl')).load(setup);
 
     function setup() {
       scrollingImage =  new PIXI.extras.TilingSprite(PIXI.loader.resources.image.texture, 800, 600);
@@ -29,7 +28,22 @@ export default PixiCanvas.extend({
       renderer.render(stage);
       theloop();
       resize();
+      addDinoEgg();
     }
+
+    let addDinoEgg = function() {
+      let kkeys = [], dinoEgg = "38,38,40,40,37,39,37,39,66,65";
+      $(document).keydown((e) => {
+        kkeys.push( e.keyCode );
+        if ( kkeys.toString().indexOf( dinoEgg ) >= 0 ) {
+          $(document).unbind('keydown');
+           PIXI.loader.resources = {};
+           PIXI.loader.add("image", '/assets/sKinney.jpeg').load(setup);
+           scrollingImage =  new PIXI.extras.TilingSprite(PIXI.loader.resources.image.texture, 800, 600);
+           console.log('boom');
+        }
+      });
+    };
 
     let theloop = function() {
       // This sets scroll speed between 1 and -1, 0 as the middle of the screen
