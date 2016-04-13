@@ -1,22 +1,41 @@
-<section class="about-page">
-  <a href="about/#info">Information</a>
-  <a href="about/#sponsors">Sponsors</a>
-  <a href="about/#location">Conference Deets</a>
+{{camera-stream}}
 
-  {{camera-stream}}
-
-  <div id="info">
-    {{partial "about/conference-info"}}
+{{!-- nav for about route --}}
+<div class="row about-nav">
+  <div class="valigner">
+    <div class="valigner--cell">
+      <ul>
+        <li>
+          {{#scroll-to href='#info' duration=500 easing='swing'}}  {{!-- we can do other easing functions, but they'd require jqueryUi--}}
+          Information
+          {{/scroll-to}}
+        </li>
+        <li>
+          {{#scroll-to href='#location' duration=500 easing='swing'}}
+          Location
+          {{/scroll-to}}
+        </li>
+        <li>
+          {{#scroll-to href='#sponsors' duration=500 easing='swing'}}
+          Sponsors
+          {{/scroll-to}}
+        </li>
+      </ul>
+    </div>
   </div>
+</div>
 
-  <div id="location">
-    {{partial "about/location"}}
-  </div>
+<div id="info">
+  {{partial "about/conference-info"}}
+</div>
 
-  <div id="sponsors">
-    {{partial "about/sponsors"}}
-  </div>
+<div id="location">
+  {{partial "about/location"}}
+</div>
 
-</section>
+<div id="sponsors">
+  {{partial "about/sponsors"}}
+</div>
+
 
 {{outlet}}

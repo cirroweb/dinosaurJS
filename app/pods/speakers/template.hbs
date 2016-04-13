@@ -1,7 +1,13 @@
 <div class="speakers">
-  <section>
-    <h1>Host / EmCee</h1>
+
+  <section class="-full -show-them-where-to-go">
+    <div class="valigner">
+      <div class="valigner--cell">
+        <h1>EmCee</h1>
+      </div>
+    </div>
   </section>
+
 
   <section id="jenn-schiffer">
     <div class="speaker-section">
@@ -12,31 +18,39 @@
           <a href="https://github.com/jennschiffer" target="blank" class="git-name">Github: jennschiffer</a>
         </div>
         <div class="speaker-description col--2of3">
-          <h4>Jenn Schiffer</h4>
-          <p>Jenn is a web developer who lives in New Jersey on purpose and works full-time as an open web engineer at Bocoup. When she's not building open web apps with the coolest web developers and clients in the game, she's making art with code, telling jokes, and getting yelled at on the Internet.</p>
+          <h2>Jenn Schiffer</h2>
+          <p class="-text-alt">Jenn is a web developer who lives in New Jersey on purpose and works
+            full-time as an open web engineer at Bocoup. When she's not building
+            open web apps with the coolest web developers and clients in the game,
+            she's making art with code, telling jokes, and getting yelled at on the Internet.</p>
         </div>
       </div>
     </div>
-    <hr />
   </section>
 
-  <section>
-    <h1>Speakers</h1>
+  <section class="-full -show-them-where-to-go">
+    <div class="valigner">
+      <div class="valigner--cell">
+        <h1>Speakers</h1>
+      </div>
+    </div>
   </section>
 
   {{#each model as |speaker|}}
     <section id="{{speaker.linkId}}">
       <div class="speaker-section">
+
         <div class="speaker-wrapper row">
           <div class="speaker-img-wrapper col--1of3">
             <img src="{{speaker.avatar}}" class="speaker-img" />
             <a href="https://twitter.com/{{speaker.twitter}}" target="blank" class="twitter-handle">Twitter: @{{speaker.twitter}}</a>
             <a href="https://github.com/{{speaker.gitHub}}" target="blank" class="git-name">Github: {{speaker.gitHub}}</a>
           </div>
+
           <div class="speaker-description col--2of3">
-            <h4>{{speaker.name}}</h4>
+            <h2>{{speaker.name}}</h2>
             {{#each speaker.description as |line|}}
-              <p> {{line}} </p>
+              <p class="-text-alt"> {{line}} </p>
             {{/each}}
             {{#content-accordion closeText='Hide Summary' openText=speaker.talkName }}
               {{#each speaker.talkDescription as |desc|}}
@@ -45,10 +59,11 @@
             {{/content-accordion}}
           </div>
         </div>
+
       </div>
-      <hr />
     </section>
   {{/each}}
+
 </div>
 
 {{outlet}}
