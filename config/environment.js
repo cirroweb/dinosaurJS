@@ -21,7 +21,8 @@ module.exports = function(environment) {
   };
 
   ENV.contentSecurityPolicy = {
-    'default-src': "'self' https://s3-us-west-2.amazonaws.com"
+    'default-src': "'none'",
+    'font-src': "'self' data: s3-us-west-2.amazonaws.com"
   };
 
   if (environment === 'development') {
