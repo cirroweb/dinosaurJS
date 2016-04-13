@@ -100,6 +100,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.navigation {
+  background: white;
+  transition: 300ms ease-in-out;
+}
+
 nav {
   position: fixed;
   left: 0;

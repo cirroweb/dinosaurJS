@@ -24,6 +24,18 @@
   }
 }
 
+.navigation {
+  background: white;
+  transition: 300ms ease-in-out;
+}
+
+body {
+  nav {
+    background: $color_white;
+    transition: 300ms ease-in-out;
+  }
+}
+
 
 section a {
   color: white;

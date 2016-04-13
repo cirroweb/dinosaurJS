@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import PIXI from 'pixi';
 import PixiCanvas from 'ember-cli-pixijs/components/pixi-canvas';
 
@@ -51,7 +50,7 @@ export default PixiCanvas.extend({
       renderer.view.style.height = h + 'px';
     };
 
-    window.onresize = function(event) {
+    window.onresize = function() {
       resize();
     };
   },
