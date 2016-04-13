@@ -22,7 +22,7 @@ module.exports = function(environment) {
 
   ENV.contentSecurityPolicy = {
     'default-src': "'none'",
-    'font-src': "'self' data: s3-us-west-2.amazonaws.com"
+    'font-src': "'self' data: http://www.dinosaurjs.com.s3.amazonaws.com/dinosaurJS/"
   };
 
   if (environment === 'development') {
