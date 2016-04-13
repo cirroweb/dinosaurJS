@@ -64,6 +64,7 @@
   text-align: center;
   display: block;
   margin: 5% 0;
+  font-size: 0.8rem;
   &:hover {
     transform: scale(1.5);
   }
@@ -78,6 +79,7 @@
 .git-name {
   text-align: center;
   display: block;
+  font-size: 0.8rem;
   &:hover {
     transform: scale(1.5);
   }
@@ -151,13 +153,15 @@ button.presentation-link.open {
 }
 
 .presentation-info {
+  @extend .-text-alt;
   transition: 400ms ease-in-out;
   background: $color_white;
-  padding: 5%;
+  padding: 5px;
   color: $color_black;
   -webkit-font-smoothing: antialiased;
-  border-radius: 10px;
+  // border-radius: 10px;
   margin-top: 1vw;
+  overflow: hidden;
   &.showing {
     max-height: 1300px;
     opacity: 1;
@@ -166,7 +170,6 @@ button.presentation-link.open {
   &.hidden {
     max-height: 0;
     opacity: 0;
-    line-height: 4vw;
   }
 }
 

@@ -1,3 +1,13 @@
+@keyframes bounce {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(50%);
+  }
+}
+
+
 .logo-wrap {
   height: 100vh;
   background: $color_white;
@@ -13,11 +23,52 @@
   background-image: -webkit-linear-gradient(left,#262626 1px,transparent 0),-webkit-linear-gradient(bottom,#262626 1px,transparent 0);
 }
 
-.name-wrap {
+.-full {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.-outline {
+  -webkit-text-stroke: 3px;
+  -webkit-text-stroke-color: inherit;
+}
+
+.-show-them-where-to-go {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+  	height: 0;
+  	border-left: 20px solid transparent;
+  	border-right: 20px solid transparent;
+  	border-top: 20px solid white;
+    animation: bounce 700ms infinite ease both alternate;
+  }
+}
+
+
+
+
+.huge-name {
   position: fixed;
-  z-index: $z_layer_10;
-  bottom: 0;
-  left: 30px;
+  bottom: 15px;
+  left: 20px;
+  right: 20px;
+  color: $color_black;
+  font-size: 4rem;
+  font-size: 19.5vw;
+  line-height: 0.85;
+
+  figure:last-child {
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: $color_black;
+    color: transparent;
+  }
 }
 
 .flexer {
@@ -59,7 +110,6 @@ canvas {
 
 
 
-
 .date {
   position: fixed;
   top: 20px;
@@ -69,40 +119,20 @@ canvas {
   z-index: $z_layer_02;
 }
 
-.count-me-down {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  z-index: $z_layer_02;
-  mix-blend-mode: difference;
-  text-align: right;
 
-  div {
-    min-width: 50px;
-    line-height: 1;
-    padding: 0;
-    margin: 0;
-    font-size: 1rem;
-    }
-
-  small {
-    display: block;
-    margin-bottom: 15px;
-  }
-}
 
 section {
   padding: 10% 5%;
 
   &.--section-black {
-    background: $color_grey_dark;
+    background: $color_black;
     color: $color_white;
     -webkit-font-smoothing: antialiased;
   }
 
-  &.--section-$color_white {
+  &.--section-white {
     background: $color_white;
-    color: $color_grey_dark;
+    color: $color_black;
   }
 
 }

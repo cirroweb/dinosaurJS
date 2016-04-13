@@ -1,17 +1,28 @@
+<header class="top-header clearfix">
+  <div class="valigner">
+    <div class="valigner--cell">
+      <ul class="-left">
+        <li>Dino JS</li>
+        <li>June 24,2016</li>
+        <li>Denver,CO</li>
+        <li><a herf="https://ti.to/dinosaurjs/2016" target="_blank" class="flash">Buy Tickets Now!</a></li>
+        <li>{{dino-countdown}}</li>
+      </ul>
+
+      <button {{action 'toggleNav'}} class="menu-btn -right">Menu</button>
+    </div>
+  </div>
+</header>
+
 <nav>
   {{nav-bar}}
 </nav>
 
-<h3>
-  {{dino-countdown}}
-</h3>
-
-<button {{action 'toggleNav'}} class="menu-btn">Menu</button>
 <div {{action 'toggleNav'}} class="nav-overlay">
   <div class="valigner nav-exit">
     <div class="valigner--cell close-nav">Close</div>
     <div class="credit">
-      Credit: Site by <a href="http://wearecirro.com" target="_blank">CIRRO</a>
+      Site by <a href="http://ultra-fragola.com" target="_blank">Ultra Fragola</a>
     </div>
   </div>
 </div>
@@ -37,6 +48,10 @@
   </ul>
 </div>
 
+
+<div class="strip -left-strip"></div>
+<div class="strip -right-strip"></div>
+<div class="strip -bottom-strip"></div>
 
 <div class="wrap">
   {{liquid-outlet}}

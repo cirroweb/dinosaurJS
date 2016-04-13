@@ -22,6 +22,9 @@ Ember.Route.reopen({
     if (cssClass !== 'application') {
       Ember.$('body').addClass(cssClass);
     }
+
+    // scroll to the top of the page on route change
+    window.scrollTo(0,0);
   },
   deactivate: function() {
     Ember.$('body').removeClass(this.toCssClass());

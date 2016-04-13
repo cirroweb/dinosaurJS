@@ -1,9 +1,11 @@
-section.about-page {
-  a {
-    color: $color_white;
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
-
 
 
 
@@ -47,6 +49,146 @@ section.about-page {
 body.about .about-nav {
   display: block;
 }
+
+.hey-you {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.badge {
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  transform-origin: center center;
+  height: 400px;
+  margin: -200px 0 0 -200px;
+  animation: circle 5s infinite linear;
+}
+
+.badge span {
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 195px;
+  top: 0;
+  transform-origin: bottom center;
+}
+
+.badge span:nth-child(1 ){
+  transform: rotate(6deg);
+}
+
+.badge span:nth-child(2 ){
+  transform: rotate(12deg);
+}
+
+.badge span:nth-child(3 ){
+  transform: rotate(18deg);
+}
+
+.badge span:nth-child(4 ){
+  transform: rotate(24deg);
+}
+
+.badge span:nth-child(5 ){
+  transform: rotate(30deg);
+}
+
+.badge span:nth-child(6 ){
+  transform: rotate(36deg);
+}
+
+.badge span:nth-child(7 ){
+  transform: rotate(42deg);
+}
+
+.badge span:nth-child(8 ){
+  transform: rotate(48deg);
+}
+
+.badge span:nth-child(9 ){
+  transform: rotate(54deg);
+}
+
+.badge span:nth-child(10) {
+  transform: rotate(60deg);
+}
+
+.badge span:nth-child(11) {
+  transform: rotate(66deg);
+}
+
+.badge span:nth-child(12) {
+  transform: rotate(72deg);
+}
+
+.badge span:nth-child(13) {
+  transform: rotate(78deg);
+}
+
+.badge span:nth-child(14) {
+  transform: rotate(84deg);
+}
+
+.badge span:nth-child(15) {
+  transform: rotate(90deg);
+}
+
+.badge span:nth-child(16) {
+  transform: rotate(96deg);
+}
+
+.badge span:nth-child(17) {
+  transform: rotate(102deg);
+}
+
+.badge span:nth-child(18) {
+  transform: rotate(108deg);
+}
+
+.badge span:nth-child(19) {
+  transform: rotate(114deg);
+}
+
+.badge span:nth-child(20) {
+  transform: rotate(120deg);
+}
+
+.badge span:nth-child(21) {
+  transform: rotate(126deg);
+}
+
+.badge span:nth-child(22) {
+  transform: rotate(132deg);
+}
+
+.badge span:nth-child(23) {
+  transform: rotate(138deg);
+}
+
+.badge span:nth-child(24) {
+  transform: rotate(144deg);
+}
+
+.badge span:nth-child(25) {
+  transform: rotate(150deg);
+}
+.badge span:nth-child(26) {
+  transform: rotate(156deg);
+}
+.badge span:nth-child(27) {
+  transform: rotate(162deg);
+}
+.badge span:nth-child(28) {
+  transform: rotate(168deg);
+}
+
+.badge span:nth-child(29) {
+  transform: rotate(174deg);
+}
+
+
 
 @media (max-width: 768px) {
   .about-nav {

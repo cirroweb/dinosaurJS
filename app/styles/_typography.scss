@@ -1,20 +1,12 @@
-@keyframes scrollCode {
-  0% {
-    transform: rotate(180deg) skew(1deg, 0deg);
-  }
-  50% {
-    transform: rotate(400deg) skew(40deg, 20deg);
-  }
-  100% {
-    transform: rotate(90deg) skew(70deg, -30deg);
-  }
-}
-
 .-text-alt {
   font-family: Helvetica,Arial,serif;
-  font-weight: 100;
-  font-size: 22px;
+  font-weight: 300;
+  font-size: 0.8rem;
   line-height: 1.4;
+
+  p {
+    line-height: 1.4;
+  }
 }
 
 .-text--white {
@@ -106,6 +98,7 @@ a {
 
 h1 {
     font-size: 4rem;
+    font-size: 19vw;
     font-weight: $font_weight_bold;
     line-height: 1.1em;
     margin-bottom: 1.5rem;
@@ -118,6 +111,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-weight: $font_weight_bold;
+    margin-bottom: 1rem;
     input {
       font-size: 2.5rem !important;
       line-height: inherit;
@@ -126,8 +120,8 @@ h2 {
 
 
 h3 {
-  font-size: 4rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: $font_weight_normal;
   input {
     font-size: 2.5rem !important;
