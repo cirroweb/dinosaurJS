@@ -8,7 +8,7 @@ module.exports = function(defaults) {
 
   var fingerprintOptions = {
     enabled: true,
-    extensions: ['js', 'svg', 'css', 'png', 'jpg', 'gif']
+    extensions: ['js', 'svg', 'css', 'png', 'jpg', 'jpeg', 'gif']
   };
 
   switch (env) {
