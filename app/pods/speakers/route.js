@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         description: [
           "Potch is a Web Developer Advocate at Mozilla. He's also the creator of http://unmaintained.tech, which encourages people to open source their software even when they don't have time to support it. When he's not building dashboards or making stickers, he's probably singing karaoke. Or singing in the car. Or shower.",
         ],
-        talkName:        'name tbd',
+        talkName:        '10 Feet and Rising- Building television-friendly web pages',
         talkDescription: [
           'Every new device wants to be online, which brings us to a bold-but-old frontier—the TV. A series of challenges await us in the living room: How do I build a UI legible across a room? How do I interact with it? The constraints of even the tiniest screens taught us what we need to build for largest ones.',
         ]
@@ -26,7 +26,7 @@ export default Ember.Route.extend({
         description: [
           "Rachel is a self-taught Front End Engineer for IBM Watson. She is currently working on multiple video game projects, a VR cat cafe, and thinking about what IoT devices she can build for her two black cats. Her other interests include glitch art, 80s horror, and indie games.",
         ],
-        talkName:        'name tbd',
+        talkName:        'JavaScript as Play',
         talkDescription: [
           "Now that you know enough frontend technologies to be dangerous, lets use those skills to make a game! We'll take a look at the open source framework Phaser to learn how to create your own browser based game. Together we'll explore topics such as sprite animation, collision detection, and scoring-- by the end we'll have a playable platformer you can tinker with.",
         ]
