@@ -272,6 +272,21 @@ input {
     width: 100%;
   }
 
+  .logo img {
+    max-height: 50px;
+  }
+
+  .badge {
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    span {
+      height: 100px;
+      width: 10px;
+      left: 100px;
+    }
+  }
+
   .split aside:last-child {
     margin-top: 60px;
   }
