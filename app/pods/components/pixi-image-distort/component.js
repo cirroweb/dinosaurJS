@@ -38,7 +38,7 @@ export default PixiCanvas.extend({
         if ( kkeys.toString().indexOf( dinoEgg ) >= 0 ) {
           $(document).unbind('keydown');
            PIXI.loader.resources = {};
-           PIXI.loader.add("image", 'assets/sKinney.jpeg').load(setup);
+           PIXI.loader.add("image", 'assets/steve.jpg').load(setup);
            scrollingImage =  new PIXI.extras.TilingSprite(PIXI.loader.resources.image.texture, 800, 600);
            console.log('boom');
         }
