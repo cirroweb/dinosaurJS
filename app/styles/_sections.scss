@@ -183,6 +183,33 @@ canvas {
 
 
 @media only screen and ( max-width: $break_tablet_small ) {
+  html.textstroke .huge-name figure:last-child {
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: $color_black;
+  }
+
+  .-right-strip,
+  .-left-strip {
+    width: 15px;
+  }
+
+  .-bottom-strip {
+    height: 15px;
+  }
+
+  .home .-right-strip,
+  .home .-left-strip {
+    height: 50px;
+  }
+
+  .huge-name {
+    font-size: 18vw;
+  }
+
+  .home .-bottom-strip{
+    display: none;
+  }
+
   section {
     padding: 80px 40px;
   }

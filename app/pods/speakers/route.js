@@ -40,7 +40,7 @@ export default Ember.Route.extend({
         description: [
           "One morning, Jenna awoke to find that she had transformed into a programmer. She's been psyched about coding ever since. She's currently swimming with JavaScript at DigitalOcean as the Engineering Manager for the Community Engineering and Creative Engineering teams. When she's not teaching pixels to party or helping keep engineers happy, Jenna enjoys climbing, coffee, and cat gifs. Her best party trick is that she wrote the most serious academic paper of her life on puns",
         ],
-        talkName:        'name tbd',
+        talkName:        'Server Farm to Table (or, how the Internet works)',
         talkDescription: [
           "Many of us depend on the internet for both work and play, but it's possible to go about our lives without knowing the steps it takes to get those pixels to show up and delight us and our users. However, a sense of this process can help us as developers write better software and understand the motivation behind many optimizations that we've been taught. This talk will cover the life of a web request in a browser, from entering the URL to the processing the HTML, covering DNS, TLS, TCP, HTTP, and HTML parsing and rendering, explaining how each step affects the performance of web apps.",
         ]

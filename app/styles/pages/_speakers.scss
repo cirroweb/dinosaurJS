@@ -157,7 +157,7 @@ div.presentation-link.open {
   @extend .-text-alt;
   transition: 400ms ease-in-out;
   background: $color_white;
-  padding: 5px;
+  padding: 10px;
   color: $color_black;
   -webkit-font-smoothing: antialiased;
   // border-radius: 10px;
@@ -178,21 +178,26 @@ div.presentation-link.open {
 }
 
 @media only screen and ( max-width: $break_tablet_small ) {
+  .-full {
+    height: 80vh;
+  }
+
   .speaker-description,
   div.presentation-link {
     text-align: center;
-
-  }
-
-  div.presentation-link {
     margin: 0;
     padding: 0;
     height: auto;
 
     &:before {
       display: none;
+      }
+
+    &:hover {
+      letter-spacing: 0;
+      }
     }
-  }
+
 
   .speaker-img-wrapper img {
     max-width: 300px;

@@ -109,7 +109,7 @@ nav {
   position: fixed;
   left: 0;
   width: 50%;
-  height: 100vh;
+  height: 100%;
   z-index: $z_layer_forward;
   transform: translateX(-100%);
   transition: 300ms ease-in-out;
@@ -229,8 +229,20 @@ body.nav-open {
 
 
 @media only screen and ( max-width: $break_tablet_small ) {
+  .credit {
+    bottom: 10px;
+    left: 20px;
+  }
+
+  nav li a:before {
+    display: none;
+  }
+
   nav {
-    width: 85%;
+    width: 80%;
+    ul {
+      padding-left: 0px;
+    }
     li {
       padding: 10px 8%;
     }
@@ -247,6 +259,9 @@ body.nav-open {
   }
 
   .top-header {
+    left: 15px;
+    right: 15px;
+
     li:last-child {
       display: none;
     }
@@ -254,6 +269,7 @@ body.nav-open {
 }
 
 @media only screen and ( max-width:$break_mobile_full) {
+
   .top-header {
     li:nth-child(4) {
       display: none;
@@ -261,6 +277,6 @@ body.nav-open {
   }
 
   .top-header {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

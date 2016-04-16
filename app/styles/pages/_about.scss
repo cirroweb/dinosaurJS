@@ -28,43 +28,6 @@
   }
 }
 
-// .about-nav {
-//   display: none;
-//   position: fixed;
-//   height: 100%;
-//   text-align: center;
-//   margin: 0 1%;
-//   top: 50%;
-//   left: 0px;
-//   z-index: $z_layer_02;
-//   color: $color_white;
-//   mix-blend-mode: difference;
-//   // text-align: right;
-//   transform: translateY(-50%) translateX(-50%);
-//   writing-mode: vertical-lr;
-//   ul {
-//     list-style: none;
-//     li {
-//       display: inline-block;
-//       padding: 10px 0px;
-//     }
-//   }
-//   a {
-//     color: $color_white;
-//   }
-//   div {
-//     min-width: 50px;
-//     line-height: 1;
-//     padding: 0;
-//     margin: 10px 0;
-//     font-size: 1rem;
-//   }
-//   small {
-//     display: block;
-//     margin-bottom: 15px;
-//   }
-// }
-
 body.about .about-nav {
   display: block;
 }
@@ -99,7 +62,6 @@ input {
   font-family: $font_work_sans;
   width: 90%;
   color: white;
-  cursor: inherit;
 
   &:focus {
     outline: 0;
@@ -268,6 +230,10 @@ input {
 }
 
 @media only screen and ( max-width: $break_tablet_small ) {
+  .git-name {
+    margin-bottom: 15px;
+  }
+
   input {
     width: 100%;
   }
@@ -292,7 +258,7 @@ input {
   }
 
   .about-nav {
-    font-size: 18px;
+    font-size: 16px;
     background-color: $color_black;
     color: $color_white;
     ul {
@@ -300,7 +266,7 @@ input {
       padding: 0 0;
       li {
         display: inline-block;
-        padding: 10px 10px;
+        padding: 10px 0px;
       }
     }
     a {

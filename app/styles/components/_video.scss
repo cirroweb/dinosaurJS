@@ -1,9 +1,16 @@
 .video-container {
   overflow: hidden;
   height: 90vh;
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90vh;
+  }
+
 }
-
-
 
 #camera-stream {
   top: 0;
