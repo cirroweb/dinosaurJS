@@ -18,13 +18,7 @@
   {{nav-bar}}
 </nav>
 
-<div {{action 'toggleNav'}} class="nav-overlay">
-  <div class="valigner nav-exit">
-    <div class="valigner--cell close-nav">Close</div>
-  </div>
-</div>
-
-
+{{close-nav clicked=(route-action "toggleNav") }}
 
 <div class="strip -left-strip"></div>
 <div class="strip -right-strip"></div>
