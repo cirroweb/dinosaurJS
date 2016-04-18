@@ -4,6 +4,33 @@ export default Ember.Route.extend({
 
   goldSponsors:  Ember.A([
     {
+      name: "Ultra Fragola",
+      img: "/assets/uf.svg",
+      link: "http://www.ultra-fragola.com/",
+      description: [
+        "Line 1",
+        "Line 2"
+      ],
+    },
+    {
+      name: "GoDaddy",
+      img: "/assets/godaddy.svg",
+      link: "https://www.godaddy.com/",
+      description: [
+        "Line 1",
+        "Line 2"
+      ],
+    },
+    {
+      name: "Mozilla",
+      img: "/assets/mozilla.svg",
+      link: "https://www.mozilla.org/en-US/",
+      description: [
+        "Line 1",
+        "Line 2"
+      ],
+    },
+    {
       name: "Turing",
       img: "/assets/turingLogo.svg",
       link: "https://www.turing.io/",
