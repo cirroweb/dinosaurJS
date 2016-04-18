@@ -215,6 +215,13 @@ input {
 
 @media only screen and ( max-width: $break_tablet_small ) {
 
+  .about-nav {
+    text-align: center;
+    a {
+      border-bottom: 2px solid #ccc;
+    }
+  }
+
   .email-signup-submit-button {
     width: 100%;
     margin-top: 30px;

@@ -220,11 +220,21 @@ body.nav-open {
 }
 
 @media only screen and ( max-width: $break_tablet_medium ) {
+
+  nav {
+    a {
+      &.active {
+        border-bottom: 2px solid $color_black;
+      }
+    }
+  }
+
   .top-header {
     li:nth-child(3) {
       display: none;
     }
   }
+
 }
 
 
