@@ -20,6 +20,27 @@
   animation: flash 1s infinite ease-in-out;
 }
 
+.notice {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  background-color: rgb(89,88,251);
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  z-index: 10000;
+  color: white;
+  font-size: 17px;
+  padding: 20px;
+  text-align: center;
+  transition: 300ms ease;
+}
+
+.notice:hover {
+  transform: rotate(10deg);
+}
+
 .top-header {
   position: fixed;
   top: 0;
@@ -229,6 +250,12 @@ body.nav-open {
 
 
 @media only screen and ( max-width: $break_tablet_small ) {
+  .notice {
+    font-size: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
   .credit {
     bottom: 10px;
     left: 20px;
