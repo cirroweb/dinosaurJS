@@ -31,6 +31,15 @@ export default Ember.Route.extend({
       ],
     },
     {
+      name: "Modeset",
+      img: "/assets/modeset.svg",
+      link: "http://modeset.com/",
+      description: [
+        "Line 1",
+        "Line 2"
+      ],
+    },
+    {
       name: "Turing",
       img: "/assets/turingLogo.svg",
       link: "https://www.turing.io/",
@@ -48,6 +57,12 @@ export default Ember.Route.extend({
       ],
     },
   ]),
+
+  // team: Ember.A([
+  //   {
+  //     name: "Steve Kinney"
+  //   }
+  // ]),
 
   silverSponsors:  Ember.A([
     {
