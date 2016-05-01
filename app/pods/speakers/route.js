@@ -134,21 +134,20 @@ export default Ember.Route.extend({
           "It’s time for JavaScript developers to start building the Mac, Windows, and Linux applications people spend their entire working day using. Modern tools like Electron, Node, and the latest ECMA/W3C specs are making it possible to easily build highly performant, native-feeling desktop apps. This talk is about how to use these tools to build desktop apps, lessons & patterns from our experience building an open source desktop email client called N1, and why we’re entering the age of the javascript-powered desktop.",
         ]
       },
-      // NOTE: update when we get her info
-      // {
-      //   name:        "Joanne Cheng",
-      //   linkId:      "joanne-cheng",
-      //   twitter:     "joannecheng",
-      //   gitHub:      "joannecheng",
-      //   avatar:      "public/assets/joanne.jpg",
-      //   description: [
-      //     "Joanne is a JavaScript developer for Keen IO.",
-      //   ],
-      //   talkName: "CHANGE ME",
-      //   talkDescription: [
-      //     "CHANGE ME",
-      //   ]
-      // }
+      {
+        name:        "Joanne Cheng",
+        linkId:      "joanne-cheng",
+        twitter:     "joannecheng",
+        gitHub:      "joannecheng",
+        avatar:      "public/assets/joanne.jpg",
+        description: [
+          "Joanne is a JavaScript developer for Keen IO.",
+        ],
+        talkName: "WebGL",
+        talkDescription: [
+          "WebGL is a way of rendering graphics using the GPU that allows us to display complex graphics right in the browser. WebGL is often associated with experimental interactive art and games, however, it's currently being used in exciting ways in more common web applications. In this talk, we'll walk through the overall WebGL architecture and explore innovative projects using this technology. We'll then create a few basic WebGL examples to get our feet wet, with the help of Three.js, a popular library around WebGL.",
+        ]
+      }
     ]);
   }
 });
