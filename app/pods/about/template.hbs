@@ -20,6 +20,11 @@
           Sponsors
           {{/scroll-to}}
         </li>
+        <li>
+          {{#scroll-to href='#diversity' duration=500 easing='swing'}}  {{!-- we can do other easing functions, but they'd require jqueryUi--}}
+          Scholarships
+          {{/scroll-to}}
+        </li>
       </ul>
     </div>
   </div>
@@ -37,5 +42,23 @@
   {{partial "about/sponsors"}}
 </div>
 
+<div id="diversity">
+  <section class="section section-white">
+
+  <div class="page-intro">
+    <h2 class="margin-bottom--80">Diversity Scholarship</h2>
+  </div>
+
+  <p>This scholarship is open to anyone who will be in the Denver,
+    Colorado area on June 24th, 2016. Recipients will receive a free
+    ticket to the conference and all events associated with a regular
+    admission ticket. Because we are a community-run event, we are unable
+    to provide travel and lodging as part of this initiative at this time,
+    but hope to be able to in the future.</p>
+  <p>We really want to see you there and we hope this scholarship
+    can enable you to contribute to our community.</p>
+
+  </section>
+</div>
 
 {{outlet}}
