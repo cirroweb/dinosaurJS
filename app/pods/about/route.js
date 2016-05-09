@@ -49,6 +49,24 @@ export default Ember.Route.extend({
       ],
     },
     {
+      name: "Google",
+      img: "/assets/google.svg",
+      link: "http://google.com/",
+      description: [
+        "Line 1",
+        "Line 2"
+      ],
+    },
+    {
+      name: "Modeset",
+      img: "/assets/digital-ocean.svg",
+      link: "https://www.digitalocean.com/",
+      description: [
+        "Line 1",
+        "Line 2"
+      ],
+    },
+    {
       name: "CA Technologies",
       img: "/assets/CA_logo.svg",
       link: "http://www.ca.com/us.html",
