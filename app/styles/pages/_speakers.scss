@@ -30,10 +30,10 @@
     div.presentation-link {
       color: $color_black;
     }
-    .presentation-info {
-      background: $color_black;
-      color: $color_white;
-    }
+    // .presentation-info {
+    //   background: $color_black;
+    //   color: $color_white;
+    // }
   }
 }
 
@@ -61,12 +61,13 @@
 }
 
 .twitter-handle {
-  text-align: center;
   display: block;
-  margin: 5% 0;
-  font-size: 0.8rem;
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  display: inline-block;
+  transform-origin: left;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 
@@ -77,16 +78,18 @@
 }
 
 .git-name {
-  text-align: center;
   display: block;
-  font-size: 0.8rem;
+  font-size: 26px;
+  margin: 0 0 40px 0;
+  display: inline-block;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    transform-origin: left;
   }
 }
 
 .speaker-description {
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 @media (max-width: 768px) {
@@ -101,7 +104,7 @@
 
 div.presentation-link {
   border: none;
-  padding: 0 0 0 3vw;
+  padding: 0 0 0 30px;
   border-radius: 0;
   transition: 400ms ease;
   height: 3vw;
@@ -109,21 +112,20 @@ div.presentation-link {
   width: 100%;
   text-align: left;
   line-height: 1.2;
+  font-size: 26px;
   color: $color_white;
   &:before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 6px;
     left: 0;
-    height: 2vw;
-    width: 2vw;
+    height: 18px;
+    width: 18px;
     background: #fcfcfc;
     line-height: 2;
     font-size: 1.5rem;
     border-radius: 50%;
     border: 3px solid;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     transition: 400ms;
   }
   &:hover {
@@ -156,9 +158,9 @@ div.presentation-link.open {
 .presentation-info {
   @extend .-text-alt;
   transition: 400ms ease-in-out;
-  background: $color_white;
-  padding: 10px;
-  color: $color_black;
+  // background: $color_white;
+  padding: 10px 0 0;
+  color: inherit;
   -webkit-font-smoothing: antialiased;
   // border-radius: 10px;
   margin-top: 1vw;

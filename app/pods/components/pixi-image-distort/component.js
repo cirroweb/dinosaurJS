@@ -29,6 +29,7 @@ export default PixiCanvas.extend({
       theloop();
       resize();
       addDinoEgg();
+      // backgroundFill();
     }
 
     let addDinoEgg = function() {
@@ -44,6 +45,12 @@ export default PixiCanvas.extend({
         }
       });
     };
+
+    // canvas built to fill width of window
+    // let backgroundFill = function() {
+    //   renderer.view.setAttribute('style', 'height:auto;width:100%;');
+    // };
+
 
     let theloop = function() {
       // This sets scroll speed between 1 and -1, 0 as the middle of the screen
@@ -62,6 +69,7 @@ export default PixiCanvas.extend({
       let h = window.innerHeight;
       renderer.view.style.width = w + 'px';
       renderer.view.style.height = h + 'px';
+      // backgroundFill();
     };
 
     window.onresize = function() {

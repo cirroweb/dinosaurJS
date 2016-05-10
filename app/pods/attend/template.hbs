@@ -6,18 +6,8 @@
     <div class="valigner--cell">
       <ul>
         <li>
-          {{#scroll-to href='#info' duration=500 easing='swing'}}  {{!-- we can do other easing functions, but they'd require jqueryUi--}}
-          Information
-          {{/scroll-to}}
-        </li>
-        <li>
           {{#scroll-to href='#location' duration=500 easing='swing'}}
           Location
-          {{/scroll-to}}
-        </li>
-        <li>
-          {{#scroll-to href='#sponsors' duration=500 easing='swing'}}
-          Sponsors
           {{/scroll-to}}
         </li>
         <li>
@@ -25,26 +15,21 @@
           Scholarships
           {{/scroll-to}}
         </li>
+        <li>
+          {{#scroll-to href='#sponsors' duration=500 easing='swing'}}
+          Sponsors
+          {{/scroll-to}}
+        </li>
       </ul>
     </div>
   </div>
 </div>
 
-<div id="info">
-  {{partial "about/conference-info"}}
-</div>
+<section id="location" class="section section-black">
+  {{partial "attend/location"}}
+</section>
 
-<div id="location">
-  {{partial "about/location"}}
-</div>
-
-<div id="sponsors">
-  {{partial "about/sponsors"}}
-</div>
-
-<div id="diversity">
-  <section class="section section-white">
-
+<section id="diversity" class="section section-white">
   <div class="page-intro">
     <h2 class="margin-bottom--80">Diversity Scholarship</h2>
   </div>
@@ -60,7 +45,15 @@
 
   <p><a href="https://docs.google.com/a/stevekinney.net/forms/d/1qzadlPiGZ_Clkq8jx_iJVJt_pBXsxXrz6d_5vKkoaWM/viewform?c=0&w=1"
     target="_blank">Fill out the Application</a></p>
-  </section>
-</div>
+</section>
+
+
+<section id="sponsors" class="section section-black sponsors-section">
+    <h2>Sponsors</h2>
+    <p>We're looking for sponsors for our wonderful event.<br>
+    <a href="http://cors-files.s3.amazonaws.com/dinoJS/DinosaurJS%20Sponsorship.pdf" target="_blank">Check out our sponsor prospectus</a>.</p>
+    <br>
+    {{sponsors-section}}
+</section>
 
 {{outlet}}

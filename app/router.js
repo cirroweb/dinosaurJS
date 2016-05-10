@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('speakers');
   this.route('schedule');
-  this.route('about');
+  this.route('attend');
   this.route('home', {path: '/'});
   this.route('code-of-conduct');
 });

@@ -1,4 +1,9 @@
-<a><div {{action "toggleAccordion" this on="tap"}} class="presentation-link {{if isOpen 'open' 'closed'}}">Talk: {{if isOpen closeText openText}}</div></a>
+<a>
+  <div {{action "toggleAccordion" this on="tap"}} class="presentation-link {{if isOpen 'open' 'closed'}}">
+    {{if isOpen closeText openText}}
+  </div>
+</a>
+
 <div class="{{if isOpen 'showing' 'hidden'}} accordion presentation-info">
   {{yield}}
 </div>
