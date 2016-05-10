@@ -61,7 +61,7 @@ input {
   font-size: 1rem;
   font-family: $font_work_sans;
   width: 90%;
-  color: white;
+  color: inherit;
 
   &:focus {
     outline: 0;
@@ -236,10 +236,6 @@ input {
 
   input {
     width: 100%;
-  }
-
-  .logo img {
-    max-height: 50px;
   }
 
   .badge {

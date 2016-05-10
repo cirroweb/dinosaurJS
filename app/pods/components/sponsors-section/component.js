@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+export default Ember.Component.extend({
+  classNames: ['third', '-wrap'],
 
   goldSponsors:  Ember.A([
     {
@@ -98,10 +99,7 @@ export default Ember.Route.extend({
         "Mode Set is a boutique product consultancy out of Denver, Colorado leveraging Ember and Rails. Though nerds at heart, we do more than write code. We are entrepreneurs. We are artists. We invest deeply in our clients, taking full ownership to build smart and successful products.",
       ],
     },
-  ]),
+  ])
 
-  setupController(controller) {
-    controller.set('goldSponsors', this.goldSponsors);
-    controller.set('silverSponsors', this.silverSponsors);
-  },
+
 });

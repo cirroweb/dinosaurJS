@@ -3,7 +3,6 @@
 }
 
 .logo {
-  padding: 7vh 10vw 7vh 0;
   opacity: 0.4;
   transition: 300ms;
 
@@ -12,9 +11,26 @@
   }
 
   img {
-    max-height: 150px;
+    max-height: 130px;
   }
 }
+
+.logo:nth-child(3n+1) {
+  padding: 10vh 14vw 10vh 0;
+}
+
+.logo:nth-child(3n+2) {
+  padding: 10vh 7vw 10vh 7vw;
+}
+
+
+.logo:nth-child(3n+3) {
+  padding: 10vh 0 10vh 14vw;
+}
+
+
+
+
 
 
 // .sponsor-logo-wrapper {
@@ -38,5 +54,19 @@
   }
   .sponsor-logo {
     margin-bottom: 5%;
+  }
+
+  .sponsors-section .third {
+    flex-direction: row !important;
+  }
+
+  .logo {
+    padding: 40px 0 !important;
+    width: 50% !important;
+  }
+
+  .logo img {
+    width: 70%;
+    max-height: 70px;
   }
 }
