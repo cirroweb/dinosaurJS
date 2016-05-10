@@ -1,0 +1,9 @@
+{{#each goldSponsors as |sponsor|}}
+  <div class="logo">
+    <a href="{{sponsor.link}}" target="blank">
+      <img src="{{sponsor.img}}" class="sponsor-logo" />
+    </a>
+  </div>
+{{/each}}
+
+{{yield}}

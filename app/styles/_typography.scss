@@ -1,11 +1,11 @@
 .-text-alt {
   font-family: Helvetica,Arial,serif;
   font-weight: 300;
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.5;
 
   p {
-    line-height: 1.4;
+    line-height: 1.5;
   }
 }
 
@@ -61,7 +61,7 @@ strong, b {
 }
 
 p {
-    margin-bottom: 33px;
+    margin-bottom: 50px;
     font-size: inherit;
     line-height: $base_line_height;
     input, textarea {

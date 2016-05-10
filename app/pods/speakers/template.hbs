@@ -14,11 +14,12 @@
       <div class="speaker-wrapper row">
         <div class="speaker-img-wrapper col--1of3">
           <img src="public/assets/jenn.png" class="speaker-img" />
-          <a href="https://twitter.com/jennschiffer" target="blank" class="twitter-handle">Twitter: @jennschiffer</a>
-          <a href="https://github.com/jennschiffer" target="blank" class="git-name">Github: jennschiffer</a>
         </div>
         <div class="speaker-description col--2of3">
           <h2>Jenn Schiffer</h2>
+          <a href="https://twitter.com/jennschiffer" target="blank" class="twitter-handle">Twitter: @jennschiffer</a>
+          <br>
+          <a href="https://github.com/jennschiffer" target="blank" class="git-name">Github: jennschiffer</a>
           <p class="-text-alt">Jenn is a web developer who lives in New Jersey on purpose and works
             full-time as an open web engineer at Bocoup. When she's not building
             open web apps with the coolest web developers and clients in the game,
@@ -43,12 +44,13 @@
         <div class="speaker-wrapper row">
           <div class="speaker-img-wrapper col--1of3">
             <img src="{{speaker.avatar}}" class="speaker-img" />
-            <a href="https://twitter.com/{{speaker.twitter}}" target="blank" class="twitter-handle">Twitter: @{{speaker.twitter}}</a>
-            <a href="https://github.com/{{speaker.gitHub}}" target="blank" class="git-name">Github: {{speaker.gitHub}}</a>
           </div>
 
           <div class="speaker-description col--2of3">
             <h2>{{speaker.name}}</h2>
+            <a href="https://twitter.com/{{speaker.twitter}}" target="blank" class="twitter-handle">Twitter: @{{speaker.twitter}}</a>
+            <br>
+            <a href="https://github.com/{{speaker.gitHub}}" target="blank" class="git-name">Github: {{speaker.gitHub}}</a>
             {{#each speaker.description as |line|}}
               <p class="-text-alt"> {{line}} </p>
             {{/each}}
