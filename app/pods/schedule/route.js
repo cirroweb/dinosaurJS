@@ -86,8 +86,8 @@ export default Ember.Route.extend({
       {
         name:      "Making it Better Without Making it Over",
         time:      "11:50AM - 12:20PM",
-        speaker:   "Rebecca Murphy",
-        speakerId: "rebecca-murphy",
+        speaker:   "Rebecca Murphey",
+        speakerId: "rebecca-murphey",
         isTalk: true,
         talkDescription: [
           "Maybe you’re lucky enough to live in the world where everything you build is shiny and new, but there are an awful lot of people working onc lient-side apps that came into being back when yayQuery was a thing and Backbone wasn’t. In this talk, I'll share the story of how I started a new job this year by paying a visit to JavaScript circa 2009, back when Ryan Dahl was getting ready to announce Node and Facebook was still four years away from being mocked for the apparent heresy of JSX.<br><br>I'll explain how I modernized and best-practice-ified a project that didn't even have a package.json, smoothing the development process, eliminating common sources of bugs, paving the way for bigger improvements, and never once uttering the words 'we oughta just start from scratch."
