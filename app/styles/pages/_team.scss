@@ -1,0 +1,74 @@
+
+.team-section {
+  color: $color_black;
+  background: #000;
+  background: -moz-linear-gradient(top, #000000 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #000000 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #000000 0% ,#ffffff 100%);
+}
+
+.team .strip {
+  mix-blend-mode: normal;
+  background: black;
+}
+
+.team__wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.team__member {
+  width: 50%;
+  padding: 0 11vw 20vh;
+  text-align: center;
+  h4 {
+    margin-bottom: 5px;
+  }
+}
+
+.steve {
+  &:hover img {
+    @extend .shake;
+    @extend .shake-horizontal;
+  }
+}
+
+.jess {
+  &:hover img {
+    @extend .shake;
+    @extend .shake-rotate;
+  }
+}
+
+.tan {
+  &:hover img {
+    @extend .shake;
+    @extend .shake-vertical;
+  }
+}
+
+.frankie {
+  &:hover img {
+    @extend .shake;
+    @extend .shake-crazy;
+  }
+}
+
+.team__member img{
+  max-width: 300px;
+  margin: 0 auto 20px;
+  display: inline-block;
+  box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+  backface-visibility: hidden;
+}
+
+@media only screen and ( max-width: $break_tablet_small ) {
+  .team__wrap {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .team__member {
+    width: 100%;
+  }
+}

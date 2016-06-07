@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('attend');
   this.route('home', {path: '/'});
   this.route('code-of-conduct');
+  this.route('team');
 });
 
 
