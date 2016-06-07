@@ -34,7 +34,7 @@ export default Ember.Route.extend({
         ]
       },
       {
-        name:      "What ever happened to those dinosaurs?",
+        name:      "What Ever Happened to Those Dinosaurs?",
         time:      "9:45AM - 10:15AM",
         speaker:   "Mark DiMarco",
         speakerId: "mark-dimarco",
@@ -44,7 +44,7 @@ export default Ember.Route.extend({
         ]
       },
       {
-        name:      "WebGL",
+        name:      "Getting Started with WebGL",
         time:      "10:15AM - 10:45AM",
         speaker:   "Joanne Cheng",
         speakerId: "joanne-cheng",
@@ -54,7 +54,7 @@ export default Ember.Route.extend({
         ]
       },
       {
-        name:      "Justin Gitlin from 'OhHeckYeah'",
+        name:      "Justin Gitlin Introduces 'OhHeckYeah'",
         time:      "10:45AM - 10:55AM",
         speaker:   "",
         speakerId: "",
@@ -84,7 +84,7 @@ export default Ember.Route.extend({
         ]
       },
       {
-        name:      "Rebecca Murphy",
+        name:      "Making it Better Without Making it Over",
         time:      "11:50AM - 12:20PM",
         speaker:   "Rebecca Murphy",
         speakerId: "rebecca-murphy",
@@ -104,7 +104,7 @@ export default Ember.Route.extend({
         ]
       },
       {
-        name:      "10 Feet and Rising- Building television-friendly web pages",
+        name:      "10 Feet and Rising: Building Television-Friendly Web Pages",
         time:      "1:50PM - 2:20PM",
         speaker:   "Potch",
         speakerId: "potch",
@@ -124,7 +124,7 @@ export default Ember.Route.extend({
         ]
       },
       {
-        name:      "Server Farm to Table (or, how the Internet works)",
+        name:      "Server Farm to Table (or, How the Internet Works)",
         time:      "2:50PM - 3:20PM",
         speaker:   "Jenna Zeigen",
         speakerId: "jenna-zeigen",
@@ -144,7 +144,7 @@ export default Ember.Route.extend({
         ]
       },
       {
-        name:      "Single Page Access—The Road to Using our Power for Good",
+        name:      "Single Page Access: The Road to Using Our Power for Good",
         time:      "3:45PM - 4:15PM",
         speaker:   "Suz Hinton",
         speakerId: "suz-hinton",
@@ -166,6 +166,16 @@ export default Ember.Route.extend({
       {
         name:      "Wrap-Up and Closing Remarks",
         time:      "4:45PM - 5:00PM",
+        speaker:   "",
+        speakerId: "",
+        isTalk: false,
+        talkDescription: [
+          ""
+        ]
+      },
+      {
+        name:      "After Party",
+        time:      "6:00PM - 9:00PM",
         speaker:   "",
         speakerId: "",
         isTalk: false,
