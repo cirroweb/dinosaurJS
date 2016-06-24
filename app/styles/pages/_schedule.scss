@@ -74,3 +74,9 @@
     background-color: $color_grey;
   }
 }
+
+@media only screen and (max-device-width: 700px) and (orientation: portrait) {
+  .schedule .accordion.showing {
+    line-height: 5vw;
+  }
+}
