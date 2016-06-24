@@ -1,4 +1,4 @@
-<h4 {{action "toggleAccordion" this}} class="schedule-link {{if isOpen 'open' 'closed'}}">
+<h4 {{action "toggleAccordion" this on="tap"}} class="schedule-link {{if isOpen 'open' 'closed'}}">
   {{if isOpen closeText openText}}
 </h4>
 <div class="{{if isOpen 'showing' 'hidden'}} accordion schedule__row-talk-info">
