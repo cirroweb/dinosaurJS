@@ -1,0 +1,112 @@
+body {
+  overflow: auto;
+
+  &.is-clipped {
+    overflow: hidden;
+  }
+}
+
+
+.logo-weird {
+  height: 100vh;
+}
+
+.-font-alt {
+  font-family: 'Graphik Regular', sans-serif;
+  font-weight: normal;
+}
+
+.index {
+  background: #D7D5C8;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
+
+.sticks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 255px;
+}
+
+.sticks span {
+  display: inline-block;
+  height: 20px;
+  width: 4px;
+  margin: 10px;
+  background: white;
+  animation: spin 10s infinite linear;
+}
+
+.sticks span:nth-child(odd) {
+  animation-delay: 1s;
+}
+
+.sm-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  padding: 0;
+  opacity: 1;
+  animation: spin 10s infinite linear;
+}
+
+
+.what {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: black;
+  padding: 10vh 10vw 10vh 40vw;
+
+  p:nth-child(2) {
+    margin-right: 10vw;
+  }
+}
+
+.seventeen p {
+  line-height: inherit;
+  background: linear-gradient(to right, #D7D5C8, #1a1a1a);
+}
+
+.seventeen a {
+  border-color: black;
+}
+
+.seventeen #mc_embed_signup {
+
+}
+
+.code-of-conduct-circle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 5vh 0 0 0;
+  text-align: left;
+  overflow: hidden;
+  transition: 400ms ease-in-out;
+  transform: translate(100px, 100px);
+
+  p {
+    background: transparent;
+    color: white;
+  }
+
+  &.showing {
+    height: 160vw;
+    width: 160vw;
+    color: black;
+    overflow: scroll;
+    padding: 30vw 50vw 30vw 30vw;
+    transform: translate(40vw, 40vw);
+    p { color: black; }
+  }
+}

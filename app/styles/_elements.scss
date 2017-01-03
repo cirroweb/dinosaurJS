@@ -1,4 +1,44 @@
 @font-face {
+    font-family: 'GT Walsheim Regular';
+    src: url( "/fonts/GT-Walsheim-Regular.woff" ) format( "woff" ),
+         url( "/fonts/GT-Walsheim-Regular.ttf" ) format( "truetype" );
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT Walsheim Oblique';
+    src: url( "/fonts/GT-Walsheim-Regular-Oblique.woff" ) format( "woff" ),
+         url( "/fonts/GT-Walsheim-Regular-Oblique.ttf" ) format( "truetype" );
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT Walsheim Medium';
+    src: url( "/fonts/GT-Walsheim-Medium.woff" ) format( "woff" ),
+         url( "/fonts/GT-Walsheim-Medium.ttf" ) format( "truetype" );
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT Walsheim Medium Oblique';
+    src: url( "/fonts/GT-Walsheim-Medium-Oblique.woff" ) format( "woff" ),
+         url( "/fonts/GT-Walsheim-Medium-Oblique.ttf" ) format( "truetype" );
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Graphik Regular';
+    src: url( "/fonts/Graphik-Regular.eot" ),
+         url( "/fonts/Graphik-Regular.otf" ) format( "opentype" ),
+         url( "/fonts/Graphik-Regular.ttf" ) format( "truetype" ),
+         url( "/fonts/Graphik-Regular.svg" ) format( "svg" );
+    font-style: normal;
+    font-stretch: normal;
+}
+
+
+@font-face {
     font-family: 'Regalo';
     src: url('https://cors-files.s3.amazonaws.com/dinoJS/reglo-bold-webfont.eot');
     src: url('https://cors-files.s3.amazonaws.com/dinoJS/reglo-bold-webfont.eot?#iefix') format('embedded-opentype'),
