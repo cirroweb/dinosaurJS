@@ -7,6 +7,8 @@ export default Ember.Route.extend({
     // $_x = Ember.$('.x span'),
     // $_y = Ember.$('.y span');
 
+    window.addEventListener("devicemotion", this.handleRotate, true);
+
     Ember.$('body').on('mousemove', function(event) {
       const cx = Math.ceil(window.innerWidth / 2.0);
       const cy = Math.ceil(window.innerHeight / 2.0);
@@ -23,5 +25,16 @@ export default Ember.Route.extend({
       const degree = (radius * 30);
       TweenLite.set(".mover", {transform:'rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)'});
       });
+  },
+
+  handleRotate(e) {
+    console.log(e);
+      // if ( window.ondeviceOrientation != undefined ) {
+        // let alpha = Math.round(e.alpha);
+        // let beta = Math.round(e.beta);
+        // let gamma = Math.round(e.gamma);
+        // console.log(alpha, beta, gamma);
+      // }
   }
+
 });

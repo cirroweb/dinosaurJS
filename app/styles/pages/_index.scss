@@ -362,3 +362,40 @@ seventeen * {
 .spacer {
   height: 40vh;
 }
+
+@media only screen and ( max-width:$break_tablet_medium) {
+  .wrap-17 {
+    width: 100%;
+  }
+
+  .seventeen,
+  .seventeen * {
+    font-size: 17px;
+  }
+
+  .container {
+    padding: 15vh 0 25vh;
+    max-width: 100%;
+  }
+
+  .seventeen .form-elements,
+  .seventeen .email-signup-submit-button {
+    width: 100%
+  }
+
+  .seventeen footer > span {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    height: 150px;
+    width: 150px;
+  }
+
+  .image {
+    width: 70%;
+    margin: 44% auto 10%;
+    padding-bottom: 46%;
+  }
+}
