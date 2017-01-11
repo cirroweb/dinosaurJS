@@ -56,9 +56,11 @@ seventeen * {
   position: relative;
   padding: 25vh 0;
   max-width: 90%;
-  -moz-transform: perspective(1000px);
+  -moz-transform: perspective(2000px);
   -moz-transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
+  -webkit-perspective: 2000px;
+  transform-style: preserve-3d;
+  perspective: 2000px;
 }
 
 .mover {
@@ -380,7 +382,8 @@ seventeen * {
 
   .seventeen .form-elements,
   .seventeen .email-signup-submit-button {
-    width: 100%
+    width: 100%;
+    padding-right: 50px;
   }
 
   .seventeen footer > span {
