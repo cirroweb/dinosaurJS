@@ -6,12 +6,16 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('speakers');
-  this.route('schedule');
-  this.route('attend');
-  this.route('home', {path: '/'});
-  this.route('code-of-conduct');
-  this.route('team');
+  this.route('index', { path: '/' });
+
+  this.route('2016', function() {
+    this.route('speakers');
+    this.route('schedule');
+    this.route('attend');
+    this.route('home');
+    this.route('code-of-conduct');
+    this.route('team');
+  });
 });
 
 
