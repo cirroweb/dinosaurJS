@@ -1,4 +1,69 @@
+.seventeen {
+  .speakers {
+    background-color: $color_redorange;
+  }
 
+  .speaker__card {
+    text-align: center;
+    a {
+      color: $color_white;
+      opacity: .4;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    img {
+      max-width: 60%;
+      max-height: 60%;
+    }
+  }
+
+  .speaker__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50%;
+    width: 50%;
+    height: 0;
+    display: inline-block;
+  }
+}
+
+.half {
+  width: 50%;
+}
+
+@media ( max-width: $break_tablet_medium ) {
+  .speakers__wrap {
+    flex-wrap: nowrap;
+    display:block;
+  }
+  .speaker__card {
+    width: 100%;
+  }
+}
+
+@media ( max-width: $break_tablet_small ) {
+  .seventeen {
+    .half {
+      width: 100%;
+    }
+
+    .speaker__bio {
+      padding-top: 0;
+    }
+
+    .speaker__image {
+      width: 90%;
+      padding-bottom: 85%;
+    }
+  }
+}
+
+
+
+
+// OLD DINO
 .page-intro {
   margin-bottom: 5%;
 }
