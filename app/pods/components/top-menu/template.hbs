@@ -1,0 +1,37 @@
+
+<div class="top-menu flex-grid">
+  <div class="seventeen-menu-box white-border-bottom column--2of4">
+    {{#link-to 'seventeen.index' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
+      DINOSAUR JS
+    {{/link-to}}
+  </div>
+  <div class="seventeen-menu-box white-border-left white-border-bottom small-text column--1of4">
+      June 15 - 16<br>
+      Space Gallery<br>
+      Denver 2017
+  </div>
+  <div class="seventeen-menu-box white-border-left white-border-bottom small-text column--1of4 border-left" {{action 'toggleMenu' true}}>
+    Menu
+  </div>
+</div>
+<div class="seventeen-menu-sidebar {{if showingMenu 'showing' 'hidden'}}">
+  <div class="seventeen-menu-box flex-grid white-border-bottom" {{action 'toggleMenu' false}}>
+    <div class="column--3of4"></div>
+    <div class="column--1of4 small-text">Close</div>
+  </div>
+  <div class="seventeen-menu-sidebar__item-wrap">
+    {{#link-to 'seventeen.index' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
+      HOME
+    {{/link-to}}
+    {{#link-to 'seventeen.speakers' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
+      SPEAKERS
+    {{/link-to}}
+    <h3>SCHEDULE</h3>
+    <h3>ATTEND</h3>
+    <h3>TEAM</h3>
+  </div>
+</div>
+{{#if showingMenu}}
+  <div class="seventeen-menu-mask" {{action 'toggleMenu' false}}></div>
+{{/if}}
+{{yield}}

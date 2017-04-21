@@ -1,0 +1,28 @@
+.seventeen {
+  .bottom-menu {
+    overflow: hidden;
+  }
+
+  .bottom-menu a {
+    display: inline;
+    color: $color_white;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+@media ( max-width: $break_tablet_medium ) {
+  .seventeen {
+    .bottom-menu {
+      flex-wrap: wrap;
+      display: flex;
+    }
+    .bottom-menu > a {
+      display: block;
+      width: 33.3%;
+    }
+    .bottom-menu > a:nth-child(-n+3) {
+      border-bottom: 1px solid $color_white;
+    }
+  }
+}

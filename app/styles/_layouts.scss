@@ -1,0 +1,308 @@
+.main-wrap {
+  margin-top: 48px;
+}
+
+.main-page__wrap {
+  margin-top: var(--spacing-2xlarge);
+}
+
+.layout--contain-content-small {
+  width: 95%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.layout--contain-content {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: var(--spacing-xlarge);
+}
+
+.admin .layout--contain-content {
+  min-height: calc(100vh - var(--admin-nav-height));
+}
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+  Inline Block Grid
+
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+ .grid {
+     font-size: 0;
+     position: relative;
+     text-align: left;
+     }
+ .grid__item {
+     display: inline-block;
+     padding: var(--spacing-small);
+     vertical-align: middle;
+
+     &.is-active {
+         opacity: 1;
+         transform: translate3d( 0, 0, 0 );
+         }
+     &.is-inactive {
+         opacity: 0;
+         transform: translate3d( 0, 0, 0 );
+         }
+     }
+
+.column--1of3 { width: 33.33333%; }
+.column--1of4 { width: 25%; }
+.column--2of3 { width: 66.66666%; }
+.column--2of4 { width: 50%; }
+.column--3of4 { width: 75%; }
+.column--1of5 { width: 20%; }
+.column--2of5 { width: 40%; }
+.column--3of5 { width: 60%; }
+.column--4of5 { width: 80%; }
+
+
+/******************************************************************************
+ * Containers
+*******************************************************************************/
+.wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+.expander {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    }
+
+.center-text {
+  text-align: center;
+}
+
+
+/* FLEX-DISPLAY */
+/* display: flex; -- Enables Flex Content for All of a Container's Direct Children */
+.flex-grid {
+  display: flex;
+}
+
+
+/* FLEX GRID SIZE */
+.col {
+  flex: 1;
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+/* FLEX-DIRECTION */
+/* determines the order of how the child elements stack */
+
+/* row: child elements stack left to right in a row */
+.flex--row {
+  flex-direction: row;
+}
+
+/* row-reverse: child elements stack right to left in a row */
+.flex--row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* column: child elements stack top to bottom in a column */
+.flex--column {
+  flex-direction: column;
+}
+
+/* column-reverse: child elements stack bottom to top in a column */
+.flex--column-reverse {
+  flex-direction: column-reverse;
+}
+
+
+
+/* FLEX-WRAP */
+/* allows child elements to wrap as needed */
+
+/* nowrap: default, single line, no wrap */
+.flex--no-wrap {
+  flex-wrap: nowrap;
+}
+
+/* wrap: multi-line, forces children to wrap in the same direction as their flex-direction */
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+/* wrap-reverse: multi-line, forces children to wrap in the opposite direction of their flex-direction */
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+
+
+
+
+/* JUSTIFY-CONTENT */
+/* justifies child elements and determines the distribution of free space */
+
+/* flex-start: child elements packed toward start line */
+.flex--start {
+  justify-content: flex-start;
+}
+
+/* flex-end: child elements packed toward end line */
+.flex--end {
+  justify-content: flex-end;
+}
+
+/* center: child elements are centered */
+.flex--center {
+  justify-content: center;
+}
+
+/* space-between: child elements are evenly distrubted on the line; first item is on the start line, last item is on the end line */
+.flex--space-between {
+  justify-content: space-between;
+}
+
+/* space-around: equal amount of space around each child element*/
+.flex--space-around {
+  justify-content: space-around;
+}
+
+
+
+
+
+/* ALIGN-ITEMS */
+/* defines how the flex items are laid out along the cross axis */
+
+/* flex-start: cross-start margin edge of the items is placed on the cross-start line */
+.flex--align-start {
+  align-items: flex-start;
+}
+
+
+/* center: items are centered in the cross-axis */
+.flex--align-center {
+  align-items: center;
+}
+
+/* baseline: items are aligned such as their baselines align */
+.flex--align-baseline {
+  align-items: baseline;
+}
+
+/* stretch: default, items stretch to fill the container, still respect min-width/max-width)*/
+.flex--align-stretch {
+  align-items: stretch;
+}
+
+
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+  Flex container elements
+
+  — ALIGN-CONTENT
+  — aligns a container's lines when there is extra space in the cross-axis
+
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+/* flex-start: lines are packed to the start of the container */
+.flex--align-content-start {
+  align-content: flex-start;
+}
+
+/* flex-end: lines are packed to the end of the container */
+.flex--align-content-end {
+  align-content: flex-end;
+}
+
+/* center: lines are packed to the center of the container */
+.flex--align-content-center {
+  align-content: center;
+}
+
+/* ----- space-between: lines evenly distributed; first line is at the start, last line is at the end */
+.flex--align-content-space-between {
+  align-content: space-between;
+}
+
+/* ----- space-around: lines evenly distributed; equal space around each line */
+.flex--align-content-space-around {
+  align-content: space-around;
+}
+
+/* ----- stretch: lines stretch to take up the remaining space */
+.flex--align-content-stretch {
+  align-content: stretch;
+}
+
+
+
+
+
+
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+  Flex child elements
+
+  — ALIGN-SELF
+  — allows default alignment to be overridden for individual flex items
+
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+/* flex-start: item aligns at start */
+.flex--align-self-start {
+  align-self: flex-start;
+}
+
+/* flex-end: item aligns at start */
+.flex--align-self-end {
+  align-self: flex-end;
+}
+
+/* center: item aligns at start */
+.flex--align-self-center {
+  align-self: center;
+}
+
+/* baseline: item aligns at baseline */
+.flex--align-self-baseline {
+  align-self: baseline;
+}
+
+/* stretch: item stretches to fill container */
+.flex--align-self-stretch {
+  align-self: stretch;
+}
+
+/* align right */
+.flex--right {
+  margin-left: auto;
+}
+
+/* align left */
+.flex--left {
+  margin-right: auto;
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+  Media Queries
+
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+@media only screen and (max-width: 768px) {
+  .flex-grid {
+    display: block;
+  }
+}

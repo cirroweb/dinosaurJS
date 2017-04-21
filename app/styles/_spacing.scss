@@ -28,6 +28,17 @@
         padding-left: ($space + px);
         }
 
+    .padding-top-bottom--#{$space} {
+      padding-top: ($space + px);
+      padding-bottom: ($space + px);
+    }
+
+
+    .padding-left-right--#{$space} {
+      padding-left: ($space + px);
+      padding-right: ($space + px);
+    }
+
     .top--#{$space} {
         top: ($space + px);
         }
