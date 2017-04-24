@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 1;
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEZJREFUeNpiYBjs4P///w70tOw/OfqY6Bkio5aNWjZq2ahl5AMWaKFKcsEK1NdAopYHdPXZaKk/atmoZaOWjVo2kgBAgAEAfKUTQkAdP+0AAAAASUVORK5CYII=), auto !important;
     &:hover {
       border-bottom: 1px solid $color_white;
     }
