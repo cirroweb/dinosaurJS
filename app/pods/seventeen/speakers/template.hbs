@@ -9,8 +9,8 @@
           {{#if speaker.picture}}{{computed-inline-styles css="background-image: " value=speaker.picture classNames="speaker__image"}}{{else}}<div></div>{{/if}}
         </div>
         <div class="flex-grid box__1 flex--wrap flex--align-stretch">
-          <div class="half extra-small-text padding--50 white-border-right flex-grid flex--column flex--center">
-            <h5>{{speaker.name}}</h5>
+          <div class="half padding--50 white-border-right flex-grid flex--column flex--center">
+            <h5 class="speaker-name">{{speaker.name}}</h5>
             {{#if speaker.twitterLink}}<div><a href={{speaker.twitterLink}} target="_blank">Twitter</a></div>{{/if}}
             {{#if speaker.githubLink}}<div><a href={{speaker.githubLink}} target="_blank">Github</a></div>{{/if}}
           </div>

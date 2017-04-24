@@ -44,14 +44,37 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrkloENhCAMRcEJGKGjMAIjOIIj3CaM4G1wI7jCbeAIXElKjiiIB+ViYpMGg8Dv+2qjEFcI55zCnDDhH2Kj+8bSVRgPnknEYhoaV3ZhstAHkABE9wwVwkNMFs50/fBUmYLGZmHc8PIHbSkLTqSEVUkIaIOK5myK7qSwH01u8RQsTBQAFc/eC+vcgiVYuJk/TXe2kp2FrXRHYjsLu9HlLGSnO7KQna5kIStdyUI2utADKyyHWgvtj3vq6MhCU/lCQTcLm+iof+nGz6X/r0OXnnl7urXU6gYOMSnlG4cn5nQZuoFLLKLT4nbxEWAA4a/rQvlXHjsAAAAASUVORK5CYII=), auto;
 
   .home__full-wrap {
-    height: 100vh;
+    height: 75vh;
+  }
+
+  .speaker-name {
+    margin-bottom: 10px;
+  }
+
+  .home__50 {
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+
+  a,
+  a:hover {
+    color: white;
   }
 
   a:hover, button, a, input, .nav-overlay, .schedule-link {
     cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEZJREFUeNpiYBjs4P///w70tOw/OfqY6Bkio5aNWjZq2ahl5AMWaKFKcsEK1NdAopYHdPXZaKk/atmoZaOWjVo2kgBAgAEAfKUTQkAdP+0AAAAASUVORK5CYII=), auto !important;
   }
 
-  .seventeen h3,
+  .seventeen h3 {
+    font-family: 'GT Walsheim Medium', sans-serif;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 1.4em;
+  }
+
   .seventeen h4 {
     font-family: 'GT Walsheim Medium', sans-serif;
     font-weight: normal;
@@ -67,7 +90,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   }
 
   .home__intro, .home__img, .home__svg {
-    height: 50vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,6 +108,11 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     svg:nth-child(2) {
       transform: translate3d(-30%, -30%, 200px);
     }
+  }
+
+  .home__intro p {
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .home__svg {
@@ -114,25 +142,31 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     color: white;
     text-decoration: none;
 
+    &:hover h4 {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+    }
+
     h4 {
       position: relative;
 
-      &:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -6px;
-        height: 1px;
-        width: 0%;
-        background-color: #cccccc;
-        transition: all 0.4s ease;
-      }
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   right: 0;
+      //   bottom: -6px;
+      //   height: 1px;
+      //   width: 0%;
+      //   background-color: #cccccc;
+      //   transition: all 0.4s ease;
+      // }
 
-      &:hover:after {
-        right: auto;
-        left: 0;
-        width: 100%;
-      }
+      // &:hover:after {
+      //   right: auto;
+      //   left: 0;
+      //   width: 100%;
+      // }
     }
   }
 
@@ -145,12 +179,54 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     border-radius: 0;
     text-decoration: none;
     color: $color_white;
-    border-bottom: none;
+    border-bottom: 1px solid white;
+    font-size: 1em;
     &:hover {
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
       background-color: $color_dark_blue;
-      border-bottom: none;
-      border-left: 1px solid $color_white;
     }
+  }
+
+  .sponsors {
+    height: 75vh;
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .sponsors__square {
+    height: 37.5vh;
+    width: 100%;
+    border-left: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & > div {
+      height: 18.75vh;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-bottom: 1px solid white;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4) {
+        border-left: 1px solid white;
+      }
+    }
+
+  }
+
+  .sponsor__logo img {
+    max-width: 190px;
+    max-height: 90px;
   }
 
 }
@@ -171,8 +247,8 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   border-top: 1px solid $color_white;
 }
 
-seventeen * {
-  font-family: 'Lab Mono', monospace;
+seventeen {
+  font-family: 'GT Walsheim Regular', sans-serif;
   font-weight: normal;
   font-size: 1.7vw;
   line-height: 1.9;
@@ -286,12 +362,15 @@ seventeen * {
 .grid-box-50 {
   top: 0;
   left: 0;
-  height: 50vh;
+  height: 75vh;
   position: absolute;
   background-color: $color_dark_blue;
   width: 50vw;
   transform-style: preserve-3d;
   transform: translateZ(-300px);
+  // background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 76%, transparent 77%, transparent);
+  // background-size: 9.3vw 9.7vw;
+  // background-position: center;
 }
 
 .box {
@@ -344,7 +423,7 @@ seventeen * {
 
 .mouse-pos {
   position: fixed;
-  font-family: 'Lab Mono', monospace;
+  font-family: 'GT Walsheim Regular', sans-serif;
   line-hight: 1.5;
   font-size: 11px;
   left: 10px;
@@ -363,7 +442,7 @@ seventeen * {
 }
 
 .-font-alt {
-  font-family: 'Lab Mono', monospace;
+  font-family: 'GT Walsheim Regular', sans-serif;
   font-weight: normal;
 }
 
@@ -406,7 +485,7 @@ seventeen * {
 
 
 .what {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   line-height: 1.6;
   color: black;
   padding: 10vh 10vw 10vh 40vw;
@@ -448,7 +527,7 @@ seventeen * {
 }
 
 .info-17 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   line-height: 2.2;
 }
 
@@ -458,14 +537,15 @@ seventeen * {
 
 .seventeen input[type=text],
 .seventeen .mc-field-group input {
-  font-family: 'Lab Mono', monospace;
+  font-family: 'GT Walsheim Regular', sans-serif;
   // border-bottom: 1px solid #373B5D;
   color: $color_white;
   font-size: 1em;
 }
 
 .seventeen input {
-  font-family: 'Lab Mono', monospace;
+  font-family: 'GT Walsheim Regular', sans-serif;
+  font-size: 1em;
 }
 
 .seventeen .form-elements {
@@ -549,6 +629,16 @@ seventeen * {
       width: 100%;
     }
 
+    .kit {
+      width: 100%;
+      border-bottom: 0;
+    }
+
+    .sponsors {
+      width: 100%;
+      border-top: 1px solid white;
+    }
+
     .home__svg {
        svg {
         width: 283px;
@@ -560,12 +650,27 @@ seventeen * {
 
 @media ( max-width: $break_tablet_small ) {
   .seventeen {
+
+    form {
+      border-top: 1px solid white;
+    }
+
+    .seventeen input {
+      border-left: 0 !important;
+    }
+
+    a.home__h4,
     .home__h4 {
       text-align: center;
+      height: 25vmax;
     }
 
     .padding--100 {
       padding: 50px;
     }
+  }
+
+  .seventeen .home__intro, .seventeen .home__img, .seventeen .home__svg, .grid-box-50 {
+    height: 75vmax;
   }
 }

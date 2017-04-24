@@ -29,6 +29,7 @@
     transition: 400ms transform;
     transform: translateX(100%);
     z-index: 999;
+    overflow-y: scroll;
     &.showing {
       transform: translateX(0%);
     }
@@ -41,6 +42,10 @@
     bottom: 0;
     width: 50%;
     opacity: 0;
+  }
+
+  .buy-tix {
+    width: 100%;
   }
 
   .seventeen-menu-sidebar__item-wrap {
@@ -62,19 +67,20 @@
       opacity: 1;
       &:before {
         content: '';
-        height: 25px;
-        width: 15px;
-        background-color: $color_white;
+        height: 23px;
+        width: 13px;
+        background-color: #FFFFFF;
         position: absolute;
-        left: 7vw;
-        top: 26px;
+        left: 40px;
+        top: 30px;
         animation:flashing 1s step-end infinite
       }
     }
   }
 
   .seventeen-menu-sidebar__item-wrap h3 {
-    padding-left: 10vw;
+    padding-left: 70px;
+    font-size: 30px !important;
   }
 }
 
@@ -101,11 +107,16 @@
     .top-menu > div:nth-child(2) {
       width: 100%;
       order: 2;
+      border-left: 0;
     }
 
     .top-menu > div:nth-child(3) {
       width: 30%;
       order: 1;
+    }
+
+    .seventeen-menu-box {
+      height: 22vmax;
     }
   }
 }

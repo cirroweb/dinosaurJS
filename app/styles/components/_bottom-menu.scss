@@ -1,6 +1,10 @@
 .seventeen {
   .bottom-menu {
     overflow: hidden;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .bottom-menu a {
