@@ -27,15 +27,35 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 
 }
 
+.mover .grid-box-50 > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 .seventeen {
   background: $color_dark_blue;
   color: $color_white;
-  font-size: 1.7vw;
+  font-size: 16px;
   line-height: 1.8;
-  font-family: 'Lab Mono', monospace;
+  // font-family: 'Lab Mono', monospace;
+  font-family: 'GT Walsheim Regular', sans-serif;
   font-weight: normal;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrkloENhCAMRcEJGKGjMAIjOIIj3CaM4G1wI7jCbeAIXElKjiiIB+ViYpMGg8Dv+2qjEFcI55zCnDDhH2Kj+8bSVRgPnknEYhoaV3ZhstAHkABE9wwVwkNMFs50/fBUmYLGZmHc8PIHbSkLTqSEVUkIaIOK5myK7qSwH01u8RQsTBQAFc/eC+vcgiVYuJk/TXe2kp2FrXRHYjsLu9HlLGSnO7KQna5kIStdyUI2utADKyyHWgvtj3vq6MhCU/lCQTcLm+iof+nGz6X/r0OXnnl7urXU6gYOMSnlG4cn5nQZuoFLLKLT4nbxEWAA4a/rQvlXHjsAAAAASUVORK5CYII=), auto;
+
   .home__full-wrap {
     height: 100vh;
+  }
+
+  a:hover, button, a, input, .nav-overlay, .schedule-link {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEZJREFUeNpiYBjs4P///w70tOw/OfqY6Bkio5aNWjZq2ahl5AMWaKFKcsEK1NdAopYHdPXZaKk/atmoZaOWjVo2kgBAgAEAfKUTQkAdP+0AAAAASUVORK5CYII=), auto !important;
+  }
+
+  .seventeen h3,
+  .seventeen h4 {
+    font-family: 'GT Walsheim Medium', sans-serif;
+    font-weight: normal;
+    margin-bottom: 0;
   }
 
   .home__half-wrap {
@@ -51,15 +71,19 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     svg {
-      width: 90%;
-      max-height: 90%;
+      width: 15vw;
+      height: 13vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
     }
     svg:nth-child(1) {
-      transform: translate3d(50px, 100px, 300px);
+      transform: translate3d(-70%, -70%, 400px);
     }
     svg:nth-child(2) {
-      transform: translate3d(-50px, -100px, 100px);
+      transform: translate3d(-30%, -30%, 200px);
     }
   }
 
@@ -67,6 +91,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     text-align: center;
     position: relative;
     background-color: $color_nav;
+    perspective: 1500px;
   }
 
   .home__h4 {
@@ -75,6 +100,40 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  a.home__h4 {
+    margin: 0;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
+    h4 {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        height: 1px;
+        width: 0%;
+        background-color: #cccccc;
+        transition: all 0.4s ease;
+      }
+
+      &:hover:after {
+        right: auto;
+        left: 0;
+        width: 100%;
+      }
+    }
   }
 
   .home__input, .home__button {
@@ -132,6 +191,10 @@ seventeen * {
 //   color: #373B5D;
 // }
 
+.seventeen .small-text {
+  font-size: 1em;
+}
+
 .container {
   position: relative;
   padding: 25vh 0;
@@ -151,6 +214,7 @@ seventeen * {
   width: 100%;
   transform-style: preserve-3d;
   transform: translateZ(0px);
+  pointer-events: none;
 }
 
 .wrap-17 {
@@ -224,9 +288,10 @@ seventeen * {
   left: 0;
   height: 50vh;
   position: absolute;
-  border: 1px solid $color_white;
   background-color: $color_dark_blue;
   width: 50vw;
+  transform-style: preserve-3d;
+  transform: translateZ(-300px);
 }
 
 .box {
