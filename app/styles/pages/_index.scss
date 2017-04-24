@@ -286,6 +286,7 @@ seventeen {
   position: absolute;
   left: 0;
   top: 0;
+  bottom: 0;
   height: auto;
   width: 100%;
   transform-style: preserve-3d;
@@ -360,6 +361,7 @@ seventeen {
 }
 
 .grid-box-50 {
+  bottom: 0;
   top: 0;
   left: 0;
   height: 75vh;
@@ -641,8 +643,8 @@ seventeen {
 
     .home__svg {
        svg {
-        width: 283px;
-        height: 223px;
+        width: 26vw;
+        height: 22vw;
       }
     }
   }

@@ -41,7 +41,6 @@ export default PixiCanvas.extend({
            PIXI.loader.resources = {};
            PIXI.loader.add("image", 'assets/steve.jpg').load(setup);
            scrollingImage =  new PIXI.extras.TilingSprite(PIXI.loader.resources.image.texture, 800, 600);
-           console.log('boom');
         }
       });
     };

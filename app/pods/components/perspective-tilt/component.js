@@ -1,13 +1,10 @@
 import Ember from 'ember';
 import TweenLite from 'tweenlite';
+import DeviceOrientationAware from 'ember-orientation/mixins/device-orientation-aware';
 
-const { Component, $, on, run: { scheduleOnce } } = Ember;
+const { Component } = Ember;
 
-export default Ember.Component.extend({
-  initializeMotionTilt: function() {
-    scheduleOnce('afterRender', this, this.registerDeviceTilt);
-  }.on('init'),
-
+export default Component.extend(DeviceOrientationAware, {
   mouseMove(event) {
     this.tilt(event);
   },
@@ -22,10 +19,11 @@ export default Ember.Component.extend({
       this.calcAndApplyTilt(tiltx, tilty, 1);
   },
 
-  registerDeviceTilt() { 
-    if (window.DeviceOrientationEvent && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      window.addEventListener("deviceorientation", this.deviceTilt.bind(this));
-    }
+  didTilt(evt) {
+    let { beta, gamma } = evt;
+    const clampedGamma = this.clampNumber(gamma, -50, 40)/2;
+    const clampedBeta  = this.clampNumber((beta - 30), -40, 40)/2;
+     TweenLite.set(".mover", {transform: `rotateY(${-clampedGamma}deg) rotateX(${-clampedBeta}deg) rotateZ(${- 180}deg)`, ease: 'linear'});
   },
 
   calcAndApplyTilt(x, y, exaggerate) {
@@ -34,15 +32,7 @@ export default Ember.Component.extend({
     TweenLite.set(".mover", {transform:'rotate3d(' + x + ', ' + y + ', 0, ' + degree + 'deg)'});
   },
 
-  deviceTilt(e) {
-    if(e.alpha && e.beta && e.gamma) {
-      // const tilt = {x: (e.beta /100), y: (-e.gamma/100) };
-      const tiltx = (((Math.abs(e.beta) - 50) * 2) / 100);
-      // const tiltx = (e.beta /100);
-      const tilty = (-e.gamma/100);
-      // const tilty = (((Math.abs(e.gamma) - 50) * 2) / 100);
-      this.calcAndApplyTilt(tiltx, tilty, .5);
-    }
+  clampNumber(number, min, max) {
+    return number <= min ? min : number >= max ? max : number;
   }
-
 });
