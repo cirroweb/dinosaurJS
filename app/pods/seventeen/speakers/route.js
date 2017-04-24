@@ -69,6 +69,6 @@ export default Route.extend({
         bio: "Franziska has a Ph.D. in mathematics and is a software engineer on Google’s V8 team. She's an expert on ES6 performance and a Node.js core collaborator. When she's not working hard on making JavaScript and Node faster, she's out horseback riding.",
         specialClasses: ""
       },
-    ]))
+    ]));
   }
 });

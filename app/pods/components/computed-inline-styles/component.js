@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const { 'String': { htmlSafe } } = Ember;
+const { 'String': { HtmlSafe } } = Ember;
 
 const { Component, computed, 'computed': { bool } } = Ember;
 
@@ -31,7 +31,7 @@ export default Component.extend({
       const units = property.units ? property.units : '';
       styleString += `${property.css}${property.value}${units}; `;
     });
-    return new htmlSafe(styleString);
+    return new HtmlSafe(styleString);
   },
 
   // Apply single styling to component from value, css and units(optional) property
@@ -40,6 +40,6 @@ export default Component.extend({
     const value = this.get('value');
     const units = this.get('units') ? this.get('units') : '';
 
-    return new htmlSafe(`${css}${value}${units};`);
+    return new HtmlSafe(`${css}${value}${units};`);
   }
 });
