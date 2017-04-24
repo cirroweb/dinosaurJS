@@ -13,7 +13,7 @@ module.exports = function(defaults) {
 
   switch (env) {
     case 'development':
-      fingerprintOptions.prepend = 'http://localhost:4200/';
+      fingerprintOptions.prepend = 'http://10.1.10.106:4200/';
     break;
     case 'staging':
       fingerprintOptions.prepend = process.env['S3_PROD_URL'];

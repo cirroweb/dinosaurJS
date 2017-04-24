@@ -8,23 +8,25 @@ export default Component.extend({
   seconds: undefined,
 
   timeTilDino() {
-    let diff = new Date("June 24, 2016 09:00:00") - new Date(); // Event time - time right now
+    if(!this.get('isDestroyed') && !this.get('isDestroying')) {
+      let diff = new Date("June 24, 2016 09:00:00") - new Date(); // Event time - time right now
 
-    let days       = Math.floor(diff / 86400000),
-        daysToInMs = days * 86400000;
+      let days       = Math.floor(diff / 86400000),
+          daysToInMs = days * 86400000;
 
-    let hours     = Math.floor((diff - daysToInMs ) / 3600000),
-        hrsToInMs = hours * 3600000;
+      let hours     = Math.floor((diff - daysToInMs ) / 3600000),
+          hrsToInMs = hours * 3600000;
 
-    let minutes    = Math.floor((diff - (daysToInMs + hrsToInMs)) / 60000),
-        minsToInMs = minutes * 60000;
+      let minutes    = Math.floor((diff - (daysToInMs + hrsToInMs)) / 60000),
+          minsToInMs = minutes * 60000;
 
-    let seconds = Math.floor( (diff - (daysToInMs + hrsToInMs + minsToInMs)) / 1000 );
+      let seconds = Math.floor( (diff - (daysToInMs + hrsToInMs + minsToInMs)) / 1000 );
 
-    this.set('days'    , days);
-    this.set('hours'   , hours);
-    this.set('minutes' , minutes);
-    this.set('seconds' , seconds);
+      this.set('days'    , days);
+      this.set('hours'   , hours);
+      this.set('minutes' , minutes);
+      this.set('seconds' , seconds);
+    }
   },
 
   scheduleTimer: function () {
