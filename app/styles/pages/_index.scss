@@ -45,6 +45,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 
   .home__full-wrap {
     height: 75vh;
+    overflow: hidden;
   }
 
   .speaker-name {
@@ -120,6 +121,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     position: relative;
     background-color: $color_nav;
     perspective: 1500px;
+    pointer-events: none;
   }
 
   .home__h4 {
@@ -292,6 +294,7 @@ seventeen {
   transform-style: preserve-3d;
   transform: translateZ(0px);
   pointer-events: none;
+  z-index: -1;
 }
 
 .wrap-17 {
@@ -620,6 +623,12 @@ seventeen {
   height: 40vh;
 }
 
+.grid-box-50,
+.grid-box-50 *,
+.seventeen .home__svg{
+  pointer-events: none;
+}
+
 
 @media ( max-width: $break_tablet_medium ) {
   .seventeen {
@@ -627,6 +636,30 @@ seventeen {
       height: auto;
       display:block;
     }
+
+    .home__button {
+      border-left: 0 !important;
+      border-bottom: 0;
+      border-top: 1px solid white;
+    }
+
+    form {
+      border-bottom: 1px solid white;
+    }
+
+    .sponsor__logo img {
+      max-width: 90px;
+      max-height: 50px;
+    }
+
+    .sponsor__logo a {
+      display: block;
+    }
+
+    .sponsors__square {
+      border-left: 0;
+    }
+
     .home__intro, .home__img, .home__h4, .home__svg, .grid-box-50, .home__input, .home__button, form {
       width: 100%;
     }
@@ -639,22 +672,53 @@ seventeen {
     .sponsors {
       width: 100%;
       border-top: 1px solid white;
+      transform: translateZ(5000px);
     }
 
     .home__svg {
        svg {
-        width: 26vw;
-        height: 22vw;
+        width: 26vmax;
+        height: 22vmax;
       }
     }
   }
+
+  a:hover, button, a, input, .nav-overlay, .schedule-link,
+  .seventeen a:hover, .seventeen button, .seventeen a, .seventeen input, .seventeen .nav-overlay, .seventeen .schedule-link {
+    cursor: pointer !important;
+  }
+
+  a.home__h4 {
+    cursor: pointer;
+    transform: translateZ(5000px);
+    &:hover h4 {
+      cursor: pointer !important;
+      -webkit-text-fill-color: initial !important;
+      -webkit-text-stroke-width: initial !important;
+      -webkit-text-stroke-color: 0 !important;
+    }
+  }
+
+  [data-ember-action] {
+    cursor: pointer !important;
+  }
+
+  [data-ember-action], a, .link {
+    cursor: pointer !important;
+  }
+
 }
 
 @media ( max-width: $break_tablet_small ) {
+  .seventeen .home__svg {
+    background: transparent;
+  }
+
   .seventeen {
 
     form {
       border-top: 1px solid white;
+      transform: translateZ(5000px);
     }
 
     .seventeen input {
@@ -667,9 +731,19 @@ seventeen {
       height: 25vmax;
     }
 
+    a.home__h4 {
+      cursor: pointer !important;
+      position: relative;
+      z-index: 2000;
+    }
+
     .padding--100 {
       padding: 50px;
     }
+  }
+
+  .seventeen .home__svg {
+    border-left: 0;
   }
 
   .seventeen .home__intro, .seventeen .home__img, .seventeen .home__svg, .grid-box-50 {

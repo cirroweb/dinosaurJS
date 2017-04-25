@@ -22,7 +22,10 @@ module.exports = function(environment) {
 
   ENV.contentSecurityPolicy = {
     'default-src': "'none'",
-    'font-src': "'self' https://s3-us-west-2.amazonaws.com/ http://www.dinosaurjs.com.s3.amazonaws.com/dinosaurJS/"
+    'font-src': ["'self'", "https://s3-us-west-2.amazonaws.com", "https://s3-us-west-2.amazonaws.com/assets/fonts", "http://www.dinosaurjs.com.s3.amazonaws.com/dinosaurJS/", "https://dinosaurjs.org"],
+    'style-src': "'self' 'unsafe-inline'",
+    'media-src': "'self'"
+    // 'font-src': "'self' https://s3-us-west-2.amazonaws.com/ http://www.dinosaurjs.com.s3.amazonaws.com/dinosaurJS/ https://dinosaurjs.org"
   };
 
   if (environment === 'development') {

@@ -20,13 +20,17 @@
     .bottom-menu {
       flex-wrap: wrap;
       display: flex;
+      height: auto;
     }
     .bottom-menu > a {
       display: block;
       width: 33.3%;
+      padding: 40px 10px;
+      height: 16vmax;
     }
     .bottom-menu > a:nth-child(-n+3) {
       border-bottom: 1px solid $color_white;
     }
   }
+
 }
