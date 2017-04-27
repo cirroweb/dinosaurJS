@@ -11,7 +11,16 @@ export default Route.extend({
         twitterLink: "https://twitter.com/tomdale?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
         githubLink: "https://github.com/tomdale",
         linkedInLink: "https://www.linkedin.com/in/tommothereffindale",
-        bio: "Tom is a member of the Ember Core Team. He's a former Apple engineer who first gained expert front-end JavaScript skills working on MobileMe and iCloud.",
+        bio: "Tom helped create Ember.js and was doing big JavaScript apps before it was cool. He works at LinkedIn, where he builds open source tools to help developers of all experience levels craft web applications that load fast and feel great.",
+        specialClasses: ""
+      },
+      {
+        picture: "url(https://avatars2.githubusercontent.com/u/1369170?v=3&s=400)",
+        name: "Monica Dinculescu",
+        twitterLink: "https://twitter.com/notwaldorf",
+        githubLink: "https://github.com/notwaldorf",
+        linkedInLink: "",
+        bio: "Monica is an emojineer at Google. She works on Polymer, web components and Chrome, and has probably at least once broken the Internet for you. She is unreasonably excited about emoji, wary of web fonts, and will become your best friend if you bring her cheese. On second thought, she may be a mouse.",
         specialClasses: ""
       },
       {
