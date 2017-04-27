@@ -6,6 +6,15 @@ export default Route.extend({
   setupController(controller) {
     controller.set('speakers', A([
       {
+        picture: "url(https://avatars0.githubusercontent.com/u/90888?v=3&s=400)",
+        name: "Tom Dale",
+        twitterLink: "https://twitter.com/tomdale?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+        githubLink: "https://github.com/tomdale",
+        linkedInLink: "https://www.linkedin.com/in/tommothereffindale",
+        bio: "Tom is a member of the Ember Core Team. He's a former Apple engineer who first gained expert front-end JavaScript skills working on MobileMe and iCloud.",
+        specialClasses: ""
+      },
+      {
         picture: "url(https://pbs.twimg.com/profile_images/795006322450300928/gsDDaLau.jpg)",
         name: "Kassandra Perch, a.k.a. the Nodebotanist",
         twitterLink: "https://twitter.com/nodebotanist",
@@ -21,15 +30,6 @@ export default Route.extend({
         githubLink: "https://github.com/brittanystoroz",
         linkedInLink: "",
         bio: "Brittany Storoz is an instructor for the frontend program at the Turing School of Software and Design. She has spoken at conferences and has worked at Mozilla and the  New York Times.",
-        specialClasses: ""
-      },
-      {
-        picture: "url(https://avatars0.githubusercontent.com/u/90888?v=3&s=400)",
-        name: "Tom Dale",
-        twitterLink: "https://twitter.com/tomdale?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-        githubLink: "https://github.com/tomdale",
-        linkedInLink: "https://www.linkedin.com/in/tommothereffindale",
-        bio: "Tom is a member of the Ember Core Team. He's a former Apple engineer who first gained expert front-end JavaScript skills working on MobileMe and iCloud.",
         specialClasses: ""
       },
       {
