@@ -58,6 +58,10 @@
   .speaker__card {
     width: 100%;
   }
+
+  .speakers .white-border-left {
+    border-left: 0;
+  }
 }
 
 @media ( max-width: $break_tablet_small ) {
