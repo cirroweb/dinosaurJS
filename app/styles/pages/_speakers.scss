@@ -3,6 +3,13 @@
     background-color: $color_redorange;
   }
 
+  h6 {
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 1.3em;
+    line-height: 1.5;
+  }
+
   .speaker__card {
     text-align: center;
     a {
@@ -32,6 +39,15 @@
 
 .half {
   width: 50%;
+}
+
+.speaker__bio-info {
+  border-bottom: 1px solid;
+  width: 100%;
+
+  &:last-child {
+    border: 0;
+  }
 }
 
 @media ( max-width: $break_tablet_medium ) {

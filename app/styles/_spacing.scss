@@ -28,6 +28,10 @@
         padding-left: ($space + px);
         }
 
+    .padding-small {
+      padding: 20px;
+      }
+
     .padding-top-bottom--#{$space} {
       padding-top: ($space + px);
       padding-bottom: ($space + px);

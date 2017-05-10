@@ -14,7 +14,23 @@
             {{#if speaker.twitterLink}}<div><a href={{speaker.twitterLink}} target="_blank">Twitter</a></div>{{/if}}
             {{#if speaker.githubLink}}<div><a href={{speaker.githubLink}} target="_blank">Github</a></div>{{/if}}
           </div>
-          <div class="speaker__bio half extra-small-text padding--50 flex--align-center flex--center">{{speaker.bio}}</div>
+          <div class="speaker__bio half flex-grid flex--wrap flex--column extra-small-text flex--align-center">
+            <div class="speaker__bio-info padding-small">
+              <div>{{speaker.type}}</div>
+            </div>
+            {{#if speaker.isKeynote}}
+              <div class="speaker__bio-info flex-grid flex--center padding-small">
+                <div>{{speaker.bio}}</div>
+              </div>
+            {{else}}
+              <div class="speaker__bio-info flex-grid flex--center padding-small">
+                <div>{{speaker.talkName}}</div>
+              </div>
+              <div class="speaker__bio-info flex-grid flex--center padding-small">
+                <div>{{speaker.talkAbstract}}</div>
+              </div>
+            {{/if}}
+          </div>
         </div>
       </div>
     {{/each}}
