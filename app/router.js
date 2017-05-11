@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('seventeen', { path: '/' }, function() {
     this.route('speakers');
     this.route('attend');
+    this.route('team');
   });
 });
 

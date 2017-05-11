@@ -9,24 +9,24 @@
           {{#if speaker.picture}}{{computed-inline-styles css="background-image: " value=speaker.picture classNames="speaker__image"}}{{else}}<div></div>{{/if}}
         </div>
         <div class="flex-grid box__1 flex--wrap flex--align-stretch">
-          <div class="half padding--50 white-border-right flex-grid flex--column flex--center">
+          <div class="half padding--50 white-border-right flex-grid flex--column -text--left">
             <h5 class="speaker-name">{{speaker.name}}</h5>
             {{#if speaker.twitterLink}}<div><a href={{speaker.twitterLink}} target="_blank">Twitter</a></div>{{/if}}
             {{#if speaker.githubLink}}<div><a href={{speaker.githubLink}} target="_blank">Github</a></div>{{/if}}
           </div>
-          <div class="speaker__bio half flex-grid flex--wrap flex--column extra-small-text flex--align-center">
+          <div class="speaker__bio half flex-grid flex--wrap flex--column extra-small-text flex--align-center -text--left">
             <div class="speaker__bio-info padding-small">
               <div>{{speaker.type}}</div>
             </div>
             {{#if speaker.isKeynote}}
-              <div class="speaker__bio-info flex-grid flex--center padding-small">
+              <div class="speaker__bio-info flex-grid padding-small">
                 <div>{{speaker.bio}}</div>
               </div>
             {{else}}
-              <div class="speaker__bio-info flex-grid flex--center padding-small">
+              <div class="speaker__bio-info flex-grid padding-small">
                 <div>{{speaker.talkName}}</div>
               </div>
-              <div class="speaker__bio-info flex-grid flex--center padding-small">
+              <div class="speaker__bio-info flex-grid padding-small">
                 <div>{{speaker.talkAbstract}}</div>
               </div>
             {{/if}}
