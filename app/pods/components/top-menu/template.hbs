@@ -26,8 +26,10 @@
     {{#link-to 'seventeen.speakers' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
       Speakers
     {{/link-to}}
-    <h3><strike>Schedule</strike></h3>
-    <h3><strike>Attend</strike></h3>
+    {{#link-to 'seventeen.attend' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
+      Attend
+    {{/link-to}}
+    <h3><strike>Schedule — Coming Soon</strike></h3>
     <h3><strike>Team</strike></h3>
   </div>
 </div>

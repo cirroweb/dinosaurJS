@@ -43,6 +43,7 @@
     "ember-data": "2.12.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
+    "ember-g-map": "0.0.25",
     "ember-gestures": "0.4.4",
     "ember-getowner-polyfill": "1.2.3",
     "ember-hammertime": "1.1.2",
@@ -54,6 +55,7 @@
     "ember-route-action-helper": "^2.0.2",
     "ember-scroll-to": "0.5.1",
     "ember-tweenlite": "1.0.1",
+    "ember-webcam": "0.0.4",
     "liquid-fire": "^0.27.2",
     "loader.js": "^4.0.0"
   },

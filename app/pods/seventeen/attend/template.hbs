@@ -3,18 +3,62 @@
     Attend
   </div>
   <a href="https://ti.to/dinosaurjs/2017" class="buy-tix home__h4 white-border-bottom column--2of4"><h4>Purchase Tickets</h4></a>
-  <div class="attend__wrap flex-grid flex--wrap">
-    <div class="flex-grid">
-      <div class="column--2of4 small-text padding--100 white-border-bottom">
-        <p class="-text--center">
-          Location
-        </p>
+  <div class="attend__wrap">
+    <div class="flex-grid flex--wrap">
+      <div class="column--2of4 small-text white-border-bottom flex-content--middle -text--center padding-small">
+          Space Gallery<br/>
+          400 Santa Fe Dr. <br>
+          Denver, CO 80204
       </div>
 
-      <div class="white-border-bottom white-border-left column--2of4">
-        map
+      <div class="location-map white-border-bottom white-border-left column--2of4">
+        {{#g-map lat=39.7228787 lng=-104.9983911 zoom=14 as |context|}}
+          {{g-map-address-marker context address="Space Gallery Denver, Colorado"}}
+        {{/g-map}}
       </div>
     </div>
+
+    <div class="padding--50 center-text white-border-bottom">
+      Where to Stay
+    </div>
+
+    <div class="lodging flex-grid flex-wrap white-border-bottom">
+      <div class="small-text -text--center flex-grid">
+            <div class="lodging-info padding-small flex-content--middle">
+              <div>
+                <h6>Airbnb</h6>
+                <a href="https://www.airbnb.com/s/denver-co/homes?checkin=2017-06-14&checkout=2017-06-18&ne_lat=39.73362627160784&ne_lng=-104.9801570841903&search_by_map=true&sw_lat=39.70728520768961&sw_lng=-105.00290221663658&zoom=15&allow_override%5B%5D=&s_tag=TELHJbD3" target="_blank">Search the Area  ↗</a>
+              </div>
+            </div>
+            <div class="lodging-info padding-small white-border-left flex-content--middle">
+              <div>
+                <h6>Marriott TownePlace Suites Denver Downtown</h6>
+                <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Dinosaur%20JS%5EDENCB%60D0CD0CA%60170.00%60USD%60false%604%606/14/17%606/18/17%605/24/17&app=resvlink&stop_mobi=yes" target="_blank">Discounted Rates  ↗</a>
+              </div>
+            </div>
+      </div>
+    </div>
+
+
+    <div class="sponsors">
+      <div class="white-border-left sponsors__square">Sponsors</div>
+
+      <div class="sponsors__square flex--wrap flex-grid">
+        <div class="sponsor__logo">
+          <a href="https://developer.microsoft.com/en-us/" target="_blank"><img src="Microsoft_logo.svg"/></a>
+        </div>
+        <div class="sponsor__logo">
+          <a href="https://www.ca.com/us.html" target="_blank"><img src="CA_logo.svg"/></a>
+        </div>
+        <div class="sponsor__logo">
+          <a href="http://wearecirro.com" target="_blank"><img src="cirro.svg"/></a>
+        </div>
+        <div class="sponsor__logo">
+          <a href="mailto:roar@dinosaurjs.org">Become a sponsor</a>
+        </div>
+      </div>
+    </div>
+
   </div>
   {{outlet}}
 </div>

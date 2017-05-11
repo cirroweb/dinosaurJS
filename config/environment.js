@@ -20,6 +20,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['g-map'] = {
+    libraries: ['places'],
+    key: 'AIzaSyBXMxjY-IT-ElZsnfV8HjMBGk4Oilyi858',
+    protocol: 'https'
+  };
+
   ENV.contentSecurityPolicy = {
     'default-src': "'none'",
     'font-src': "'self' https://s3-us-west-2.amazonaws.com/ http://www.dinosaurjs.com.s3.amazonaws.com/dinosaurJS/"
