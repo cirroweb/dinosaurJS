@@ -42,10 +42,14 @@
     width: 100%;
   }
 
+  .lodging {
+    height: auto;
+  }
+
   .lodging-info {
     width: 100%;
     width: 100vw;
-    height: 25vh;
+    height: 50vmax;
     &:first-child {
       border-bottom: 1px solid;
     }
