@@ -702,6 +702,10 @@ seventeen {
       order: 2;
     }
 
+    .team-profile-pic {
+      transform: translate3d(-50%, -50%, 200px) rotate(180deg);
+    }
+
     .seventeen .team  .home__full-wrap, .seventeen .team .home__half-wrap {
       display: flex
     }
