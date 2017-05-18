@@ -32,58 +32,6 @@ export default Route.extend({
         specialClasses: ""
       },
       {
-        picture: "url(assets/kassandra.jpg)",
-        name: "Kassandra Perch, a.k.a. the Nodebotanist",
-        talkName: "IoT.js",
-        talkAbstract: "You’ve seen NodeBots, but how do you build systems with NodeBots? What systems would you build? In this workshop, we’ll take a deeper dive into NodeBots (but we’ll cover the basics in case you’re new or it’s been awhile)– we’ll talk about why serverless and IoT are best buddies, and discuss why and how you’d build a system of NodeBots devices.",
-        twitterLink: "https://twitter.com/nodebotanist",
-        githubLink: "https://github.com/nodebotanist",
-        linkedInLink: "",
-        type: "Workshop",
-        isKeynote: false,
-        bio: "Kassandra is a Developer Relations Engineer at IOpipe by day, and a new longboarder and Electrical Engineering student by night. They like to build NodeBots and snuggle cats in their ATX home when not out doing those things.",
-      specialClasses: ""
-      },
-      {
-        picture: "url(assets/brittany.jpg)",
-        name: "Brittany Storoz",
-        talkName: "Finding & Fixing All The Broken Things: An Uncomfortably Close Look at Chrome Developer Tools",
-        talkAbstract: "Let’s be real. Code is broken way more often than it’s working. That’s why we have dev tools. But how useful they are is entirely dependent on how well we understand them. In this workshop we’ll take a look at some of the more advanced features of Chrome Canary’s developer tools. We’ll explore some of the lesser known functionality, play around with experimental features, and learn how extending dev tools can help us better understand our applications.",
-        twitterLink: "https://twitter.com/@brittanystoroz",
-        githubLink: "https://github.com/brittanystoroz",
-        linkedInLink: "",
-        type: "Workshop",
-        isKeynote: false,
-        bio: "Brittany Storoz is an instructor for the frontend program at the Turing School of Software and Design. She has spoken at conferences and has worked at Mozilla and the  New York Times.",
-        specialClasses: ""
-      },
-      {
-        picture: "url(assets/marla.jpg)",
-        name: "Marla Brizel",
-        talkName: "ClojureScript for JavaScript Developers ",
-        talkAbstract: "Tired of fighting with state? (Don’t worry, we all are.) Are you interested in learning the ins and outs of functional programming? Want to learn a new language to expand your horizons? Come learn how to write for the browser using ClojureScript—a Lisp-inspired language that compiles down to JavaScript and offers interoperability with browser APIs and existing client-side libraries. In this workshop, you’ll learn how to write useful code in a functional language and how to apply these same concepts to your vanilla JavaScript.",
-        twitterLink: "https://twitter.com/@brittanystoroz",
-        githubLink: "https://github.com/brittanystoroz",
-        linkedInLink: "",
-        type: "Workshop",
-        isKeynote: false,
-        bio: "Marla Brizel is a software developer at Democracy Works where she works on various initiatives to ensure that no voter should ever have to miss an election. She also helps curate the session lineup for Denver Startup Week and is an expert in agile development practices. She spends as much time as she possibly can skiing and trail running in the mountains.",
-        specialClasses: ""
-      },
-      {
-        picture: "url(assets/rachelw.jpg)",
-        name: "Rachel White",
-        talkName: "Machine Learning Made Easy",
-        talkAbstract: "If you’ve ever wondered what cat you would be, you’re in luck. Using Microsoft’s Cognitive services Emotion Analysis API, we’ll build a quick and easy to use node application that will analyze your selfies and let you know what purrfect feline suits your mood. Don’t like cats? That’s cool, swap out for your animal of choice.",
-        twitterLink: "https://twitter.com/ohhoe",
-        githubLink: "https://github.com/rachelnicole",
-        linkedInLink: "",
-        type: "Workshop",
-        isKeynote: false,
-        bio: "Rachel White is a technologist, artist, and pretend-cyborg who is currently a Tech Evangelist at Microsoft. She is interested in new uses for old hardware, useless robots, VR/AR/MR, and bots. she has spoken internationally about JavaScript Robotics, Twitter Bots, and browser based Video Games. Rachel is currently working on multiple video game projects, a VR cat cafe, and thinking about what IoT devices she can build for her two black cats. Her other interests include glitch art, 80â€™s horror, and indie games. Her aesthetic is fog machines, laser lights, and broken VHS tapes.",
-        specialClasses: ""
-      },
-      {
         picture: "url(assets/micah.jpg)",
         name: "Micah Adams",
         talkName: "One Day We Will All Be Front End Developers ",
@@ -187,6 +135,110 @@ export default Route.extend({
         bio: "Franziska has a Ph.D. in mathematics and is a software engineer on Google’s V8 team. She's an expert on ES6 performance and a Node.js core collaborator. When she's not working hard on making JavaScript and Node faster, she's out horseback riding.",
         specialClasses: ""
       },
+      {
+        picture: "url(assets/kassandra.jpg)",
+        name: "Kassandra Perch, a.k.a. the Nodebotanist",
+        talkName: "IoT.js",
+        talkAbstract: "You’ve seen NodeBots, but how do you build systems with NodeBots? What systems would you build? In this workshop, we’ll take a deeper dive into NodeBots (but we’ll cover the basics in case you’re new or it’s been awhile)– we’ll talk about why serverless and IoT are best buddies, and discuss why and how you’d build a system of NodeBots devices.",
+        twitterLink: "https://twitter.com/nodebotanist",
+        githubLink: "https://github.com/nodebotanist",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "Kassandra is a Developer Relations Engineer at IOpipe by day, and a new longboarder and Electrical Engineering student by night. They like to build NodeBots and snuggle cats in their ATX home when not out doing those things.",
+      specialClasses: ""
+      },
+      {
+        picture: "url(assets/brittany.jpg)",
+        name: "Brittany Storoz",
+        talkName: "Finding & Fixing All The Broken Things: An Uncomfortably Close Look at Chrome Developer Tools",
+        talkAbstract: "Let’s be real. Code is broken way more often than it’s working. That’s why we have dev tools. But how useful they are is entirely dependent on how well we understand them. In this workshop we’ll take a look at some of the more advanced features of Chrome Canary’s developer tools. We’ll explore some of the lesser known functionality, play around with experimental features, and learn how extending dev tools can help us better understand our applications.",
+        twitterLink: "https://twitter.com/@brittanystoroz",
+        githubLink: "https://github.com/brittanystoroz",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "Brittany Storoz is an instructor for the frontend program at the Turing School of Software and Design. She has spoken at conferences and has worked at Mozilla and the  New York Times.",
+        specialClasses: ""
+      },
+      {
+        picture: "url(assets/marla.jpg)",
+        name: "Marla Brizel",
+        talkName: "ClojureScript for JavaScript Developers ",
+        talkAbstract: "Tired of fighting with state? (Don’t worry, we all are.) Are you interested in learning the ins and outs of functional programming? Want to learn a new language to expand your horizons? Come learn how to write for the browser using ClojureScript—a Lisp-inspired language that compiles down to JavaScript and offers interoperability with browser APIs and existing client-side libraries. In this workshop, you’ll learn how to write useful code in a functional language and how to apply these same concepts to your vanilla JavaScript.",
+        twitterLink: "https://twitter.com/@brittanystoroz",
+        githubLink: "https://github.com/brittanystoroz",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "Marla Brizel is a software developer at Democracy Works where she works on various initiatives to ensure that no voter should ever have to miss an election. She also helps curate the session lineup for Denver Startup Week and is an expert in agile development practices. She spends as much time as she possibly can skiing and trail running in the mountains.",
+        specialClasses: ""
+      },
+      {
+        picture: "url(assets/rachelw.jpg)",
+        name: "Rachel White",
+        talkName: "Machine Learning Made Easy",
+        talkAbstract: "If you’ve ever wondered what cat you would be, you’re in luck. Using Microsoft’s Cognitive services Emotion Analysis API, we’ll build a quick and easy to use node application that will analyze your selfies and let you know what purrfect feline suits your mood. Don’t like cats? That’s cool, swap out for your animal of choice.",
+        twitterLink: "https://twitter.com/ohhoe",
+        githubLink: "https://github.com/rachelnicole",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "Rachel White is a technologist, artist, and pretend-cyborg who is currently a Tech Evangelist at Microsoft. She is interested in new uses for old hardware, useless robots, VR/AR/MR, and bots. she has spoken internationally about JavaScript Robotics, Twitter Bots, and browser based Video Games. Rachel is currently working on multiple video game projects, a VR cat cafe, and thinking about what IoT devices she can build for her two black cats. Her other interests include glitch art, 80â€™s horror, and indie games. Her aesthetic is fog machines, laser lights, and broken VHS tapes.",
+        specialClasses: ""
+      },
+      {
+        picture: "url(assets/brian.jpg)",
+        name: "Brian Sinclair",
+        talkName: "Accessibility: The Basics and Beyond",
+        talkAbstract: "A lot of people talk about accessibility, but it's a very broad topic. Where does one even begin? In this workshop, we'll take a trip through the Web Content Accessibility Guidelines and talk about the most common places where applications fail to meet the standard. We'll also look at how quick and easy it is to take care of a lot of low-hanging fruit, as well as discuss some of the more complex aspects of what it means to be accessible.",
+        twitterLink: "https://twitter.com/brianarn",
+        githubLink: "https://github.com/brianarn",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "Brian Sinclair is a Senior Software Engineer at DigitalOcean, serving as technical lead of the front-end infrastructure team for the DigitalOcean control panel. Prior to that, he did a whole bunch of accessibility work (amongst other things) for Bazaarvoice. He also has an absurd amount of board games and will happily chew your ear off about any of them.",
+        specialClasses: ""
+      },
+      {
+        picture: "url(assets/brenna.png)",
+        name: "Brenna Martenson",
+        talkName: "Warning: May Cause Side Effects. How to Implement Redux Sagas as Middleware",
+        talkAbstract: "Redux has become the new hot tamale in making state management hurt less. Using pure functions called actions and reducers, Redux allows us to bridge the gap from a specific React component to that universal state. Although this has made front-end life easier, a remaining challenge is how to handle the events that need to happen in between the action and reducer. In this workshop we will talk about how Redux Sagas have stepped in to organize that stage of development using ES6 Generator functions. ",
+        twitterLink: "https://twitter.com/martenson_bj?lang=en",
+        githubLink: "https://github.com/martensonbj",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "Brenna Martenson is a developer and travel junkie. She is currently an instructor for the front end program at the Turing School of Software and Design. ",
+        specialClasses: ""
+      },
+      {
+        picture: "url(assets/regis.jpg)",
+        name: "Regis Boudinot",
+        talkName: "Vue, I See You! Learning How to Build User Interfaces with a Progressive Framework",
+        talkAbstract: "Vue.js is a small progressive framework that is growing in popularity and in use! It is a nice mix of React and Angular (from a top level approach) and allows for a fun and fast development experience. It can also be incrementally adopted into existing codebases. This workshop will cover how to use the vue-cli and how to get a simple todo app running from scratch. I will cover how to use the reactive state Vue provides and live code with all of you so you can ask questions as I go along and we can learn together! I will also show examples of Vue in the wild (at GitLab) and how we have incrementally adopted it into our codebase.",
+        twitterLink: "https://twitter.com/rboudinot?lang=en",
+        githubLink: "https://github.com/selfup",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "Regis Boudinot is a Frontend Engineer and Trained Release Manager at Gitlab. He mentors Turing students, is always trying to help people on Slack, and enjoys playing guitar at Open Mic Nights. He spends a lot of time building prototypes, writing libraries in Rust/JavaScript, as well as automating things with hardware.",
+        specialClasses: ""
+      },
+      {
+        picture: "url(assets/blank.png)",
+        name: "",
+        talkName: "",
+        twitterLink: "",
+        githubLink: "",
+        linkedInLink: "",
+        type: "",
+        isKeynote: false,
+        bio: "",
+        specialClasses: ""
+      }
+
     ]));
 
   }

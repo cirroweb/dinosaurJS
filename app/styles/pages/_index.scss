@@ -33,6 +33,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   width: 100%;
 }
 
+
 .seventeen {
   background: $color_dark_blue;
   color: $color_white;
@@ -46,6 +47,10 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   .home__full-wrap {
     height: 75vh;
     overflow: hidden;
+  }
+
+  .home__intro {
+    padding: 50px 30px;
   }
 
   .speaker-name {
@@ -90,6 +95,20 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     width: 50%;
   }
 
+  .team__svg,
+  .seventeen .team .home__intro, .seventeen .team .home__img, .seventeen .team .home__svg {
+    height: 50vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .seventeen .team .home__full-wrap {
+    height: 50vmax;
+    overflow: hidden;
+  }
+
   .home__intro, .home__img, .home__svg {
     height: 75vh;
     display: flex;
@@ -120,6 +139,14 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     text-align: center;
     position: relative;
     background-color: $color_nav;
+    perspective: 1500px;
+    pointer-events: none;
+  }
+
+  .team__svg {
+    text-align: center;
+    position: relative;
+    background-color: #945b38;
     perspective: 1500px;
     pointer-events: none;
   }
@@ -382,6 +409,30 @@ seventeen {
   // background-position: center;
 }
 
+.team-box-50 {
+  bottom: 0;
+  top: 50%;
+  left: 50%;
+  height: 30vmax;
+  width: 30vmax;
+  position: absolute;
+  background-color: white;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, -300px);
+}
+
+.team-profile-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30vmax;
+  width: 30vmax;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate3d(-50%, -50%, 200px);
+}
+
 .box {
   // outline: 1px solid transparent;
   // width: 300px;
@@ -636,9 +687,27 @@ seventeen {
 
 @media ( max-width: $break_tablet_medium ) {
   .seventeen {
-    .home__full-wrap, .home__half-wrap {
-      height: auto;
+    .home__full-wrap, .home__half-wrap,
+    .team .home__full-wrap, .team .home__half-wrap {
+      height: auto !important;
       display:block;
+    }
+
+    .team .home__full-wrap .home__intro {
+      order: 1;
+      height: 25vmax;
+    }
+
+    .team .home__full-wrap .team__svg {
+      order: 2;
+    }
+
+    .seventeen .team  .home__full-wrap, .seventeen .team .home__half-wrap {
+      display: flex
+    }
+
+    .seventeen .team  .home__full-wrap:last-child .team__svg.white-border-bottom{
+      border-bottom: 0;
     }
 
     .home__button {
@@ -750,7 +819,7 @@ seventeen {
     border-left: 0;
   }
 
-  .seventeen .home__intro, .seventeen .home__img, .seventeen .home__svg, .grid-box-50 {
+  .seventeen .home__intro, .seventeen .home__img, .seventeen .home__svg, .team_svg, .grid-box-50 {
     height: 75vmax;
   }
 }

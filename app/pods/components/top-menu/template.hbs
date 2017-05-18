@@ -30,6 +30,9 @@
       Attend
     {{/link-to}}
     <h3>Schedule — Coming Soon</h3>
+    {{#link-to 'seventeen.team' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
+      Team
+    {{/link-to}}
   </div>
 </div>
 {{#if showingMenu}}
