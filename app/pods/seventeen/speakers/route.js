@@ -136,6 +136,19 @@ export default Route.extend({
         specialClasses: ""
       },
       {
+        picture: "url(assets/jeremy.png)",
+        name: "Jeremy Foster",
+        talkName: "",
+        talkAbstract: "You live, breath, and think JavaScript. It’s because you have a propeller brain. It’s great. You’re solving the world’s problems one node module at a time. You’re making work more productive and our personal lives more streamline. But, although I know it's heretical, there's more to life than the freaking code! So let’s have some high-level banter about the state of tech, the future of tech, and your place in the whole thing as a developer. I offer alt perspective, mild humor, inspiring life pro tips, and absolutely no cat gifs.",
+        twitterLink: "https://twitter.com/codefoster",
+        githubLink: "https://github.com/codefoster",
+        linkedInLink: "",
+        type: "Speaker",
+        isKeynote: false,
+        bio: "I studied Computer Engineering and Mathematics in school a long time ago, and have thoroughly enjoyed my career course ever since - primarily teaching and software development and primarily on the web stack. I gained experience in education, aerospace manufacturing, and insurance, and eventually joined Microsoft with the goal of informing and inspiring software developers. I authored my first book CSS for Windows 8 App Development, published a couple of courses on Pluralsight.com, and try to keep up with audiences via my blog codefoster.com and my Twitter feed @codefoster. When I’m not working, I’m working on maker projects, spending time with my wife and two sons, hiking and camping, sailing, scuba diving, or working on house projects.",
+        specialClasses: ""
+      },
+      {
         picture: "url(assets/kassandra.jpg)",
         name: "Kassandra Perch, a.k.a. the Nodebotanist",
         talkName: "IoT.js",
@@ -225,19 +238,19 @@ export default Route.extend({
         isKeynote: false,
         bio: "Regis Boudinot is a Frontend Engineer and Trained Release Manager at Gitlab. He mentors Turing students, is always trying to help people on Slack, and enjoys playing guitar at Open Mic Nights. He spends a lot of time building prototypes, writing libraries in Rust/JavaScript, as well as automating things with hardware.",
         specialClasses: ""
-      },
-      {
-        picture: "url(assets/blank.png)",
-        name: "",
-        talkName: "",
-        twitterLink: "",
-        githubLink: "",
-        linkedInLink: "",
-        type: "",
-        isKeynote: false,
-        bio: "",
-        specialClasses: ""
       }
+      // {
+      //   picture: "url(assets/blank.png)",
+      //   name: "",
+      //   talkName: "",
+      //   twitterLink: "",
+      //   githubLink: "",
+      //   linkedInLink: "",
+      //   type: "",
+      //   isKeynote: false,
+      //   bio: "",
+      //   specialClasses: ""
+      // }
 
     ]));
 

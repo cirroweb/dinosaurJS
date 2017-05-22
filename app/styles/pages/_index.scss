@@ -225,7 +225,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   }
 
   .sponsors__square {
-    height: 37.5vh;
+    // height: 37.5vh;
     width: 100%;
     border-left: 1px solid white;
     display: flex;
@@ -233,20 +233,32 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     align-items: center;
     text-align: center;
 
+    &:nth-child(1) {
+      height: 25vh;
+    }
+
+    &:nth-child(2) {
+      height: 50vh;
+    }
+
+
     & > div {
-      height: 18.75vh;
+      height: 16.66vh;
       width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
 
       &:nth-child(1),
-      &:nth-child(2) {
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
         border-bottom: 1px solid white;
       }
 
       &:nth-child(2),
-      &:nth-child(4) {
+      &:nth-child(4),
+      &:nth-child(6) {
         border-left: 1px solid white;
       }
     }
@@ -255,7 +267,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 
   .sponsor__logo img {
     max-width: 190px;
-    max-height: 90px;
+    max-height: 80px;
   }
 
 }
