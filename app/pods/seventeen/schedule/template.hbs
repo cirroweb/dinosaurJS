@@ -1,0 +1,20 @@
+<div class="schedule">
+  <div class="padding--50 center-text white-border-bottom">
+    Schedule
+  </div>
+
+  <div class="schedule-wrap">
+    {{#each talks as |talk|}}
+      {{#seventeen-schedule-accordion time=talk.time title=talk.title hasToggle=talk.hasToggle classNames="schedule-item"}}
+        {{#if talk.speaker}}
+          <div class="schedule-speaker">{{talk.speaker}}</div>
+        {{/if}}
+        {{#if talk.description}}
+          <div class="schedule-description">{{talk.description}}</div>
+        {{/if}}
+      {{/seventeen-schedule-accordion}}
+    {{/each}}
+  </div>
+</div>
+
+{{outlet}}

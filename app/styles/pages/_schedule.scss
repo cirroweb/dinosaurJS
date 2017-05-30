@@ -2,6 +2,84 @@
   opacity: 0.4;
 }
 
+.seventeen {
+  &.seventeen-schedule {
+    background: $color_gray_blue;
+    .seventeen {
+      background: $color_gray_blue;
+    }
+  }
+
+  .schedule-wrap {
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .not-toggleable {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrkloENhCAMRcEJGKGjMAIjOIIj3CaM4G1wI7jCbeAIXElKjiiIB+ViYpMGg8Dv+2qjEFcI55zCnDDhH2Kj+8bSVRgPnknEYhoaV3ZhstAHkABE9wwVwkNMFs50/fBUmYLGZmHc8PIHbSkLTqSEVUkIaIOK5myK7qSwH01u8RQsTBQAFc/eC+vcgiVYuJk/TXe2kp2FrXRHYjsLu9HlLGSnO7KQna5kIStdyUI2utADKyyHWgvtj3vq6MhCU/lCQTcLm+iof+nGz6X/r0OXnnl7urXU6gYOMSnlG4cn5nQZuoFLLKLT4nbxEWAA4a/rQvlXHjsAAAAASUVORK5CYII=), auto !important;
+  }
+
+  .toggleable {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEZJREFUeNpiYBjs4P///w70tOw/OfqY6Bkio5aNWjZq2ahl5AMWaKFKcsEK1NdAopYHdPXZaKk/atmoZaOWjVo2kgBAgAEAfKUTQkAdP+0AAAAASUVORK5CYII=), auto !important;
+  }
+
+  .schedule-item {
+    border-right: 1px solid $color_white;
+    border-left: 1px solid $color_white;
+    border-bottom: 1px solid $color_white;
+    padding: 50px;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .schedule-accordion-content {
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+    height: auto;
+
+    &.hidden {
+      max-height: 0
+    }
+
+    &.showing {
+      max-height: 500px;
+    }
+  }
+
+  .schedule-time {
+    left: 0;
+  }
+
+  .schedule-padding-wrap {
+    position: relative;
+  }
+
+  .schedule-title,  {
+    position: absolute;
+    right: 0px;
+    font-weight: bold;
+  }
+
+  .schedule-time, .schedule-title {
+    display: inline-block;
+  }
+
+  .schedule-time, .schedule-title, .schedule-accordion-content {
+    text-transform: uppercase;
+  }
+
+  @media only screen and ( max-width: $break_tablet_medium ) {
+    .schedule-time, .schedule-title, .schedule-accordion-content {
+      position: relative;
+      display: inherit;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
 .schedule {
 
   .schedule__row {
@@ -10,7 +88,7 @@
   }
 
   .schedule__row-time {
-    color: white;
+    color: $color_white;
     opacity: 0.4;
     justify-content: flex-start;
     width: 40%;

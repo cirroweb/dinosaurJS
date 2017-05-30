@@ -1,0 +1,14 @@
+<div class="schedule-padding-wrap">
+  <div class="schedule-time">
+    {{time}}
+  </div>
+
+  <div class="schedule-title">
+    {{title}}
+  </div>
+  {{#if hasToggle}}
+    <div class="schedule-accordion-content {{if isOpen "showing" "hidden"}}">
+      {{yield}}
+    </div>
+  {{/if}}
+</div>
