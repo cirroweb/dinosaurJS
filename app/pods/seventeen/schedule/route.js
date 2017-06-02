@@ -11,9 +11,16 @@ export default Ember.Route.extend({
         icon: 'pause'
       },
       { time: "9.00AM - 9.30AM",
-        title: "Unknown",
+        title: "Get Your Head Outta the Cloud – Let’s Talk Tech",
         speaker: "Jeremy Foster",
         description: "You live, breath, and think JavaScript. It’s because you have a propeller brain. It’s great. You’re solving the world’s problems one node module at a time. You’re making work more productive and our personal lives more streamline. But, although I know it's heretical, there's more to life than the freaking code! So let’s have some high-level banter about the state of tech, the future of tech, and your place in the whole thing as a developer. I offer alt perspective, mild humor, inspiring life pro tips, and absolutely no cat gifs.",
+        hasToggle: true,
+        icon: 'talk'
+      },
+      { time: "9.30AM - 10.00AM",
+        title: "JavaScript Engines: How Do They Even?",
+        speaker: "F. Hinkelmann",
+        description: "Want to know how JavaScript engines work? Why is JavaScript so fast? What is just-in-time compilation? We'll look at basic and not-so-basic concepts of compilers, challenges posed by modern JavaScript, and what that means for performance. You'll learn how to write code that's fast and compiler-friendly.",
         hasToggle: true,
         icon: 'talk'
       },
@@ -26,7 +33,7 @@ export default Ember.Route.extend({
       },
       { time: "10.30AM - 11.00AM",
         title: "Break",
-        speaker: "Mike & Justin",
+        speaker: "",
         description: "",
         hasToggle: false,
         icon: 'pause'
@@ -74,7 +81,7 @@ export default Ember.Route.extend({
         icon: 'talk'
       },
       { time: "2.45PM - 3.15PM",
-        title: "Ice Cream Break",
+        title: "Break",
         speaker: "",
         description: "",
         hasToggle: false,
@@ -106,7 +113,7 @@ export default Ember.Route.extend({
         speaker: "Steve Kinney",
         description: "",
         hasToggle: false,
-        icon: 'talk'
+        icon: 'pause'
       },
       { time: "4.45PM - 5.15PM",
         title: "The True Cost of Unmoderated Collaboration: A Story from the Trenches",
@@ -120,7 +127,7 @@ export default Ember.Route.extend({
         speaker: "",
         description: "",
         hasToggle: false,
-        icon: 'pause'
+        icon: 'talk'
       },
     ]);
 
