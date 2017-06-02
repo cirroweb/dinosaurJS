@@ -28,7 +28,7 @@
     border-right: 1px solid $color_white;
     border-left: 1px solid $color_white;
     border-bottom: 1px solid $color_white;
-    padding: 50px;
+    // padding: 50px;
     &:last-child {
       border-bottom: none;
     }
@@ -38,14 +38,24 @@
     overflow: hidden;
     transition: 300ms ease-in-out;
     height: auto;
+    border-top: 1px solid white;
 
     &.hidden {
-      max-height: 0
+      max-height: 0;
     }
 
     &.showing {
       max-height: 500px;
     }
+  }
+
+  .schedule-title-bar {
+    padding: 50px;
+  }
+
+  .schedule-description {
+    width: 50%;
+    padding: 50px;
   }
 
   .schedule-time {
@@ -57,17 +67,47 @@
   }
 
   .schedule-title,  {
-    position: absolute;
-    right: 0px;
     font-weight: bold;
+    text-align: right;
+    p {
+      margin-bottom: 0;
+    }
   }
 
   .schedule-time, .schedule-title {
     display: inline-block;
   }
 
-  .schedule-time, .schedule-title, .schedule-accordion-content {
-    text-transform: uppercase;
+  .schedule-section-title {
+    text-align: center;
+    padding: 60px;
+    border-bottom: 1px solid white;
+
+    &.workshops {
+      border-top: 1px solid white;
+    }
+  }
+
+  .schedule-icon {
+    display: inline-block;
+    margin-right: 30px;
+    height: 20px;
+    width: 15px;
+    vertical-align: sub;
+
+    &.talk {
+      width: 21px;
+    }
+
+    &.workshop {
+      width: 10px;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
   }
 
   @media only screen and ( max-width: $break_tablet_medium ) {

@@ -3,18 +3,39 @@
     Schedule
   </div>
 
+  <div class="schedule-section-title">
+    <h3>June 15th Talks</h3>
+    <p>8AM - 5PM</p>
+    <a href="https://www.google.com/maps/place/Space+Gallery/@39.7228828,-105.0005851,17z/data=!3m1!4b1!4m5!3m4!1s0x876c7f3037fba9d1:0x85b7cbb6aa50a36a!8m2!3d39.7228787!4d-104.9983911" target="_blank">Space Gallery</a>
+  </div>
+
   <div class="schedule-wrap">
     {{#each talks as |talk|}}
-      {{#seventeen-schedule-accordion time=talk.time title=talk.title hasToggle=talk.hasToggle classNames="schedule-item"}}
-        {{#if talk.speaker}}
-          <div class="schedule-speaker">{{talk.speaker}}</div>
-        {{/if}}
+      {{#seventeen-schedule-accordion time=talk.time title=talk.title icon=talk.icon hasToggle=talk.hasToggle speaker=talk.speaker classNames="schedule-item"}}
         {{#if talk.description}}
           <div class="schedule-description">{{talk.description}}</div>
         {{/if}}
       {{/seventeen-schedule-accordion}}
     {{/each}}
   </div>
+
+  <div class="schedule-section-title workshops">
+    <h3>June 16th WorkShops</h3>
+    <p>8AM - 5PM</p>
+    <a href=""  target="_blank">Galvanize</a>
+  </div>
+
+  <div class="schedule-wrap">
+    {{#each workshops as |shop|}}
+      {{#seventeen-schedule-accordion time=shop.time title=shop.title hasToggle=shop.hasToggle icon=shop.icon speaker=shop.speaker classNames="schedule-item"}}
+      <i>{{icon-library shop.icon}}</i>
+        {{#if shop.description}}
+          <div class="schedule-description">{{shop.description}}</div>
+        {{/if}}
+      {{/seventeen-schedule-accordion}}
+    {{/each}}
+  </div>
+
 </div>
 
 {{outlet}}

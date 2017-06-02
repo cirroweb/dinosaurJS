@@ -1,10 +1,16 @@
 <div class="schedule-padding-wrap">
-  <div class="schedule-time">
-    {{time}}
-  </div>
+  <div class="schedule-title-bar flex-grid">
+    <div class="schedule-icon {{icon}}">
+      {{icon-library icon}}
+    </div>
+    <div class="schedule-time flex-1">
+      {{time}}
+    </div>
 
-  <div class="schedule-title">
-    {{title}}
+    <div class="schedule-title flex-1">
+      {{#if speaker}}<p>{{speaker}}</p>{{/if}}
+      <p>{{title}}</p>
+    </div>
   </div>
   {{#if hasToggle}}
     <div class="schedule-accordion-content {{if isOpen "showing" "hidden"}}">
