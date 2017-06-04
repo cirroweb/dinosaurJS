@@ -2,6 +2,138 @@
   opacity: 0.4;
 }
 
+.seventeen {
+  &.seventeen-schedule {
+    background: $color_gray_blue;
+    .seventeen {
+      background: $color_gray_blue;
+    }
+  }
+
+  .schedule-wrap {
+    width: 95%;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .not-toggleable {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrkloENhCAMRcEJGKGjMAIjOIIj3CaM4G1wI7jCbeAIXElKjiiIB+ViYpMGg8Dv+2qjEFcI55zCnDDhH2Kj+8bSVRgPnknEYhoaV3ZhstAHkABE9wwVwkNMFs50/fBUmYLGZmHc8PIHbSkLTqSEVUkIaIOK5myK7qSwH01u8RQsTBQAFc/eC+vcgiVYuJk/TXe2kp2FrXRHYjsLu9HlLGSnO7KQna5kIStdyUI2utADKyyHWgvtj3vq6MhCU/lCQTcLm+iof+nGz6X/r0OXnnl7urXU6gYOMSnlG4cn5nQZuoFLLKLT4nbxEWAA4a/rQvlXHjsAAAAASUVORK5CYII=), auto !important;
+  }
+
+  .toggleable {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEZJREFUeNpiYBjs4P///w70tOw/OfqY6Bkio5aNWjZq2ahl5AMWaKFKcsEK1NdAopYHdPXZaKk/atmoZaOWjVo2kgBAgAEAfKUTQkAdP+0AAAAASUVORK5CYII=), auto !important;
+  }
+
+  .schedule-item {
+    border-right: 1px solid $color_white;
+    border-left: 1px solid $color_white;
+    border-bottom: 1px solid $color_white;
+    // padding: 50px;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .schedule-accordion-content {
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+    height: auto;
+    box-shadow: inset 0 1px 0 0px white;
+
+    &.hidden {
+      max-height: 0;
+    }
+
+    &.showing {
+      max-height: 500px;
+    }
+  }
+
+  .schedule-title-bar {
+    padding: 50px;
+  }
+
+  .schedule-description {
+    max-width: 700px;
+    padding: 50px;
+    border-right: 1px solid;
+    margin: 0 auto;
+    border-left: 1px solid;
+  }
+
+  .schedule-time {
+    left: 0;
+  }
+
+  .schedule-padding-wrap {
+    position: relative;
+  }
+
+  .schedule-title,  {
+    font-weight: normal;
+    text-align: right;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .schedule-time, .schedule-title {
+    display: inline-block;
+  }
+
+  .schedule-section-title {
+    text-align: center;
+    padding: 60px;
+    border-bottom: 1px solid white;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    &.workshops {
+      border-top: 1px solid white;
+    }
+  }
+
+  .schedule-icon {
+    display: inline-block;
+    margin-right: 30px;
+    height: 20px;
+    width: 15px;
+    margin-top: 2px;
+    vertical-align: sub;
+
+    &.talk {
+      width: 21px;
+    }
+
+    &.pause {
+      width: 12px;
+    }
+
+    &.workshop {
+      width: 8px;
+      margin-top: 3px;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  @media only screen and ( max-width: $break_tablet_medium ) {
+    .schedule-time, .schedule-title, .schedule-accordion-content {
+      position: relative;
+      display: inherit;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+
 .schedule {
 
   .schedule__row {
@@ -10,7 +142,7 @@
   }
 
   .schedule__row-time {
-    color: white;
+    color: $color_white;
     opacity: 0.4;
     justify-content: flex-start;
     width: 40%;
@@ -72,5 +204,36 @@
 
   hr {
     background-color: $color_grey;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .seventeen .schedule-description {
+    border: 0;
+    padding: 30px;
+    font-size: 15px;
+  }
+
+  .seventeen .schedule-time {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .seventeen .schedule-title h5 {
+    font-size: 22px;
+    margin-top: 8px;
+  }
+
+  .seventeen .schedule-title-bar {
+    padding: 20px 20px 40px;
+  }
+
+  .seventeen .schedule-section-title {
+    padding: 60px 20px;
+  }
+
+  .seventeen .schedule-section-title h2 {
+    font-size: 2rem;
   }
 }
