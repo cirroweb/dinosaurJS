@@ -18,6 +18,7 @@ Router.map(function() {
     this.route('speakers');
     this.route('attend');
     this.route('team');
+    this.route('schedule');
   });
 });
 
