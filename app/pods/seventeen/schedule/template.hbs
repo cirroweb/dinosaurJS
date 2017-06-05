@@ -30,7 +30,6 @@
   <div class="schedule-wrap">
     {{#each workshops as |shop|}}
       {{#seventeen-schedule-accordion time=shop.time title=shop.title hasToggle=shop.hasToggle icon=shop.icon speaker=shop.speaker classNames="schedule-item"}}
-      <i>{{icon-library shop.icon}}</i>
         {{#if shop.description}}
           <div class="schedule-description">{{shop.description}}</div>
         {{/if}}

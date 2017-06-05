@@ -144,7 +144,7 @@ export default Ember.Route.extend({
         time: "9:00 AM - 11:30 AM",
         title: "Diversity, Inclusion, and Intersectionality",
         speaker: "Patricia Realini",
-        description: "",
+        description: "Description coming soon...",
         hasToggle: true,
         icon: 'workshop'
       },
@@ -152,7 +152,7 @@ export default Ember.Route.extend({
         time: "9:00 AM - 12:00 PM",
         title: "Design for Developers (Or, How to Make Your Application Not Look Like Garbage)",
         speaker: "Louisa Barrett",
-        description: "",
+        description: "Description coming soon...",
         hasToggle: true,
         icon: 'workshop'
       },
