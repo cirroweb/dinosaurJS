@@ -25,7 +25,7 @@ export default Ember.Route.extend({
         icon: 'talk'
       },
       { time: "10.00AM - 10.30AM",
-        title: "Making the Jump: How Destop Era Frameworks can Thrive on Mobile",
+        title: "Making the Jump: How Desktop Era Frameworks can Thrive on Mobile",
         speaker: "Tom Dale",
         description: "Today’s most popular frameworks come from a time when the world was a different place. Ember’s first rendering engine, for example, was optimized around the performance gotchas of Internet Explorer 6. IE6 has since faded into history, and smartphones with spotty connectivity and occasionally dodgy hardware have become the lowest common denominator that we must optimize for. In this talk, we’ll discuss how smartphones fundamentally change the assumptions we make about architecting applications for the web. Then, we’ll cover how we can embrace these new mobile constraints to build even better apps—for everyone. Finally, we’ll look at the techniques used by desktop-era libraries and what they’re doing to become great for the mobile web.",
         hasToggle: true,
@@ -133,6 +133,22 @@ export default Ember.Route.extend({
 
     controller.set('workshops', [
       {
+        time: "9:00 AM - 11:00 AM",
+        title: "Warning: May Cause Side Effects. How to Implement Redux Sagas as Middleware",
+        speaker: "Brenna Martenson",
+        description: "Redux has become the new hot tamale in making state management hurt less. Using pure functions called actions and reducers, Redux allows us to bridge the gap from a specific React component to that universal state. Although this has made front-end life easier, a remaining challenge is how to handle the events that need to happen in between the action and reducer. In this workshop we will talk about how Redux Sagas have stepped in to organize that stage of development using ES6 Generator functions.",
+        hasToggle: true,
+        icon: 'workshop'
+      },
+      {
+        time: "9:00 AM - 11:00 AM",
+        title: "Accessibility: The Basics and Beyond",
+        speaker: "Brian Sinclair",
+        description: "A lot of people talk about accessibility, but it's a very broad topic. Where does one even begin? In this workshop, we'll take a trip through the Web Content Accessibility Guidelines and talk about the most common places where applications fail to meet the standard. We'll also look at how quick and easy it is to take care of a lot of low-hanging fruit, as well as discuss some of the more complex aspects of what it means to be accessible.",
+        hasToggle: true,
+        icon: 'workshop'
+      },
+      {
         time: "9:00 AM - 12:00 PM",
         title: "Machine Learning for Beginners",
         speaker: "Rachel White",
@@ -141,31 +157,23 @@ export default Ember.Route.extend({
         icon: 'workshop'
       },
       {
-        time: "9:00 AM - 11:30 AM",
-        title: "Diversity, Inclusion, and Intersectionality",
-        speaker: "Patricia Realini",
-        description: "Description coming soon...",
-        hasToggle: true,
-        icon: 'workshop'
-      },
-      {
         time: "9:00 AM - 12:00 PM",
         title: "Design for Developers (Or, How to Make Your Application Not Look Like Garbage)",
         speaker: "Louisa Barrett",
-        description: "Description coming soon...",
+        description: "We've all seen what can happen when design gets left by the wayside during product development: a great idea, a squeaky clean codebase, a bizarre interface, and users abandoning it when they can't figure out how (or why) to use it. If you're in this situation, don't despair! There is a light at the end of the garbagey-UI tunnel: you can avoid these user-centric pitfalls even when you're strapped for cash, short on time, and without the budget to bring on a designer. In this workshop we'll update your skills toolkit to include the design and UX foundations that will give you the most bang for your buck and help you make your product sing.",
         hasToggle: true,
         icon: 'workshop'
       },
       {
         time: "9:00 AM - 12:00 PM",
-        title: "TypeScript in Pracice",
-        speaker: "Bryan Hughes",
-        description: "Are you interested in TypeScript, but not sure where to start? Like most modern web development, it can feel like there are too many options and no obvious answers. This workshop will teach you all about TypeScript, and how to use it in practice. We'll walk through creating a small Node.js express app and a small React web app, all written in TypeScript. We'll also walk through setting up a build pipeline, and effectively debugging TypeScript code on the server and in the browser.",
+        title: "Finding & Fixing All The Broken Things: An Uncomfortably Close Look at Chrome Developer Tools",
+        speaker: "Brittany Storoz",
+        description: "Let's be real. Code is broken way more often than it's working. That's why we have dev tools. But how useful they are is entirely dependent on how well we understand them. In this workshop we'll take a look at some of the more advanced features of Chrome Canary's developer tools. We'll explore some of the lesser known functionality, play around with experimental features, and learn how extending dev tools can help us better understand our applications.",
         hasToggle: true,
         icon: 'workshop'
       },
       {
-        time: "12:30 PM - 4:30 PM",
+        time: "9:00 AM - 1:00 PM",
         title: "IoT and Serverless",
         speaker: "Kas Perch",
         description: "You've seen NodeBots, but how do you build systems with NodeBots? What systems would you build? In this workshop, we'll take a deeper dive into NodeBots (but we'll cover the basics in case you're new or it's been awhile). We'll talk about why serverless and IoT are best buddies, and discuss why and how you'd build a system of NodeBots devices.",
@@ -173,15 +181,7 @@ export default Ember.Route.extend({
         icon: 'workshop'
       },
       {
-        time: "10:00 AM - 12:00 PM",
-        title: "Accessibility: The Basics and Beyond",
-        speaker: "Brian Sinclair",
-        description: "A lot of people talk about accessibility, but it's a very broad topic. Where does one even begin? In this workshop, we'll take a trip through the Web Content Accessibility Guidelines and talk about the most common places where applications fail to meet the standard. We'll also look at how quick and easy it is to take care of a lot of low-hanging fruit, as well as discuss some of the more complex aspects of what it means to be accessible.",
-        hasToggle: true,
-        icon: 'workshop'
-      },
-      {
-        time: "1:00 PM - 2:30 PM",
+        time: "11:30 AM - 1:00 PM",
         title: "Functional Programming with ClojureScript",
         speaker: "Marla Brizel",
         description: "Tired of fighting with state? (Don't worry, we all are.) Are you interested in learning the ins and outs of functional programming? Want to learn a new language to expand your horizons? Come learn how to write for the browser using ClojureScript—a Lisp-inspired language that compiles down to JavaScript and offers interoperability with browser APIs and existing client-side libraries. In this workshop, you'll learn how to write useful code in a functional language and how to apply these same concepts to your vanilla JavaScript.",
@@ -197,13 +197,21 @@ export default Ember.Route.extend({
         icon: 'workshop'
       },
       {
-        time: "1:00 PM - 3:00 PM",
-        title: "Warning: May Cause Side Effects. How to Implement Redux Sagas as Middleware",
-        speaker: "Brenna Martenson",
-        description: "Redux has become the new hot tamale in making state management hurt less. Using pure functions called actions and reducers, Redux allows us to bridge the gap from a specific React component to that universal state. Although this has made front-end life easier, a remaining challenge is how to handle the events that need to happen in between the action and reducer. In this workshop we will talk about how Redux Sagas have stepped in to organize that stage of development using ES6 Generator functions.",
+        time: "1:00 PM - 3:30 PM",
+        title: "Build A Safety “Net”: Intersectional & Inclusive Standards for Developers ",
+        speaker: "Patricia Realini",
+        description: "Give a developer readable code and they can code for a day, teach a developer best practices and coding standards and they can be a valuable addition to any engineering team. But just as we depend on code standards so that we can all work in a shared codebase, we need a standard for psychological safety on our engineering teams, especially when it comes to underrepresented minorities. In this workshop we will break down our unconscious biases, learn how to level up from allies to accomplices, and practice techniques for building an intersectional support system so that our teams can be just as performant as our code. ",
         hasToggle: true,
         icon: 'workshop'
-      }
+      },
+      {
+        time: "1:00 PM - 4:00 PM",
+        title: "TypeScript in Practice",
+        speaker: "Bryan Hughes",
+        description: "Are you interested in TypeScript, but not sure where to start? Like most modern web development, it can feel like there are too many options and no obvious answers. This workshop will teach you all about TypeScript, and how to use it in practice. We'll walk through creating a small Node.js express app and a small React web app, all written in TypeScript. We'll also walk through setting up a build pipeline, and effectively debugging TypeScript code on the server and in the browser.",
+        hasToggle: true,
+        icon: 'workshop'
+      },
     ]);
   }
 });
