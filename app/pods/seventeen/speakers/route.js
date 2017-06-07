@@ -162,6 +162,19 @@ export default Route.extend({
       specialClasses: ""
       },
       {
+        picture: "url(assets/patricia.jpg)",
+        name: "Patricia Realini",
+        talkName: "Build A Safety “Net”: Intersectional & Inclusive Standards for Developers",
+        talkAbstract: "Give a developer a readable code and they can code for a day, teach a developer best practices and coding standards and they can be a valuable addition to any engineering team. But just as we depend on code standards so that we can all work in a shared codebase, we need a standard for psychological safety on our engineering teams, especially when it comes to underrepresented minorities. In this workshop we will break down our unconscious biases, learn how to level up from allies to accomplices, and practice techniques for building an intersectional support system so that our teams can be just as performant as our code.",
+        twitterLink: "https://twitter.com/patriciarealini",
+        githubLink: "https://github.com/patriciarealini",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "",
+        specialClasses: ""
+      },
+      {
         picture: "url(assets/brittany.jpg)",
         name: "Brittany Storoz",
         talkName: "Finding & Fixing All The Broken Things: An Uncomfortably Close Look at Chrome Developer Tools",
@@ -185,6 +198,19 @@ export default Route.extend({
         type: "Workshop",
         isKeynote: false,
         bio: "Marla Brizel is a software developer at Democracy Works where she works on various initiatives to ensure that no voter should ever have to miss an election. She also helps curate the session lineup for Denver Startup Week and is an expert in agile development practices. She spends as much time as she possibly can skiing and trail running in the mountains.",
+        specialClasses: ""
+      },
+      {
+        picture: "url(assets/bryan.jpg)",
+        name: "Bryan Hughes",
+        talkName: "TypeScript in Practice",
+        talkAbstract: "Are you interested in TypeScript, but not sure where to start? Like most modern web development, it can feel like there are too many options and no obvious answers. This workshop will teach you all about TypeScript, and how to use it in practice. We'll walk through creating a small Node.js express app and a small React web app, all written in TypeScript. We'll also walk through setting up a build pipeline, and effectively debugging TypeScript code on the server and in the browser.",
+        twitterLink: "https://twitter.com/nebrius",
+        githubLink: "https://github.com/nebrius",
+        linkedInLink: "",
+        type: "Workshop",
+        isKeynote: false,
+        bio: "",
         specialClasses: ""
       },
       {
@@ -238,19 +264,19 @@ export default Route.extend({
         isKeynote: false,
         bio: "Regis Boudinot is a Frontend Engineer and Trained Release Manager at Gitlab. He mentors Turing students, is always trying to help people on Slack, and enjoys playing guitar at Open Mic Nights. He spends a lot of time building prototypes, writing libraries in Rust/JavaScript, as well as automating things with hardware.",
         specialClasses: ""
+      },
+      {
+        picture: "url(assets/blank.png)",
+        name: "",
+        talkName: "",
+        twitterLink: "",
+        githubLink: "",
+        linkedInLink: "",
+        type: "",
+        isKeynote: false,
+        bio: "",
+        specialClasses: ""
       }
-      // {
-      //   picture: "url(assets/blank.png)",
-      //   name: "",
-      //   talkName: "",
-      //   twitterLink: "",
-      //   githubLink: "",
-      //   linkedInLink: "",
-      //   type: "",
-      //   isKeynote: false,
-      //   bio: "",
-      //   specialClasses: ""
-      // }
 
     ]));
 
