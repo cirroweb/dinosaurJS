@@ -159,7 +159,7 @@ export default Route.extend({
         type: "Workshop",
         isKeynote: false,
         bio: "Kassandra is a Developer Relations Engineer at IOpipe by day, and a new longboarder and Electrical Engineering student by night. They like to build NodeBots and snuggle cats in their ATX home when not out doing those things.",
-      specialClasses: ""
+        specialClasses: ""
       },
       {
         picture: "url(assets/patricia.jpg)",
@@ -264,20 +264,7 @@ export default Route.extend({
         isKeynote: false,
         bio: "Regis Boudinot is a Frontend Engineer and Trained Release Manager at Gitlab. He mentors Turing students, is always trying to help people on Slack, and enjoys playing guitar at Open Mic Nights. He spends a lot of time building prototypes, writing libraries in Rust/JavaScript, as well as automating things with hardware.",
         specialClasses: ""
-      },
-      {
-        picture: "url(assets/blank.png)",
-        name: "",
-        talkName: "",
-        twitterLink: "",
-        githubLink: "",
-        linkedInLink: "",
-        type: "",
-        isKeynote: false,
-        bio: "",
-        specialClasses: ""
       }
-
     ]));
 
   }
