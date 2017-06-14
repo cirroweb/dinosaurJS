@@ -234,16 +234,16 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
     text-align: center;
 
     &:nth-child(1) {
-      height: 25vh;
+      height: 15vh;
     }
 
     &:nth-child(2) {
-      height: 67vh;
+      height: 75vh;
     }
 
 
     & > div {
-      height: 16.66vh;
+      height: 15vh;
       width: 50%;
       display: flex;
       justify-content: center;
@@ -254,14 +254,17 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
       &:nth-child(3),
       &:nth-child(4),
       &:nth-child(5),
-      &:nth-child(6) {
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
         border-bottom: 1px solid white;
       }
 
       &:nth-child(2),
       &:nth-child(4),
       &:nth-child(6),
-      &:nth-child(8) {
+      &:nth-child(8),
+      &:nth-child(10) {
         border-left: 1px solid white;
       }
     }

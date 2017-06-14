@@ -171,7 +171,7 @@ export default Route.extend({
         linkedInLink: "",
         type: "Workshop",
         isKeynote: false,
-        bio: "",
+        bio: "Patricia Realini is a front end engineer, an artist and a woman. When she's not writing code, she's writing documentation. When she's not writing docs, she's collecting records and recipe testing.",
         specialClasses: ""
       },
       {
@@ -210,7 +210,7 @@ export default Route.extend({
         linkedInLink: "",
         type: "Workshop",
         isKeynote: false,
-        bio: "",
+        bio: "Bryan Hughes is a technical evangelist at Microsoft, a member of the Node.js Technical Steering Committee, and chairperson of the Node.js Community Comittee. Bryan is also the creator of Raspi IO, a Raspberry Pi plugin for the Johnny-Five JavaScript robotics library. Outside of tech, Bryan is an amateur photographer, occasional writer, a once upon a time pianist, and a wine aficionado.",
         specialClasses: ""
       },
       {
