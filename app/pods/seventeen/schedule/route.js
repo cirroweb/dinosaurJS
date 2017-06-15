@@ -200,7 +200,7 @@ export default Ember.Route.extend({
         time: "1:00 PM - 3:30 PM",
         title: "Build A Safety “Net”: Intersectional & Inclusive Standards for Developers",
         speaker: "Patricia Realini",
-        description: "Give a developer a readable code and they can code for a day, teach a developer best practices and coding standards and they can be a valuable addition to any engineering team. But just as we depend on code standards so that we can all work in a shared codebase, we need a standard for psychological safety on our engineering teams, especially when it comes to underrepresented minorities. In this workshop we will break down our unconscious biases, learn how to level up from allies to accomplices, and practice techniques for building an intersectional support system so that our teams can be just as performant as our code.",
+        description: "Give a developer readable code and they can code for a day, teach a developer best practices and coding standards and they can be a valuable addition to any engineering team. But just as we depend on code standards so that we can all work in a shared codebase, we need a standard for psychological safety on our engineering teams, especially when it comes to underrepresented minorities. In this workshop we will break down our unconscious biases, learn how to level up from allies to accomplices, and practice techniques for building an intersectional support system so that our teams can be just as performant as our code.",
         hasToggle: true,
         icon: 'workshop'
       },
