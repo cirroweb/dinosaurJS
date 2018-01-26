@@ -63,7 +63,7 @@ strong, b {
 p {
     margin-bottom: 50px;
     font-size: inherit;
-    line-height: $base_line_height;
+    line-height: 1.8;
     input, textarea {
       font-size: 1rem !important;
       line-height: inherit;
@@ -81,7 +81,12 @@ a {
     }
 
 p a {
-  border-bottom: 1px solid $color_grey;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  transition: 300ms;
+
+  &:hover {
+    border-color: rgba(255,255,255,0.8)
+  }
 }
 
 .a--nav {

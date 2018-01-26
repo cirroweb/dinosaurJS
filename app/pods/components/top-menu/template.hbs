@@ -2,13 +2,11 @@
 <div class="top-menu flex-grid">
   <div class="seventeen-menu-box white-border-bottom column--2of4">
     {{#link-to 'seventeen.index' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
-      Dinosaur JS Conference 2017
+      Dinosaur JS Conference 2018
     {{/link-to}}
   </div>
   <div class="seventeen-menu-box white-border-left white-border-bottom small-text column--1of4">
-      June 15 - 16<br>
-      Space Gallery<br>
-      Denver, Colorado
+      <h3>June 21 - 22</h3>
   </div>
   <div class="seventeen-menu-box white-border-left white-border-bottom small-text column--1of4 border-left" {{action 'toggleMenu' true}}>
     Menu
@@ -23,15 +21,15 @@
     {{#link-to 'seventeen.index' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
       Home
     {{/link-to}}
-    {{#link-to 'seventeen.speakers' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
-      Speakers
-    {{/link-to}}
+    {{!#link-to 'seventeen.speakers' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
+      <!-- Speakers -->
+    {{!/link-to}}
     {{#link-to 'seventeen.attend' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
       Attend
     {{/link-to}}
-    {{#link-to 'seventeen.schedule' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
-      Schedule
-    {{/link-to}}
+    {{!#link-to 'seventeen.schedule' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
+      <!-- Schedule -->
+    {{!/link-to}}
     {{#link-to 'seventeen.team' invokeAction=(action 'toggleMenu' false) tagName="h3"}}
       Team
     {{/link-to}}
