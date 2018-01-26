@@ -37,10 +37,10 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 .seventeen {
   background: $color_dark_blue;
   color: $color_white;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   // font-family: 'Lab Mono', monospace;
-  font-family: 'GT Walsheim Regular', sans-serif;
+  font-family: 'Untitled Sans R','GT Walsheim Regular', sans-serif;
   font-weight: normal;
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAYAAADdGWXmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrkloENhCAMRcEJGKGjMAIjOIIj3CaM4G1wI7jCbeAIXElKjiiIB+ViYpMGg8Dv+2qjEFcI55zCnDDhH2Kj+8bSVRgPnknEYhoaV3ZhstAHkABE9wwVwkNMFs50/fBUmYLGZmHc8PIHbSkLTqSEVUkIaIOK5myK7qSwH01u8RQsTBQAFc/eC+vcgiVYuJk/TXe2kp2FrXRHYjsLu9HlLGSnO7KQna5kIStdyUI2utADKyyHWgvtj3vq6MhCU/lCQTcLm+iof+nGz6X/r0OXnnl7urXU6gYOMSnlG4cn5nQZuoFLLKLT4nbxEWAA4a/rQvlXHjsAAAAASUVORK5CYII=), auto;
 
@@ -75,14 +75,14 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   }
 
   .seventeen h3 {
-    font-family: 'GT Walsheim Medium', sans-serif;
+    font-family: 'Untitled Sans R','GT Walsheim Medium', sans-serif;
     font-weight: normal;
     margin-bottom: 0;
     font-size: 1.4em;
   }
 
   .seventeen h4 {
-    font-family: 'GT Walsheim Medium', sans-serif;
+    font-family: 'Untitled Sans R','GT Walsheim Medium', sans-serif;
     font-weight: normal;
     margin-bottom: 0;
   }
@@ -175,10 +175,15 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #fff;
+      // letter-spacing: 0.3rem;
+      -webkit-transform: skewX(-12deg);
+      transform: skewX(-12deg);
     }
 
     h4 {
       position: relative;
+      transition: 300ms;
+      will-change: transform;
 
       // &:after {
       //   content: "";
@@ -299,7 +304,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 }
 
 seventeen {
-  font-family: 'GT Walsheim Regular', sans-serif;
+  font-family: 'Untitled Sans R','GT Walsheim Regular', sans-serif;
   font-weight: normal;
   font-size: 1.7vw;
   line-height: 1.9;
@@ -728,7 +733,7 @@ seventeen {
       display: flex
     }
 
-    .seventeen .team  .home__full-wrap:last-child .team__svg.white-border-bottom{
+    .seventeen .team  .home__full-wrap:last-child .home__intro.white-border-bottom{
       border-bottom: 0;
     }
 

@@ -1,30 +1,50 @@
 <div class="attend">
-  <div class="padding--50 center-text white-border-bottom">
+  <div class="padding--100 center-text white-border-bottom">
     Attend
   </div>
   <div class="attend__wrap">
     <div class="flex-grid flex--wrap">
       <div class="column--2of4 small-text white-border-bottom flex-content--middle -text--center padding-small">
-          Space Gallery<br/>
-          400 Santa Fe Dr. <br>
+          Conference Venue — June 21<br/>
+          Alamo Drafthouse Cinema<br>
+          4255 West Colfax Ave<br/>
           Denver, CO 80204
       </div>
 
       <div class="location-map white-border-bottom white-border-left column--2of4">
-        {{#g-map lat=39.7228787 lng=-104.9983911 zoom=14 as |context|}}
-          {{g-map-address-marker context address="Space Gallery Denver, Colorado"}}
+        {{#g-map lat=39.7408103 lng=-105.0447136 zoom=14 as |context|}}
+          {{g-map-address-marker context address="Alamo Drafthouse Cinema Sloans Lake"}}
         {{/g-map}}
       </div>
     </div>
+  </div>
+  <div class="attend__wrap">
+    <div class="flex-grid flex--wrap">
+
+      <div class="column--2of4 small-text white-border-bottom flex-content--middle -text--center padding-small">
+          Workshop Venue — June 22<br/>
+          Turing School of Software & Design<br/>
+          1331 Market Street<br/>
+          Denver, CO 80202
+      </div>
+
+      <div class="location-map white-border-bottom white-border-left column--2of4">
+        {{#g-map lat=39.7508006 lng=-104.9987834 zoom=14 as |context|}}
+          {{g-map-address-marker context address="Turing School of Software & Design"}}
+        {{/g-map}}
+      </div>
+    </div>
+  </div>
 
     <div class="padding--50 center-text white-border-bottom">
       Tickets
     </div>
-    <a href="#" class="buy-tix home__h4 white-border-bottom column--2of4"><h4>Sold Out</h4></a>
-    <a href="https://ti.to/dinosaurjs/2017#tito-ticket-7e-h55xaudc" class="buy-tix home__h4 white-border-bottom column--2of4"><h4>Diversity Scholarships</h4></a>
+    <!-- <a href="#" class="buy-tix home__h4 white-border-bottom column--2of4"><h4>Sold Out</h4></a> -->
+    <a href="https://ti.to/dinosaurjs/2018" target="_blank" class="buy-tix home__h4 white-border-bottom column--2of4"><h4>Buy Tickets</h4></a>
+    <!-- <a href="https://ti.to/dinosaurjs/2017#tito-ticket-7e-h55xaudc" class="buy-tix home__h4 white-border-bottom column--2of4"><h4>Diversity Scholarships</h4></a> -->
 
 
-    <div class="padding--50 center-text white-border-bottom">
+    <!-- <div class="padding--50 center-text white-border-bottom">
       Where to Stay
     </div>
 
@@ -102,9 +122,9 @@
         </div>
         <div class="sponsor__logo"></div>
       </div>
-    </div>
+    </div> -->
 
-  </div>
+
   {{outlet}}
 </div>
 
