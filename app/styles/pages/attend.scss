@@ -40,6 +40,7 @@
 .seventeen .attend .sponsors__square:nth-child(1),
 .seventeen .attend .sponsors__square:nth-child(2) {
   height: 75vh;
+  overflow: hidden;
 }
 
 @media ( max-width: $break_tablet_medium ) {

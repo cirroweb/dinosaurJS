@@ -246,9 +246,13 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
       height: 75vh;
     }
 
+    &:last-child {
+      border-bottom: 0;
+    }
+
 
     & > div {
-      height: 15vh;
+      height: 38vh;
       width: 50%;
       display: flex;
       justify-content: center;
@@ -256,8 +260,8 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 
       &:nth-child(1),
       &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(4),
+      // &:nth-child(3),
+      // &:nth-child(4),
       &:nth-child(5),
       &:nth-child(6),
       &:nth-child(7),
