@@ -52,7 +52,11 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.buildENV = 'production'
+  }
 
+  if (environment === 'staging') {
+    ENV.buildENV = 'produciton'
   }
 
   return ENV;
