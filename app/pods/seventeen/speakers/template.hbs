@@ -9,9 +9,9 @@
           {{#if speaker.picture}}{{computed-inline-styles css="background-image: " value=speaker.picture classNames="speaker__image"}}{{else}}<div></div>{{/if}}
         </div>
 
-        <div>
+        <div class="speaker__card-inner">
           <!-- <div class="flex-grid box flex--wrap flex--align-stretch"> -->
-          <div class="flex-grid white-border-bottom">
+          <div class="speaker__bio-top flex-grid white-border-bottom -full-width">
 
             <div class="box__1 white-border-right flex-grid flex--column -text--left">
               <h5 class="speaker-name padding--50">{{speaker.name}}</h5>
@@ -21,22 +21,22 @@
 
 
             <div class="box__1">
-              <div class="speaker__bio-info padding-small">
+              <div class="speaker__bio-info padding-small -text--left">
                 <div>{{speaker.type}}</div>
               </div>
               {{#if speaker.isKeynote}}
-                <div class="speaker__bio-info flex-grid padding-small">
+                <div class="speaker__bio-info padding-small">
                   <div>{{speaker.bio}}</div>
                 </div>
               {{else}}
-                <div class="speaker__bio-info flex-grid padding-small">
+                <div class="speaker__bio-info padding-small -text--left">
                   <div>{{speaker.talkName}}</div>
                 </div>
               {{/if}}
             </div>
           </div>
 
-          <div class="flex-grid">
+          <div class="flex-grid speaker__bio-bottom">
             <div class="box__1 white-border-right flex-grid flex--column -text--left">
               <div class="speaker__bio-left padding-small">
                 {{speaker.bio}}
@@ -45,7 +45,7 @@
 
 
             <div class="box__1">
-              <div class="speaker__bio-info flex-grid padding-small">
+              <div class="speaker__bio-info -text--left padding-small">
                 <div>{{speaker.talkAbstract}}</div>
               </div>
             </div>

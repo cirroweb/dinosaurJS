@@ -25,6 +25,12 @@
     }
   }
 
+  .speaker__card-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
   .speaker__image {
     background-repeat: no-repeat;
     background-size: cover;
