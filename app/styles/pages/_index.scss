@@ -1,3 +1,7 @@
+.top-menu {
+  border-top: 1px solid white;
+}
+
 body {
   overflow: auto;
   &.is-clipped {
@@ -248,7 +252,7 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 
 
     & > div {
-      height: 38vh;
+      height: 25vh;
       width: 50%;
       display: flex;
       justify-content: center;
@@ -256,10 +260,10 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
 
       &:nth-child(1),
       &:nth-child(2),
-      // &:nth-child(3),
-      // &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6),
+      &:nth-child(3),
+      &:nth-child(4),
+      // &:nth-child(5),
+      // &:nth-child(6),
       &:nth-child(7),
       &:nth-child(8) {
         border-bottom: 1px solid white;
@@ -279,6 +283,13 @@ body.seventeen-speakers, body.seventeen-speakers .bottom-menu, body.seventeen-sp
   .sponsor__logo img {
     max-width: 190px;
     max-height: 80px;
+  }
+
+  .sponsor__logo svg {
+    max-width: 190px;
+    max-height: 80px;
+    width: 100%;
+    height: auto;
   }
 
 }
