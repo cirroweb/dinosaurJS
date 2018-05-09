@@ -145,7 +145,7 @@ export default Route.extend({
       linkedInLink: "",
       type: "Speaker",
       isKeynote: false,
-      bio: "After many years of ghostwriting, Emily Freeman made the bold (insane?!) choice to switch careers into software engineering. Emily is the curator of JavaScript January. She works as a developer advocate for Kickbox and lives in Denver, Colorado. Madison is on a mission to help developers build secure software. She is a Developer Evangelist and Software Engineer at IronCore Labs. Madison has deep roots in the startup community and has worked as a front-end developer, designer and marketer.",
+      bio: "After many years of ghostwriting, Emily Freeman made the bold (insane?!) choice to switch careers into software engineering. Emily is the curator of JavaScript January. She works as a developer advocate for Kickbox and lives in Denver, Colorado.",
       specialClasses: ""
     }
   ]))
