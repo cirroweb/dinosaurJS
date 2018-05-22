@@ -34,7 +34,7 @@ export default Route.extend({
       {
         picture: "url(https://pbs.twimg.com/profile_images/898317681199259648/BfY1lAY4_400x400.jpg)",
         name: "Jennifer Wong",
-        talkName: "Empathetic Design Systems",
+        talkName: "Empathetic Design Systems<br>",
         talkAbstract: "How do you make a design system empathetic and whom should it be empathetic towards? At Eventbrite, we decided to replace our outdated styleguide with a newfangled design system from scratch. We made a great start.. But we forgot about a11y, fellow engineers, and our coworkers from Product, Design, and more. Slow dev time, changing designs, and new technology caused growing pains. So what did we learn in our first iteration? How did empathy help shape our ever-changing, morphing design system? Come learn how to build an empathetic design system from the ground up or start empathizing today!",
         twitterLink: "",
         githubLink: "",
@@ -125,7 +125,7 @@ export default Route.extend({
     {
       picture: "url(https://pbs.twimg.com/profile_images/971608744156053505/IWBH3oFM_400x400.jpg)",
       name: "Madison Kerndt",
-      talkName: "Maps, Monads, and Pure Functions: Functional Programming for Beginners",
+      talkName: "Maps, Monads, and Pure Functions: Functional Programming for Beginners </br>( with Emily Freeman )",
       talkAbstract: "We’ve all met that one dev who’s absolutely obsessed with “pure functions” and throws around the word “lambda” like anyone knows what the heck he’s talking about. If you don’t have a degree in applied mathematics, FP is intimidating. No, terrifying. But here’s the thing — once you get past the fancy words, it’s really quite simple. And, after you recover from your mind being blown, you’ll find yourself with an entirely new set of technical tools. This workshop is advanced programming for beginners. We’ll make FP approachable and walk you through how to build a functional program in JS.",
       twitterLink: "",
       githubLink: "",
@@ -138,7 +138,7 @@ export default Route.extend({
     {
       picture: "url(https://pbs.twimg.com/profile_images/970852530711228417/MaOE-b6h_400x400.jpg)",
       name: "Emily Freeman",
-      talkName: "Maps, Monads, and Pure Functions: Functional Programming for Beginners",
+      talkName: "Maps, Monads, and Pure Functions: Functional Programming for Beginners </br>( with Madison Kerndt )",
       talkAbstract: "We’ve all met that one dev who’s absolutely obsessed with “pure functions” and throws around the word “lambda” like anyone knows what the heck he’s talking about. If you don’t have a degree in applied mathematics, FP is intimidating. No, terrifying. But here’s the thing — once you get past the fancy words, it’s really quite simple. And, after you recover from your mind being blown, you’ll find yourself with an entirely new set of technical tools. This workshop is advanced programming for beginners. We’ll make FP approachable and walk you through how to build a functional program in JS.",
       twitterLink: "",
       githubLink: "",
@@ -147,7 +147,46 @@ export default Route.extend({
       isKeynote: false,
       bio: "After many years of ghostwriting, Emily Freeman made the bold (insane?!) choice to switch careers into software engineering. Emily is the curator of JavaScript January. She works as a developer advocate for Kickbox and lives in Denver, Colorado.",
       specialClasses: ""
+    },
+    {
+      picture: "url(https://camo.githubusercontent.com/f717356337380e5f38accea1e142be6d976deee0/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f3939373333333537363032393939393130342f705443665a5238715f343030783430302e6a7067)",
+      name: "Leta Keane",
+      talkName: "CSS Grid",
+      talkAbstract: "One of the newest editions to the CSS family, Grid is a powerful way to lay out 2D page elements. Whether you're an interested CSS Grid rookie or a Flexbox master suspicious of this new kid on the responsive block, this workshop will give you the tools you need so you can begin creating flexible, controlled layouts!",
+      twitterLink: "",
+      githubLink: "",
+      linkedInLink: "",
+      type: "Workshop",
+      isKeynote: false,
+      bio: "",
+      specialClasses: ""
+    },
+    {
+      picture: "url(https://camo.githubusercontent.com/d68016f7759c98963d5e696c9cf63be1be186fc6/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f3937353830373937313534333437343137382f496b4b31706b384b5f343030783430302e6a7067)",
+      name: "Jhun de Andres",
+      talkName: "Code Splitting 101",
+      talkAbstract: "<p>It's 2018 and we have mobile CSS, mobile HTML, but for some reason there's no 'mobile' JavaScript. Thankfully with ES6's dynamic imports, we can lazy load our components and drastically cut down the initial load time of our applications. In this workshop you'll learn how to use ES6 dynamic imports to help split your code bundle and test it (because it's 2018).</p><p>This workshop is for everyone! You’ll get the most out of this session if you’ve written a little bit of React before and know how to test, but those aren’t prerequisites. You’ll get all the concepts, tools, and context needed via code examples.</p>You can expect material on ES6 JavaScript, mocking and stubbing functions inside of a testing environment, and really great gifs to drive some of these abstract points home. You’ll leave empowered and excited to start splitting up your code!",
+      twitterLink: "",
+      githubLink: "",
+      linkedInLink: "",
+      type: "Workshop",
+      isKeynote: false,
+      bio: "",
+      specialClasses: ""
+    },
+    {
+      picture: "url(https://camo.githubusercontent.com/02f63133cd7fe57afde2bbe0ceec065ef4fdf27c/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f3832363134393736343937343730323539372f50322d33684e6e625f343030783430302e6a7067)",
+      name: "Bryan Hughes",
+      talkName: "Node.js Serverless Design and Best Practices",
+      talkAbstract: "Serverless is taking the backend world by storm, and for good reason. It promises infinite scalability and never having to manage a server again. Serverless mostly achieves these goals the same way that functional programming does. You define inputs and outputs without using state...and state is what makes scaling hard.   Much like functional programming though, being productive in serverless requires a tricky shift in mindset. This workshop will walk you through creating a serverless application with Node.js, teach you best practices, and teach you how to think serverless.   Note: We will be using Azure Functions for this workshop and we will provide you with Azure credit.",
+      twitterLink: "",
+      githubLink: "",
+      linkedInLink: "",
+      type: "Workshop",
+      isKeynote: false,
+      bio: "",
+      specialClasses: ""
     }
-  ]))
+  ]));
   }
 });

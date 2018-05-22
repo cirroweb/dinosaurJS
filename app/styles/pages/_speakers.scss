@@ -1,6 +1,19 @@
 .seventeen {
+  .page-title {
+    font-size: 6vmax;
+    transform: skew(-25deg);
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
   .speakers {
     background-color: $color_redorange;
+  }
+
+  .speaker__abstract,
+  .speaker__bio {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   h6 {
@@ -29,6 +42,13 @@
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+  }
+
+  .speaker__type {
+    padding: 10px;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
   }
 
   .speaker__image {

@@ -1,5 +1,5 @@
 <div class="speakers">
-  <div class="padding--50 center-text">
+  <div class="padding--50 center-text page-title">
     Speakers
   </div>
   <div class="speakers__wrap flex-grid flex--wrap">
@@ -13,24 +13,24 @@
           <!-- <div class="flex-grid box flex--wrap flex--align-stretch"> -->
           <div class="speaker__bio-top flex-grid white-border-bottom -full-width">
 
-            <div class="box__1 white-border-right flex-grid flex--column -text--left">
-              <h5 class="speaker-name padding--50">{{speaker.name}}</h5>
+            <div class="box__1 white-border-right flex-grid flex--column -text--left flex-center-center">
+              <h5 class="speaker-name padding--10">{{speaker.name}}</h5>
               {{#if speaker.twitterLink}}<div><a href={{speaker.twitterLink}} target="_blank">Twitter</a></div>{{/if}}
               {{#if speaker.githubLink}}<div><a href={{speaker.githubLink}} target="_blank">Github</a></div>{{/if}}
             </div>
 
 
             <div class="box__1">
-              <div class="speaker__bio-info padding-small -text--left">
-                <div>{{speaker.type}}</div>
+              <div class="speaker__bio-info -text--left">
+                <div class="speaker__type">{{speaker.type}}</div>
               </div>
               {{#if speaker.isKeynote}}
-                <div class="speaker__bio-info padding-small">
+                <div class="speaker__bio-info speaker__bio padding-small">
                   <div>{{speaker.bio}}</div>
                 </div>
               {{else}}
-                <div class="speaker__bio-info padding-small -text--left">
-                  <div>{{speaker.talkName}}</div>
+                <div class="speaker__bio-info padding-small speaker__talk -text--left">
+                  <div>{{{speaker.talkName}}}</div>
                 </div>
               {{/if}}
             </div>
@@ -38,15 +38,15 @@
 
           <div class="flex-grid speaker__bio-bottom">
             <div class="box__1 white-border-right flex-grid flex--column -text--left">
-              <div class="speaker__bio-left padding-small">
+              <div class="speaker__bio-left speaker__bio padding-small">
                 {{speaker.bio}}
               </div>
             </div>
 
 
             <div class="box__1">
-              <div class="speaker__bio-info -text--left padding-small">
-                <div>{{speaker.talkAbstract}}</div>
+              <div class="speaker__bio-info -text--left padding-small speaker__abstract">
+                <div>{{{speaker.talkAbstract}}}</div>
               </div>
             </div>
           </div>
