@@ -24,6 +24,7 @@ You will need the following things properly installed on your computer.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Deploying
+* Before you can deploy you will need a `.env.production.deploy`. Ask Frankie to get you the contents of it so you can push to prod. 
 * `ember deploy production --activae=true` (deploy to production and activate new index)
 
 
