@@ -26,8 +26,8 @@ export default Route.extend({
         twitterLink: "https://twitter.com/buritica",
         githubLink: "https://github.com/buritica",
         linkedInLink: "",
-        type: "Speaker",
-        isKeynote: true,
+        type: "Keynote",
+        isKeynote: false,
         bio: "Juan Pablo Buriticá is the VP of Engineering at splice.com where he leads and serves an engineering team throughout North and South America, with the mission of building the creative hub for the modern musician. Juan Pablo has built effective software engineering organizations by emphasizing Open Source software values, technical excellence, trust, and empathy. He has also organized more than 10 software engineering conferences in the US & Latin-America, founded multiple JavaScript meetups, and led the growth of Colombia’s JavaScript community, now one of the largest Spanish-speaking JS communities in the world. His favorite food group is empanadas.",
         specialClasses: ""
       },
