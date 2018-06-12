@@ -19,91 +19,91 @@ export default Ember.Route.extend({
       },
       {
         time: "9.30AM - 10.00AM",
-        time: "What To Expect When You’re Expecting: A Guide to Regression Testing",
+        title: "What To Expect When You’re Expecting: A Guide to Regression Testing",
         speaker: "Emily Morehouse",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "10.00AM - 10.30AM",
-        time: "Houdini - how you too can write a browser rendering engine!",
+        title: "Houdini - how you too can write a browser rendering engine!",
         speaker: "Naina Raisinghani",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "10.30AM  - 11.10AM",
-        time: "Break",
+        title: "Break",
         speaker: "",
         description: "",
         hasToggle: false,
         icon: "pause",
       }, {
         time: "11.10AM - 11.40AM",
-        time: "The Critical Request: An investigation into what blocks render",
+        title: "The Critical Request: An investigation into what blocks render",
         speaker: "Ben Schwarz",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "11.40AM - 12.10PM",
-        time: "Bridging the Disconnect: Making Software to Make a Statement",
+        title: "Bridging the Disconnect: Making Software to Make a Statement",
         speaker: "Chris Bolin",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "12.10PM  - 1.40PM",
-        time: "Lunch",
+        title: "Lunch",
         speaker: "",
         description: "",
         hasToggle: false,
         icon: "pause",
       }, {
         time: "1.40PM - 2.10PM",
-        time: "Help me WebAssembly, You're My Only Hope",
+        title: "Help me WebAssembly, You're My Only Hope",
         speaker: "Jay Phelps",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "2.10PM - 2.40PM",
-        time: "Compilers: The New Frontier In Web Performance",
+        title: "Compilers: The New Frontier In Web Performance",
         speaker: "Chad Hietala",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "2.40PM - 3.20PM",
-        time: "Break",
+        title: "Break",
         speaker: "",
         description: "",
         hasToggle: false,
         icon: "pause",
       }, {
         time: "3.20PM - 3.50PM",
-        time: "require('WebGL-magic') with glslify",
+        title: "require('WebGL-magic') with glslify",
         speaker: "Max Bittker",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "3.50PM - 4.20PM",
-        time: "Empathetic Design Systems",
+        title: "Empathetic Design Systems",
         speaker: "Jennifer Wong",
         description: "",
         hasToggle: false,
         icon: "talk"
       }, {
         time: "4.20PM - 5.05PM",
-        time: "Break",
+        title: "Break",
         speaker: "",
         description: "",
         hasToggle: false,
         icon: "pause",
       }, {
         time: "5.05PM - 5.35PM",
-        time: "Keynote",
+        title: "Keynote",
         speaker: "Juan Pablo Buritica",
         description: "",
         hasToggle: false,
@@ -111,7 +111,7 @@ export default Ember.Route.extend({
       },
       {
         time: "5.35PM - 5.45PM",
-        time: "Closing Ceremonies",
+        title: "Closing Ceremonies",
         speaker: "",
         description: "",
         hasToggle: false,
