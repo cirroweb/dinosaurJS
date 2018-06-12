@@ -1,6 +1,6 @@
 # Dinosaurjs
 
-This README outlines the details of collaborating on this rad Ember application. ✌🏽
+✌🏽
 
 ## Prerequisites
 
@@ -29,21 +29,14 @@ You will need the following things properly installed on your computer.
 Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
-
 * `ember test`
 * `ember test --server`
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
+### Deploying
+* `ember deploy production --activae=true` (deploy to production and activate new index)
 
 
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+## Notes for collaborators 
+* We use pod structure so all current code is withing the `seventeen` folder — https://github.com/cirroweb/dinosaurJS/tree/master/app/pods/seventeen. Yes, I realize this is 2018 but we are using the same site as last year so get off my back lol. 
+* Static JSON data lives in the associated route within the `seventeen` directory.
 
