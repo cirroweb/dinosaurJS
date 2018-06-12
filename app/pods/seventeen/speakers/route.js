@@ -18,19 +18,19 @@ export default Route.extend({
         bio: "Emily Morehouse-Valcarcel is the Director of Engineering at Cuttlesoft, a digital product agency focused on creating beautifully designed software. Her passion is driven by a blend of empathy, strategy, curiosity, and human-centered design. She's an avid OSS contributor and constant learner focused on building tools to automate the mundane and shed light on the complexity of the human experience. Emily holds degrees in Computer Science, Criminology, and Theatre from Florida State University.",
         specialClasses: ""
       },
-      // {
-      //   picture: "url(http://gravatar.com/avatar/3994a1ac47c4a684d7378ef06c1571cd?s=400)",
-      //   name: "Brian Holt",
-      //   talkName: "Entangled Qubits: Quantum Computing with JavaScript",
-      //   talkAbstract: "Qubits, entanglements, and superpositions, oh my! Coming is the great revolution of quantum computing and it’s going to change everything. We inch closer to this amazing breakthrough on a daily basis and we’re beginning as computer scientists to think through what quantum computing means for us as software engineers. Luckily for us as software engineers we too can harness the great power of quantum computing when it arrives. We’ll go through the basic units of quantum computing, the terminology, and sorts of problems it can deal with that we can’t deal with today. The future is now. Or soon.",
-      //   twitterLink: "",
-      //   githubLink: "",
-      //   linkedInLink: "",
-      //   type: "Speaker",
-      //   isKeynote: false,
-      //   bio: "Brian is currently working as a senior cloud developer advocate at Microsoft and he's all about developers, developers, developers. Previously he was a JavaScript engineer at Netflix, LinkedIn and Reddit. When not working, Brian finds time to teach on Frontend Masters, run his mouth on Front End Happy Hour, travel all over the world, and play with his adorable dog. Brian is currently a resident of Seattle, WA.",
-      //   specialClasses: ""
-      // },
+      {
+        picture: "url(https://pbs.twimg.com/profile_images/821131399386267650/UdtdTb2H_400x400.jpg)",
+        name: "Juan Pablo Buriticá",
+        talkName: "Power, Influence and Authority in Engineering Leadership",
+        talkAbstract: "Leadership opportunities are available at all levels of an organization, but some are more evident or clearly defined than others. Helping an organization achieve its goals may require us to step up as engineering leaders. As individual contributors, we may be able to support our team in negotiating the scope of a feature, facilitating a meeting or looking into that part of our codebase everyone shies away from. How about improving processes, helping define the culture or even the career journey of an organization? Do we need to be managers to have explicit authority to be agents of change? Maybe ... or maybe not.\nThis talk explores different challenges that engineering teams have through the lens of power, influence or authority from the perspective of engineers or managers. If you've ever wondered if you should step into management, this talk can give you some insight into the right tool or role needed to be an agent for positive change. After this talk, you should have a better idea of whether making the management career change can give you the tools you need to grow and help others in the process.",
+        twitterLink: "https://twitter.com/buritica",
+        githubLink: "https://github.com/buritica",
+        linkedInLink: "",
+        type: "Speaker",
+        isKeynote: true,
+        bio: "Juan Pablo Buriticá is the VP of Engineering at splice.com where he leads and serves an engineering team throughout North and South America, with the mission of building the creative hub for the modern musician. Juan Pablo has built effective software engineering organizations by emphasizing Open Source software values, technical excellence, trust, and empathy. He has also organized more than 10 software engineering conferences in the US & Latin-America, founded multiple JavaScript meetups, and led the growth of Colombia’s JavaScript community, now one of the largest Spanish-speaking JS communities in the world. His favorite food group is empanadas.",
+        specialClasses: ""
+      },
       {
         picture: "url(https://pbs.twimg.com/profile_images/898317681199259648/BfY1lAY4_400x400.jpg)",
         name: "Jennifer Wong",

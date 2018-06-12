@@ -103,7 +103,7 @@ export default Ember.Route.extend({
         icon: "pause",
       }, {
         time: "5.05PM - 5.35PM",
-        title: "Keynote",
+        title: "Power, Influence and Authority in Engineering Leadership",
         speaker: "Juan Pablo Buritica",
         description: "",
         hasToggle: false,
