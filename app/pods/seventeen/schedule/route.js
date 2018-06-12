@@ -110,7 +110,7 @@ export default Ember.Route.extend({
         icon: "talk"
       },
       {
-        time: "5.05PM - 5.35PM",
+        time: "5.35PM - 5.45PM",
         time: "Closing Ceremonies",
         speaker: "",
         description: "",
