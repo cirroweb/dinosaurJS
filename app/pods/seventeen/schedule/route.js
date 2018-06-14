@@ -82,7 +82,7 @@ export default Ember.Route.extend({
         icon: "pause",
       }, {
         time: "3.20PM - 3.50PM",
-        title: "require('WebGL-magic') with glslify",
+        title: "How to Program Your GPU (and Not Do It Alone)",
         speaker: "Max Bittker",
         description: "",
         hasToggle: false,
