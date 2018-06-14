@@ -91,7 +91,7 @@ export default Route.extend({
         {
           picture: 'url(https://spectrum.ieee.org/image/MzAwOTIwMg.jpeg)',
           name: 'Max Bittker',
-          talkName: How to Program Your GPU (and Not Do It Alone)",
+          talkName: "How to Program Your GPU (and Not Do It Alone)",
           talkAbstract:
             'Intrigued by WebGL? Don\'t go at it alone! Leverage the bundling tool glslify to get your pixels flowing. I\'ll introduce you to glslify and its ecosystem of friendly micro-libraries for the GPU that will empower you to learn graphics programming and build things that will make people on the internet say "neat". Pick up the tools you need to soar beyond "hello world".',
           twitterLink: '',
