@@ -313,6 +313,48 @@ export default Route.extend({
           isKeynote: false,
           bio: '',
           specialClasses: '',
+        },
+        {
+          picture: 'url(https://pbs.twimg.com/profile_images/496348912257478657/GJFDcKOx_400x400.png)',
+          name: 'Romeeka Gayhart',
+          talkName: 'Technical Writing for Developers',
+          talkAbstract:
+            "How do you communicate about your projects to the world and your fellow developers? If you work on a distributed team, open source or just want to avoid a full day of meetings  - you probably depend on written communication.<br><br> The good news is that there are well defined best practices in the field of technical writing that can help us.<br><br> Bring your READMEs, RFCs, reports, side projects and even your Github username and we’ll work together to combine the science of technical writing and the world of web development.",
+          twitterLink: '',
+          githubLink: '',
+          linkedInLink: '',
+          type: 'Workshop',
+          isKeynote: false,
+          bio: '',
+          specialClasses: '',
+        },
+        {
+          picture: 'url(https://media.licdn.com/dms/image/C5603AQEm6Lydg9hjeQ/profile-displayphoto-shrink_200_200/0?e=1529514000&v=beta&t=xwLC2r9J5U155e4mX9vsk7IfK2AWN2TIH0U2oPtJINM)',
+          name: 'Melissa Wagasky',
+          talkName: 'Fastest Progessive Web App (PWA) in the West',
+          talkAbstract:
+            "A few years ago, pundits were trumpeting the demise of the mobile web. Apps had won the day. In retrospect, that announcement hasn’t aged well. The mobile web is alive and well. Progressive Web Applications (PWA) provide native qualities with the ease of access and distribution of the web. But PWAs are not built on a single technology and it can be a bit tricky to wrap your head around a PWA is exactly.  It turns out, there are a bunch of technologies that go into building a PWA. In these 90 minutes we’ll turn a web app into a PWA and cover the important technologies for getting started with PWAs along the way.",
+          twitterLink: '',
+          githubLink: '',
+          linkedInLink: '',
+          type: 'Workshop',
+          isKeynote: false,
+          bio: '',
+          specialClasses: '',
+        },
+        {
+          picture: 'url(https://pbs.twimg.com/profile_images/900416714747240449/lPTo6edb_400x400.jpg)',
+          name: 'Chris Bolin (Again!)',
+          talkName: 'Intermediate React',
+          talkAbstract:
+            "Take your React skills to the next level! We'll dive into three topics used in modern React applications: render props, the context API (new in React 16), and advanced forms (using Formik). You should already be familiar with React basics like JSX, components, and lifecycle methods.",
+          twitterLink: '',
+          githubLink: '',
+          linkedInLink: '',
+          type: 'Workshop',
+          isKeynote: false,
+          bio: '',
+          specialClasses: '',
         }
       ]),
     );
