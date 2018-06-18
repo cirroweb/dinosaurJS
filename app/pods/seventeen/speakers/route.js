@@ -227,7 +227,7 @@ export default Route.extend({
           linkedInLink: '',
           type: 'Workshop',
           isKeynote: false,
-          bio: '',
+          bio: "Bryan Hughes is a technical evangelist at Microsoft and long-time member of the Node.js and NodeBots communities. Bryan is the creator of Raspi IO which provides Raspberry Pi support for the Johnny-Five JavaScript robotics library. Bryan also created Raver Lights, a distributed wireless lighting system designed for festivals, and Request Inspector, a Node.js performance diagnostics tool. Outside of tech, Bryan is an amateur photographer, occasional writer, a once upon a time pianist, and a wine aficionado.",
           specialClasses: '',
         },
         {
