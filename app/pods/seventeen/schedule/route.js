@@ -129,7 +129,7 @@ export default Ember.Route.extend({
         icon: "pause"
       },
       {
-        time: "9.00AM - 10.30PM",
+        time: "9.30AM - 11.00PM",
         title: "Introduction to React Native",
         speaker: "Katie Scruggs",
         description: "",
