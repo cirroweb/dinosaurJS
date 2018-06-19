@@ -121,6 +121,22 @@ export default Ember.Route.extend({
 
     controller.set('workshops', [
       {
+        time: "8.00AM - 9.00PM",
+        title: "Breakfast and Registration",
+        speaker: "",
+        description: "",
+        hasToggle: false,
+        icon: "pause"
+      },
+      {
+        time: "9.00AM - 10.30PM",
+        title: "Introduction to React Native",
+        speaker: "Katie Scruggs",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
         time: "9.00AM - 12.00PM",
         title: "Node.js Serverless Design and Best Practices",
         speaker: "Bryan Hughes",
@@ -145,14 +161,6 @@ export default Ember.Route.extend({
         icon: "talk"
       },
       {
-        time: "9.00AM - 12.00PM",
-        title: "Fastest Progressive Web App in the West",
-        speaker: "Melissa Wagasky",
-        description: "",
-        hasToggle: false,
-        icon: "talk"
-      },
-      {
         time: "9.30AM - 11.30AM",
         title: "How Linters, Compilers, and Other Cool Things Work",
         speaker: "Will Klein",
@@ -164,6 +172,14 @@ export default Ember.Route.extend({
         time: "10.30AM - 12.00PM",
         title: "Kubernetes for JS App developers",
         speaker: "Will Klein",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "10.45AM - 12.00PM",
+        title: "Fastest Progressive Web App in the West",
+        speaker: "Melissa Wagasky",
         description: "",
         hasToggle: false,
         icon: "talk"
@@ -218,6 +234,14 @@ export default Ember.Route.extend({
       },
       {
         time: "1.00PM - 3.00PM",
+        title: "Serverless JavaScript in the Cloud with Google Cloud Platform",
+        speaker: "Myles Borins",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "1.00PM - 2.30PM",
         title: "Serverless JavaScript in the Cloud with Google Cloud Platform",
         speaker: "Myles Borins",
         description: "",
