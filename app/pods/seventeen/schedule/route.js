@@ -171,7 +171,7 @@ export default Ember.Route.extend({
       {
         time: "10.30AM - 12.00PM",
         title: "Kubernetes for JS App developers",
-        speaker: "Will Klein",
+        speaker: "Lovisa Svallignson",
         description: "",
         hasToggle: false,
         icon: "talk"
