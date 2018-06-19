@@ -240,14 +240,6 @@ export default Ember.Route.extend({
         hasToggle: false,
         icon: "talk"
       },
-      {
-        time: "1.00PM - 2.30PM",
-        title: "Serverless JavaScript in the Cloud with Google Cloud Platform",
-        speaker: "Myles Borins",
-        description: "",
-        hasToggle: false,
-        icon: "talk"
-      },
     ]);
   }
 });
