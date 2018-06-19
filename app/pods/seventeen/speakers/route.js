@@ -343,6 +343,20 @@ export default Route.extend({
           specialClasses: '',
         },
         {
+          picture: 'url(https://pbs.twimg.com/profile_images/952225529100320768/HzL6kmHp_400x400.jpg)',
+          name: 'Katie Scruggs',
+          talkName: 'Introduction to React Native',
+          talkAbstract:
+            "Have you ever wanted to build mobile apps but didn't have the time to learn Java for Android and Objective C or Swift for iOS? React Native lets you build mobile apps using React! In this workshop, we'll build a mobile app that you can display in a simulator and view on your phone. We'll talk about the quirks of React Native vs React, how to style your components with style props, and how to navigate between mobile screens.",
+          twitterLink: '',
+          githubLink: '',
+          linkedInLink: '',
+          type: 'Workshop',
+          isKeynote: false,
+          bio: 'Katie is an Integration Engineer at TrackVia',
+          specialClasses: '',
+        },
+        {
           picture: 'url(https://pbs.twimg.com/profile_images/900416714747240449/lPTo6edb_400x400.jpg)',
           name: 'Chris Bolin (Again!)',
           talkName: 'Intermediate React',
