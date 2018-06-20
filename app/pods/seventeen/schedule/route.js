@@ -161,6 +161,14 @@ export default Ember.Route.extend({
         icon: "talk"
       },
       {
+        time: "9.00AM - 10.30AM",
+        title: "CSS Grid",
+        speaker: "Leta Keane",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
         time: "9.30AM - 11.30AM",
         title: "How Linters, Compilers, and Other Cool Things Work",
         speaker: "Will Klein",
@@ -169,7 +177,7 @@ export default Ember.Route.extend({
         icon: "talk"
       },
       {
-        time: "10.30AM - 12.00PM",
+        time: "10.30AM - 12.30PM",
         title: "Kubernetes for JS App developers",
         speaker: "Lovisa Svallignson",
         description: "",
