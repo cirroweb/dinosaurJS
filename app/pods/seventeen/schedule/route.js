@@ -119,6 +119,135 @@ export default Ember.Route.extend({
       },
     ]);
 
-    controller.set('workshops', []);
+    controller.set('workshops', [
+      {
+        time: "8.00AM - 9.00PM",
+        title: "Breakfast and Registration",
+        speaker: "",
+        description: "",
+        hasToggle: false,
+        icon: "pause"
+      },
+      {
+        time: "9.30AM - 11.00PM",
+        title: "Introduction to React Native",
+        speaker: "Katie Scruggs",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "9.00AM - 12.00PM",
+        title: "Node.js Serverless Design and Best Practices",
+        speaker: "Bryan Hughes",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "9.00AM - 12.00PM",
+        title: "Building a Component Library",
+        speaker: "Alan Smith",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "9.00AM - 11.00AM",
+        title: "Code Splitting 101",
+        speaker: "Jhun de Andres",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "9.00AM - 10.30AM",
+        title: "CSS Grid",
+        speaker: "Leta Keane",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "9.30AM - 11.30AM",
+        title: "How Linters, Compilers, and Other Cool Things Work",
+        speaker: "Will Klein",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "10.30AM - 12.30PM",
+        title: "Kubernetes for JS App developers",
+        speaker: "Lovisa Svallignson",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "10.45AM - 12.00PM",
+        title: "Fastest Progressive Web App in the West",
+        speaker: "Melissa Wagasky",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "12.00PM - 1.00PM",
+        title: "Lunch",
+        speaker: "",
+        description: "",
+        hasToggle: false,
+        icon: "pause"
+      },
+      {
+        time: "1.00PM - 3.00PM",
+        title: "Technical Writing for Developers",
+        speaker: "Meeka Gayhart",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "12.30PM - 3.00PM",
+        title: "Intermediate React",
+        speaker: "Chris Bolin",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "1.30PM - 3.00PM",
+        title: "Maps, Monads, and Pure Functions: Functional Programming for Beginners",
+        speaker: "Emily Freeman & Madison Kerndt",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "1.00PM - 3.00PM",
+        title: "Clouduboy: Create JS Games for Microcontrollers",
+        speaker: "Flaki",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "1.00PM - 3.00PM",
+        title: "Collaborative Coding with Glitch",
+        speaker: "Jenn Schiffer",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+      {
+        time: "1.00PM - 3.00PM",
+        title: "Serverless JavaScript in the Cloud with Google Cloud Platform",
+        speaker: "Myles Borins",
+        description: "",
+        hasToggle: false,
+        icon: "talk"
+      },
+    ]);
   }
 });
