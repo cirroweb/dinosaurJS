@@ -109,7 +109,7 @@ export default Route.extend({
           name: 'Jay Phelps',
           talkName: "Help me WebAssembly, you're my only hope!",
           talkAbstract:
-            "WebAssembly (aka wasm) is a new, standardized compilation target for the web, shipping in all modern browsers. But since it's so low level it can be difficult to see how it will revolutionize the next generation of web apps–and definitely not just games and C++! In this talk, Jay will reveal what it is, how you can use it today, and the incredible opportunities it will unlock in the years to come on both the Web and on Desktop.",
+            "WebAssembly (aka wasm) is a new, standardized compilation target for the web, shipping in all modern browsers. But since it's so low level it can be difficult to see how it will revolutionize the next generation of web apps–and definitely not just games and C++! In this talk, Jay   reveal what it is, how you can use it today, and the incredible opportunities it will unlock in the years to come on both the Web and on Desktop.",
           twitterLink: '',
           githubLink: '',
           linkedInLink: '',
@@ -162,7 +162,7 @@ export default Route.extend({
           twitterLink: '',
           githubLink: '',
           linkedInLink: '',
-          type: 'Speaker',
+          type: 'Workshop',
           isKeynote: false,
           bio:
             'Madison is on a mission to help developers build secure software and to make the digital world a safer place for everyone. She is a Developer Evangelist and Software Engineer at IronCore Labs, makers of turnkey data security solutions for developers and empowers Enterprises to control their data wherever it lives. Madison has deep roots in the startup community and has worked with multiple startups as a front-end developer, designer, and marketer. She enjoys building, creating, teaching, and con',
@@ -179,7 +179,7 @@ export default Route.extend({
           twitterLink: '',
           githubLink: '',
           linkedInLink: '',
-          type: 'Speaker',
+          type: 'Workshop',
           isKeynote: false,
           bio:
             'After many years of ghostwriting, Emily Freeman made the bold (insane?!) choice to switch careers into software engineering. Emily is the curator of JavaScript January. She works as a developer advocate for Kickbox and lives in Denver, Colorado.',
@@ -255,7 +255,7 @@ export default Route.extend({
           linkedInLink: '',
           type: 'Workshop',
           isKeynote: false,
-          bio: 'Will is a full stack engineer and co-organizes the React Denver meetup. He loves sharing what he can with the community, whether its organizing events, giving talks, or mentoring others. He is proud to be a father and husband, and lives on a healthy diet of coffee and ice cream in Longmont, Colorado.',
+          bio: 'Will is a full stack engineer at Workday and co-organizes the React Denver meetup. He loves sharing what he can with the community, whether its organizing events, giving talks, or mentoring others. He is proud to be a father and husband, and lives on a healthy diet of coffee and ice cream in Longmont, Colorado.',
           specialClasses: '',
         },
         {
